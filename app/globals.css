@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Mori';
+  src: url('./Assets/Font/PPMori-SemiBold.otf');
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --noto: 'Noto Sans', sans-serif;
+  --main: #1e539e;
+  --roboto: 'Roboto', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +28,144 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background: #e4ebf5;
+  /* font-family: var(--roboto); */
 }
+
+
+.num{
+  /* stroke-width: 2px;
+  stroke: #000;
+  fill: none; */
+  /* color: var(--main);
+  -webkit-text-fill-color: #e4ebf5;  */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.menu{
+  transition: 200ms ease-in-out;
+}
+
+.menu.active{
+  transition: 200ms ease-in-out;
+
+}
+
+.bar1, .bar2{
+  transition: 250ms ease-in-out;
+}
+.menu.active > .bar1{
+  transform: rotate(-45deg) translate(-4px, 3px);
+  transition: 0.25s ease-in;
+}
+.menu.active > .bar2{
+  transform: rotate(45deg) translate(-4px, -3px);
+  transition: 0.25s ease-in;
+}
+
+
+
+
+.radial-gradient2 {
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgb(255, 255, 255) 0%,
+    transparent 100%
+    ), #e4ebf5;
+    /* background: #e4ebf5; */
+   
+}
+
+.linear-mask2 {
+  -webkit-mask-image: linear-gradient(-75deg, white calc(var(--x) + 20%), transparent calc(var(--x) + 30%), white calc(var(--x) + 100%));
+  mask-image: linear-gradient(-75deg, white calc(var(--x) + 20%), transparent calc(var(--x) + 30%), white calc(var(--x) + 100%));
+  /* mask-image: linear-gradient(-75deg, white calc(var(--x) + 20%), transparent 30%, white 100%); */
+}
+
+.linear-overlay2 {
+  background-image: linear-gradient(-75deg, rgba(255, 255, 255, 0.1) calc(var(--x) + 20%),  #1e539e calc(var(--x) + 25%), rgba(255, 255, 255, 0.1) calc(var(--x) + 100%));
+  mask: linear-gradient(black, black) content-box, linear-gradient(black, black) ;
+  -webkit-mask: linear-gradient(black, black) content-box, linear-gradient(black, black) ;
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+
+}
+
+.link{
+  width: fit-content;
+}
+
+.link:hover{
+  filter: drop-shadow(1px 1px 10px rgb(30, 83, 158, .5));
+}
+
+.link:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link::after{
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #1e539e;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 200ms ease-in-out;
+}
+
+
+.btn{
+  z-index: 1;
+  transition: 200ms ease-in-out;
+  border: .5px solid #1e539e;
+}
+
+.btn:hover{
+  color: #1e539e;
+  /* transition: 200ms ease-in-out; */
+}
+
+.btn:hover::after{
+  height: 0%;
+}
+.btn::after{
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e539e;
+  transition: 200ms ease-in-out;
+  
+}
+
+
+.btn2:nth-child(1)::after{
+  background: #25d366;
+}
+
+.btn2:nth-child(2)::after{
+  background: #395498;
+}
+
+.btn2:nth-child(3)::after{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.btn2{
+  border: .5px solid transparent;
+}
+  
+.btn2:hover{
+  border: .5px solid var(--main);
+}
+  
