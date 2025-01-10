@@ -30,7 +30,7 @@ const Social = () => {
         },
     ]
   return (
-    <div className=' z-[20] fixed bottom-20 right-20 flex flex-col items-center gap-3'>
+    <div className=' z-[20] fixed bottom-10 right-10 lg:bottom-20 lg:right-20 flex flex-col items-center gap-3'>
         <AnimatePresence>
             {drop && (
                 <div className='flex flex-col gap-3'>

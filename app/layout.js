@@ -22,16 +22,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} bg-[#e4ebf5] relative ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} bg-[#e4ebf5] z-[1] relative ${geistMono.variable} antialiased`}
       >
-        <div className="max-w-[1450px]  px-5 px pt-[13px] mx-auto w-full h-auto">
+        <div className="max-w-[1450px] z-20  px-5 px pt-[13px] mx-auto w-full h-auto">
 
           <header>
               <Nav />
+
           </header>
-
-
         </div>
+        
+
         {children}
         <Social />
       </body>
