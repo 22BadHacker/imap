@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Social from './component/Social'
 import Nav from "./component/Nav";
+import Footer from "./component/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,19 +23,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} bg-[#e4ebf5] z-[1] relative ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} w-full bg-[#e4ebf5] h-auto overflow-y-scroll grid-cols-1 grid grid-row-[auto_1fr_auto] z-[1] relative ${geistMono.variable} antialiased`}
       >
-        <div className="max-w-[1450px] z-20  px-5 px pt-[13px] mx-auto w-full h-auto">
+        <div className="w-full">
 
-          <header>
+          <header className="max-w-[1450px] z-20  px-5  py-[13px] mx-auto w-full h-auto">
               <Nav />
 
           </header>
         </div>
         
+        <div>
+          {children}
 
-        {children}
+        </div>
         <Social />
+
+        {/* <section className="w-full h-full bg-[#000]">
+              <Footer />
+          
+
+        </section> */}
       </body>
     </html>
   );
