@@ -53,7 +53,7 @@ const Nav = () => {
    
   return (
     <>
-    <nav className='w-full z-20 relative h-[65px]  flex justify-between items-center '>
+    <nav className='w-full z-[100] relative h-[65px]  flex justify-between items-center '>
         <div className='flex z-[5] w-full flex-row-reverse sm:justify-normal sm:flex-row justify-between items-center gap-10 lg:gap-[60px]'>
             <div onClick={dropHandel} className={`${active} lg:hidden p-[2px] rounded-full menu cursor-pointer md:size-9 size-[38px] flex flex-col gap-2 justify-center items-center `}>
                 <div className="w-full h-[1.5px] bg-main bar1 relative"></div>
@@ -106,16 +106,16 @@ const Nav = () => {
 
             {
                 drop && (
-                    <motion.div  animate={{opacity: 1, height: '50vh', width: '45vw', filter: 'blur(0px)'}} transition={{duration: 0.1, delay: 0.1, ease: 'easeInOut', type: 'spring', stiffness: 50, damping: 10}} initial={{opacity: 0, height: 0, width:0, filter: 'blur(2px)'}} className='absolute lg:hidden sm:flex hidden border-[.5px] border-main   z-[1] -top-[6px] -left-[10px] h-[50vh] w-[35vw] rounded-[40px] overflow-hidden bg-white/80 backdrop-blur-[50px] shadow-[2px_2px_4px_rgb(0,0,0,.1)] px-4 py-6'>
+                    <motion.div  animate={{opacity: 1, height: '50vh', width: '45vw', filter: 'blur(0px)'}} transition={{duration: 0.1, ease: 'linear', type: 'spring', stiffness: 60, damping: 15}} initial={{opacity: 0, height: 0, width:0, filter: 'blur(2px)'}} className='absolute lg:hidden sm:flex hidden    z-[2] -top-[5px] border-[.5px] border-black/10 -left-[10px] h-[50vh] w-[35vw] rounded-[00px] overflow-hidden bg-white/5 backdrop-blur-[10px] shadow-[2px_2px_4px_rgb(0,0,0,.05)]  px-5 py-6'>
                         <div className='flex linkss relative top-[80px] flex-col gap-2 w-full'>
                             {navLinks.map((link, i) => (
-                                <>
+                                <div key={i}>
                                     <div className="w-full h-[.2px] opacity-20 bg-main"></div>
-                                    <div  className='text-main  tracking-wide w-full h-[30px]  hover:text-black relative font-medium  text-[20px]'>
-                                        <Link key={i} href={link.url}  className=''>{link.title}</Link>
+                                    <div  className='text-main pt-1 tracking-wide w-full h-[30px]  hover:text-black relative font-medium  text-[20px]'>
+                                        <Link href={link.url}  className=''>{link.title}</Link>
 
                                     </div>
-                                </>
+                                </div>
                                 ))}
                                 <div className="w-full h-[.2px] opacity-20 bg-main"></div>
                             <div className='flex relative  flex-col gap-3 pt-2 pl-2 uppercase'>
@@ -138,7 +138,9 @@ const Nav = () => {
                                 
                             </div>
 
+                            
                         </div>
+
 
                         <div className="absolute bottom-0 opacity-50 right-0 blur-[70px] size-[100px] rounded-[20px_0_0_0] bg-red-500"></div>
                         <div className="absolute top-0 opacity-50 right-0 blur-[80px] size-[100px] rounded-[20px_0_0_0] bg-blue-500"></div>
@@ -158,16 +160,16 @@ const Nav = () => {
 
         {
             drop && (
-                <motion.div animate={{opacity:1, filter: 'blur(0px)'}} transition={{ delay:.2,duration: .25, ease: 'easeInOut'}} initial={{opacity: 0, filter: 'blur(10px)'}} className='w-screen z-10 sm:hidden flex  absolute h-auto bg-white/70 backdrop-blur-[25px] right-0 top-0 py-10 border-b-[.5px] border-main shadow-[0px_1px_1px_#1e539e] pt-[80px] left-0'>
-                    <div className='flex linkss relative  flex-col gap-2 w-full pt-10 px-5 pr-10'>
+                <motion.div animate={{opacity:1, filter: 'blur(0px)'}} transition={{ delay:.2,duration: .25, ease: 'easeInOut'}} initial={{opacity: 0, filter: 'blur(10px)'}} className='w-screen z-10 sm:hidden flex  absolute h-auto bg-white/100 backdrop-blur-[25px] right-0 top-0 py-10 border-b-[.5px] border-black/20 shadow-[0px_.5px_.5px_#1e539e] pt-[80px] left-0'>
+                    <div className='flex linkss relative h-full flex-col gap-2 w-full pt-10 px-5 pr-10'>
                             {navLinks.map((link, i) => (
-                                <>
-                                    <div key={i} className='text-main  tracking-wide w-full   hover:text-black relative font-medium  text-[20px]'>
+                                <div key={i}>
+                                    <div  className='text-main  tracking-wide w-full   hover:text-black relative font-medium  text-[20px]'>
                                         <Link key={i} href={link.url}  className=''>{link.title}</Link>
 
                                     </div>
-                                    <div className="w-full h-[.2px] opacity-20 bg-main"></div>
-                                </>
+                                    <div  className="w-full h-[.2px] opacity-20 bg-main"></div>
+                                </div>
                                 ))}
                                 {/* <div className="w-full h-[.2px] opacity-20 bg-main"></div> */}
                             <div className='flex relative  flex-col gap-3 pt-2 text-[15px]  uppercase'>

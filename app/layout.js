@@ -41,11 +41,11 @@ export default function RootLayout({ children }) {
         </div>
         <Social />
 
-        {/* <section className="w-full h-full bg-[#000]">
+        <section className="relative w-full h-auto ">
               <Footer />
+        </section>
           
 
-        </section> */}
       </body>
     </html>
   );

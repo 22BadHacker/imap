@@ -16,7 +16,7 @@ const Form = ({name}) => (
     </div>
 )
 
-const selecte = ['Informatique', 'Genie civil', "Bureautique", 'Comptabilité', 'Infographie','Marketing','Logistique & management', 'Gestion des entreprises' ,'La Langue Anglais' ]
+const selecte = ['Informatique', 'Genie civil', "Bureautique", 'Comptabilité', 'Infographie','Marketing','logistique et transport', 'Gestion des entreprises' ,'La Langue Anglais' ]
 
 
 const Sign = () => {
@@ -29,7 +29,7 @@ const Sign = () => {
     <div  className='w-screen absolute top-0 left-0 h-screen '>
 
         
-        <motion.form initial={{opacity:0, filter: 'blur(10px)'}} transition={{duration: .2, ease: 'easeInOut', type: 'tween'}} animate={{opacity: 1, filter: 'blur(0)'}} action="" className="w-[500px] z-30  border-[#1e539e] border-[.5px] h-[600px] flex flex-col gap-2 bg-[#f8f9fb]   overflow-hidden absolute right-[155px] top-[90px]">
+        <motion.form initial={{opacity:0, filter: 'blur(10px)'}} transition={{duration: .2, ease: 'easeInOut', type: 'tween'}} animate={{opacity: 1, filter: 'blur(0)'}} action="" className="w-[500px] z-[80]  border-[#1e539e] border-[.5px] h-[600px] flex flex-col gap-2 bg-[#f8f9fb]   overflow-hidden absolute right-[155px] top-[90px]">
         {/* <div class="absolute top-0 z-[-2] h-screen w-screen bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
         <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1.5px,transparent_1.5px),linear-gradient(to_bottom,#8080800a_1.5px,transparent_1.5px)] bg-[size:14px_24px]"></div>
 
