@@ -19,15 +19,17 @@ export const metadata = {
   description: "IMAP.ma",
 };
 
+// e4ebf5
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} w-full bg-[#e4ebf5] h-auto overflow-y-scroll grid-cols-1 grid grid-row-[auto_1fr_auto] z-[1] relative ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} w-full bg-[#fff] h-auto    z-[1] relative ${geistMono.variable} antialiased`}
       >
         <div className="w-full">
 
-          <header className="max-w-[1450px] z-20  px-5  py-[13px] mx-auto w-full h-auto">
+          <header className="max-w-[1450px]  z-20  px-5  py-[13px] mx-auto w-full h-auto">
               <Nav />
 
           </header>

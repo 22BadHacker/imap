@@ -11,7 +11,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { IoCodeSlash } from "react-icons/io5";
 
-export default function SchoolFormation() {
+export default function Page2() {
   const formations = [
     {
       title: "Programmation de web",
@@ -49,7 +49,7 @@ export default function SchoolFormation() {
 
   return (
     <section className="py-20 bg-[#e4ebf5]">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
           <motion.div

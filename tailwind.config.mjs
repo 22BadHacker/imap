@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily:{
+			mori : 'var(--mori)',
+			morir : 'var(--morir)',
+			mori1 : 'var(--mori1)',
+			sussi: 'var(--sussi)'
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

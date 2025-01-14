@@ -1,13 +1,13 @@
 // 'use client'
 import React from 'react'
 import Image from 'next/image'
-import Hero from './component/Home/Hero'
+// import Hero from './component/Home/Hero'
 // import bg from './Assets/Work/bg.mp4'
 
 
 const page = () => {
   return (
-    <div className='w-full z-[-1] bg-[#e4ebf5] relative h-full pb-0  '>
+    <div className='w-full z-[-1] bg-[#fff] relative h-full pb-0  '>
       <div className="w-screen h-screen abject-cover">
           {/* <iframe src={bg} autoPlay loop /> */}
       </div>

@@ -8,11 +8,12 @@ export const navLinks = [
     {
         id: 2,
         title: "Formations",
-        url: "/formations",
+        url: "/Formations",
     },
     {
         id: 3,
-        title: "showcase",
+        title: "Œuvres",
+        // title: "showcase",
         url: "/Showcase",
     },
     {

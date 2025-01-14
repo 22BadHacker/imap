@@ -53,7 +53,7 @@ const Nav = () => {
    
   return (
     <>
-    <nav className='w-full z-20 relative h-[65px] flex justify-between items-center '>
+    <nav className='w-full z-20 relative h-[65px]  flex justify-between items-center '>
         <div className='flex z-[5] w-full flex-row-reverse sm:justify-normal sm:flex-row justify-between items-center gap-10 lg:gap-[60px]'>
             <div onClick={dropHandel} className={`${active} lg:hidden p-[2px] rounded-full menu cursor-pointer md:size-9 size-[38px] flex flex-col gap-2 justify-center items-center `}>
                 <div className="w-full h-[1.5px] bg-main bar1 relative"></div>
@@ -66,10 +66,10 @@ const Nav = () => {
 
             <div className="lg:flex gap-8 items-center hidden">
                 {navLinks.map((link) => (
-                    <Link href={link.url} key={link.id} className='text-main link relative font-normal  text-[17px]'>{link.title}</Link>
+                    <Link href={link.url} key={link.id} className=' font-mori hover:text-main link relative   text-[17px]'>{link.title}</Link>
                 ))}
                 <div className='w-[.5px] h-[20px] bg-black'></div>
-                <div onClick={() => setDrop(!drop)} className='flex duration-200 ease-in-out cursor-pointer relative w-fit gap-1 text-[14px] text-main font-semibold items-center uppercase'><Image src={fr} alt='maroc' width={20} height={20} /> <span>Fr</span>  {drop ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}
+                <div onClick={() => setDrop(!drop)} className='flex duration-200 ease-in-out cursor-pointer relative w-fit gap-1 text-[14px]  font-semibold items-center uppercase'><Image src={fr} alt='maroc' width={20} height={20} /> <span>Fr</span>  {drop ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}
                     {drop && (
                         <motion.div animate={{opacity: 1, filter: 'blur(0px)'}} transition={{duration: 0.3, delay: 0, ease: 'easeInOut', type: 'spring', stiffness: 100}} initial={{opacity: 0, filter: 'blur(2px)'}} className='absolute z-[2] top-[35px] left-0 w-[90px] bg-white/70 border-[.5px] border-main rounded-md p-2'>
                             {/* <div className='size-3 absolute bg-main -top-1 z-[-4] left-1  -rotate-45'></div> */}
@@ -97,9 +97,9 @@ const Nav = () => {
 
         <div className="sm:flex gap-5 items-center z-[5] hidden">
             
-            <p onClick={()=> setSign(!sign)} className='font-normal cursor-pointer relative link text-[17px] text-main' >S'inscrire</p>
+            <p onClick={()=> setSign(!sign)} className='font-normal cursor-pointer relative link text-[17px] ' >S'inscrire</p>
             <div className='w-[.5px] h-[20px] bg-black'></div>
-            <Link className='font-normal relative btn w-fit h-fit overflow-hidden border-[.5px] border-main rounded-full text-white py-2 px-5  text-[16px]' href='/'>Platform</Link>
+            <Link className='font-normal relative btn w-fit h-fit overflow-hidden border-[.5px] border-black rounded-full text-white py-2 px-5  text-[16px]' href='/'>Platform</Link>
         </div>
 
         <AnimatePresence>

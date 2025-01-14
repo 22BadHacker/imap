@@ -1,12 +1,13 @@
 import React from 'react'
-import Contact from './Contact'
-// import Sign from './Sign'
+import Formation from './Formation'
+import Page2 from './Page2'
 
 const page = () => {
   return (
     <div className='w-full h-auto  pb-[100px]'>
-        <Contact />
-    </div>
+    <Formation />
+    {/* <page2 /> */}
+</div>
   )
 }
 
