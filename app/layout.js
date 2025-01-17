@@ -4,6 +4,7 @@ import Social from './component/Social'
 import Nav from "./component/Nav";
 import Footer from "./component/Footer";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +28,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} w-full bg-[#fff] h-auto    z-[1] relative ${geistMono.variable} antialiased`}
       >
+
+        
         <div className="w-full">
 
           <header className="max-w-[1450px]  z-20  px-5  py-[13px] mx-auto w-full h-auto">
@@ -34,14 +37,16 @@ export default function RootLayout({ children }) {
 
           </header>
         </div>
+
         
-        <div>
+        
+        <div className="">
           {children}
 
         </div>
         <Social />
 
-        <section className="relative w-full h-auto ">
+        <section className="relative  w-full h-auto ">
               <Footer />
         </section>
           

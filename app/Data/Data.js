@@ -20,8 +20,8 @@ export const navLinks = [
     },
     {
         id: 3,
-        title: "Œuvres",
-        // title: "showcase",
+        // title: "Œuvres",
+        title: "Showcase",
         url: "/Showcase",
     },
     {

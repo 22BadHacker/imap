@@ -31,7 +31,7 @@ const Social = () => {
         },
     ]
   return (
-    <motion.div drag className=' z-[20] fixed bottom-[60px] right-10 lg:bottom-20 lg:right-20 flex flex-col items-center gap-3'>
+    <motion.div drag className=' z-[20] fixed bottom-[60px] right-5 sm:right-10 lg:bottom-20 lg:right-20 flex flex-col items-center gap-3'>
         <AnimatePresence>
             {drop && (
                 <div className='flex flex-col gap-3'>

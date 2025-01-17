@@ -1,16 +1,17 @@
 'use client'
 import React, {useState, useEffect, useRef} from 'react'
-import logo from '../Assets/Logo+sub.svg'
+import logo from '../Assets/IMAPLogo/IMAP.svg'
+import out from '../Assets/IMAPLogo/outloudWhite.svg'
 import Image from 'next/image'
-import Link from 'next/link'
 import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
-import Button from '../ButtonWhite/Button';
 import { navLinks } from '../Data/Data';
 import maroc from '../Assets/Flags/Flag_of_Morocco.svg (2).png'
 import eng from '../Assets/Flags/Flag_of_the_United_Kingdom_(3-5).svg.webp'
 import fr from '../Assets/Flags/Flag_of_France.svg.webp'
 import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter, usePathname } from 'next/navigation'
 import Sign from './Sign'
+import Link from 'next/link'
 
 
 const Nav = () => {
@@ -47,29 +48,35 @@ const Nav = () => {
     }
 
    
-
+    const router = useRouter()
+    const pathname = usePathname()
+    // const href = router.asPath
+    // const handleClick = (e) => {
+    //     e.preventDefault()
+    //     router.push(href)
+    //   }
    
 
    
   return (
     <>
-    <nav className='w-full z-[100] relative h-[65px]  flex justify-between items-center '>
+    <nav className='w-full z-[100]  relative h-[65px]  flex justify-between items-center '>
         <div className='flex z-[5] w-full flex-row-reverse sm:justify-normal sm:flex-row justify-between items-center gap-10 lg:gap-[60px]'>
             <div onClick={dropHandel} className={`${active} lg:hidden p-[2px] rounded-full menu cursor-pointer md:size-9 size-[38px] flex flex-col gap-2 justify-center items-center `}>
                 <div className="w-full h-[1.5px] bg-main bar1 relative"></div>
                 <div className="w-full h-[1.5px] bg-main bar2 relative"></div>
             </div>
             <Link href='/'>
-                <Image src={logo} className='sm:size-[120px] size-[120px]' alt='logo' width={120} height={120} />
+                <Image src={logo} className='sm:size-[125px] size-[120px]' alt='IMAP' width={125} height={125} />
             </Link>
 
 
             <div className="lg:flex gap-8 items-center hidden">
                 {navLinks.map((link) => (
-                    <Link href={link.url} key={link.id} className=' font-mori hover:text-main link relative   text-[17px]'>{link.title}</Link>
+                    <Link  onClick={() => router.push(link.url, undefined, { shallow: true })} href={link.url} key={link.id} className={`${router.pathname === link.url ? 'text-main2' : ''} font-mori hover:text-main2 font-semibold text-black/70  link relative   text-[17px]`}>{link.title}</Link>
                 ))}
                 <div className='w-[.5px] h-[20px] bg-black'></div>
-                <div onClick={() => setDrop(!drop)} className='flex duration-200 ease-in-out cursor-pointer relative w-fit gap-1 text-[14px]  font-semibold items-center uppercase'><Image src={fr} alt='maroc' width={20} height={20} /> <span>Fr</span>  {drop ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}
+                <div onClick={() => setDrop(!drop)} className='flex duration-200 ease-in-out cursor-pointer relative w-fit gap-1 text-[14px]  font-semibold items-center uppercase'><Image src={fr} alt='France' width={20} height={20} /> <span>Fr</span>  {drop ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}
                     {drop && (
                         <motion.div animate={{opacity: 1, filter: 'blur(0px)'}} transition={{duration: 0.3, delay: 0, ease: 'easeInOut', type: 'spring', stiffness: 100}} initial={{opacity: 0, filter: 'blur(2px)'}} className='absolute z-[2] top-[35px] left-0 w-[90px] bg-white/70 border-[.5px] border-main rounded-md p-2'>
                             {/* <div className='size-3 absolute bg-main -top-1 z-[-4] left-1  -rotate-45'></div> */}
@@ -81,7 +88,7 @@ const Nav = () => {
                                 </div>
                                 <div className="w-full h-[.2px] opacity-20 bg-main"></div>
                                 <div className="flex gap-1 items-center ">
-                                    <Image src={eng} alt='maroc' width={20} height={20} />
+                                    <Image src={eng} alt='Enflish' width={20} height={20} />
                                     <p>En</p>
 
                                 </div>
@@ -97,9 +104,15 @@ const Nav = () => {
 
         <div className="sm:flex gap-5 items-center z-[5] hidden">
             
-            <p onClick={()=> setSign(!sign)} className='font-normal cursor-pointer relative link text-[17px] ' >S'inscrire</p>
+            <p onClick={()=> setSign(!sign)} className='font-mori cursor-pointer hover:text-main2 font-semibold text-black/70  link relative   text-[17px]' >S'inscrire</p>
+            
             <div className='w-[.5px] h-[20px] bg-black'></div>
-            <Link className='font-normal relative btn w-fit h-fit overflow-hidden border-[.5px] border-black rounded-full text-white py-2 px-5  text-[16px]' href='/'>Platform</Link>
+            
+            <motion.a initial='initial' whileHover='hovered' className='relative btn flex items-center justify-center  overflow-hidden  rounded-full font-semibold text-[#f9f9f9] h-[44px] w-[105px]  text-[16.5px]' href='/'><motion.div  variants={{ hovered: {top: 0}}} className='absolute -top-20 inset-0 w-full h-full flex justify-center items-center'>
+                    <Image width={72}  src={out} alt='OUTLOUD'/>
+                </motion.div> 
+            <motion.span variants={{intial: {y:0}, hovered: {y: '130%', opacity:0}}}className='opacity-95'>Platform</motion.span>
+            </motion.a>
         </div>
 
         <AnimatePresence>
