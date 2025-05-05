@@ -140,7 +140,7 @@ const Form = () => {
                     handleButtonClick(item);
                     setValue("formation", [...activeButtons, item].filter((btn, index, self) => self.indexOf(btn) === index));
                     }} 
-                    className={`${activeButtons.includes(item) ? 'active' : ''} ${isSubmitSuccessful && isSuccess ? '' : 'focuus'}  size-fit overflow-hidden border-dashed  z-[1]  text-[16.5px] font-metro relative border-[1.4px] border-gray-500 bg-transparent  px-4 py-[9px] rounded-full text-black/70 hover:border-black cursor-pointer`} 
+                    className={`${activeButtons.includes(item) ? 'active' : ''} ${isSubmitSuccessful && isSuccess ? '' : 'focuus'}  size-fit overflow-hidden border-dashed  z-[1]  text-[16px]  relative border-[.5px] border-black/40 bg-transparent  px-4 py-[9px] rounded-full text-black/70 hover:border-black cursor-pointer`} 
                     key={item}
                     >
                     {item}
@@ -159,7 +159,7 @@ const Form = () => {
             </div>
 
 
-            <button  className='h-[66px] click w-[220px] flex items-center  justify-center z-[1] overflow-hidden duration-200 mt-3 relative  rounded-full text-white  text-[17.5px] cursor-pointer  font-metro font-semibold  tracking-wide'>
+            <button  className='h-[62px] click w-[200px] flex items-center  justify-center z-[1] overflow-hidden duration-200 mt-3 relative  rounded-full text-white  text-[16px] cursor-pointer  font-metro font-semibold  tracking-wide'>
                 {isSubmitting ? (
                 <svg
                   className="w-5 h-5 mx-auto text-white animate-spin"

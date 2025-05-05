@@ -22,7 +22,7 @@ const layout = ({ children }) => {
 
             
 
-            <section className="relative  w-full h-auto bg-[#f5f9ff] pb-4 pt-20 ">
+            <section className="relative  w-full h-auto bg-[#f5f9ff] pb-4 pt-[40px] ">
                 <Footer />
             </section>
     </div>
