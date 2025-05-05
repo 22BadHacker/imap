@@ -32,7 +32,7 @@ const NavBar = () => {
 
                 <div className="flex items-center gap-[2px] ">
                     {/* <span className='text-[19px] duration-200  bg-[#e4e6ef] border-[1px]  rounded-full size-[45px] flex items-center justify-center text-[#443938]'><HiArrowUpRight /></span> */}
-                    <Link className='text-[19px]  px-[27px]  duration-200 hover:text-white  lg:py-[10px] py-[9px] call relative ease-in-out  text-[#2b2e3a] overflow-hidden border-[1px] border-[#e4e6ef]  font-normal  tracking-wide hidden lg:block  rounded-full' href={'/sign-up'}>S'inscrire</Link>
+                    <Link className='text-[19px]  px-[27px]  duration-200 hover:text-white  lg:py-[10px] py-[9px] call relative ease-in-out  text-[#2b2e3a] overflow-hidden border-[1px] border-[#e4e6ef]  font-normal  tracking-wide hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
 
                 </div>
                 
