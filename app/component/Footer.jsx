@@ -31,11 +31,11 @@ const Footer = () => {
 
             <div className="w-full lg:w-[30vw] flex flex-col justify-between ">
               
-              <Link href={'/'} className="size-[214px] scale-95 bg-white flex justify-center items-center rounded-full border-black/10  border-[.5px]">
+              <Link href={'/'} className="size-[214px] bg-white flex justify-center items-center rounded-full border-black/10  border-[.5px]">
                 <MagneticNested/>
               </Link>
 
-              <Image className='w-[210px] relative top-[1px]' src={Ima} alt="logo" />
+              <Image className='w-[200px] relative top-[1px]' src={Ima} alt="logo" />
               
             </div>
             
@@ -43,33 +43,33 @@ const Footer = () => {
             {/* Second */}
 
             <div className="flex flex-col gap-[70px]">
-              <div className="w-full flex justify-between">
+              <div className="w-full sm:flex sm:justify-between grid grid-cols-2 ">
 
                 <div className="flex flex-col gap-3">
-                  <h1 className='font-medium text-main  uppercase text-[14px] pb-1'>/ NAVIGATION</h1>
+                  <h1 className='font-medium text-main  uppercase text-[12px] sm:text-[14px] pb-1'>/ NAVIGATION</h1>
                   <div className="flex flex-col gap-[2px]">
                       {
-                        center.map((item, i)=> <Link href='/' key={i} className='text-gray-800 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[26px]'>{item}<HiArrowUpRight className='dir text-[18px] relative top-[1px] opacity-0'/></Link>)
+                        center.map((item, i)=> <Link href='/' key={i} className='text-gray-800 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[21px] sm:text-[26px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[18px] relative top-[1px] opacity-0'/></Link>)
                       }
                   </div>
 
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <h1 className='font-medium text-main  uppercase text-[14px] pb-1'>/ Formations</h1>
+                  <h1 className='font-medium text-main  uppercase  text-[12px] sm:text-[14px] pb-1'>/ Formations</h1>
                   <div className="flex flex-col gap-[3px]">
                       {
-                        selecte.map((item, i)=> <Link href='/' key={i} className='text-gray-800 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[26px]'>{item}<HiArrowUpRight className='dir text-[17px] relative top-[2px] opacity-0'/></Link>)
+                        selecte.map((item, i)=> <Link href='/' key={i} className='text-gray-800 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[21px] sm:text-[26px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[17px] relative top-[2px] opacity-0'/></Link>)
                       }
                   </div>
 
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <h1 className='font-medium text-main  uppercase text-[14px] pb-1'>/ Socials</h1>
+                  <h1 className='font-medium text-main  uppercase  text-[12px] sm:text-[14px] pb-1'>/ Socials</h1>
                   <div className="flex flex-col gap-[3px]">
                       {
-                        socials.map((item, i)=> <Link href={item.href} key={i} className='text-gray-800 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[26px]'>{item.name}<HiArrowUpRight className='dir text-[17px] relative top-[2px] opacity-0'/></Link>)
+                        socials.map((item, i)=> <Link href={item.href} key={i} className='text-gray-800 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[21px] sm:text-[26px]'>{item.name}<HiArrowUpRight className='dir text-[16px] sm:text-[17px] relative top-[2px] opacity-0'/></Link>)
                       }
                   </div>
 
@@ -78,23 +78,41 @@ const Footer = () => {
                     
               </div>
 
-              <div className="justify-between items-end flex w-full pt-[70px]">
+              <div className="justify-between items-end hidden md:flex w-full pt-[70px]">
                 
                 
                 <div className="flex flex-col gap-0">
-                    <Link className='text-gray-800  font-metro text-[19px] font-medium' href='tel:+212604248395'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>T : </span>  06 042 483 95</Link>
-                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href={''}><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
-                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>H : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
+                    <Link className='text-gray-800  text-[17.5px] font-poppins font-normal' href='tel:+212604248395'><span className='font-[700]  pr-[4px] '>T : </span>  06 042 483 95</Link>
+                    <Link className='text-gray-800  text-[17.5px] font-poppins font-normal' href={''}><span className='font-[700]  pr-[4px] '>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
+                    <p className='text-gray-800  text-[17.5px] font-poppins font-normal' href=''><span className='font-[700]  pr-[4px] '>H : </span> Du lundi au samedi, de 8h30 à 21h00</p>
                     
                   
                 </div>
                 <div className="flex flex-col">
-                  <Link className='text-gray-800 font-metro text-[19px] font-medium' href='tel:+212691990259' ><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>T : </span> 06 919 902 59</Link>
-                  <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>E : </span> contact.imap@gmail.com</Link>
+                  <Link className='text-gray-800  text-[17.5px] font-poppins font-normal' href='tel:+212691990259' ><span className='font-[700]  pr-[4px] '>T : </span> 06 919 902 59</Link>
+                  <Link className='text-gray-800  text-[17.5px] font-poppins font-normal' href='mailto:contact.imap@gmail.com'><span className='font-[700]  pr-[4px]'>E : </span> contact.imap@gmail.com</Link>
                   
                 {/* <p className='font-metro text-[19px] text-right'>2025 <span className=''>©</span>  IMAP</p> */}
 
                 </div>
+
+              </div>
+
+
+              <div className="w-full md:hidden grid grid-cols-1 gap-4">
+
+                <div className="flex flex-col gap-0">
+                    <Link className='text-gray-800  font-metro text-[19px] font-medium' href='tel:+212604248395'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>T : </span>  06 042 483 95</Link>
+                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='tel:+212691990259' ><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>T : </span> 06 919 902 59</Link>
+
+                </div>
+
+                <div className="flex flex-col gap-0">
+                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>E : </span> contact.imap@gmail.com</Link>
+
+                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href={''}><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
+                </div>
+                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>H : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
 
               </div>
 
