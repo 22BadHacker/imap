@@ -6,7 +6,7 @@ import ginie from './Assets/Construction-Management-and-Cost-Estimation-scaled.j
 
 const Formation = () => {
   return (
-     <div className='w-full container h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
+     <div className='w-full container h-screen max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
              <div className="w-full flex flex-col gap-20 coontain relative h-auto py-[120px] z-[1]">
                  <div className="flex gap-3 flex-col">
                      {/* {
@@ -21,7 +21,7 @@ const Formation = () => {
                      </h1>
                  </div>
                      
-                 <div className="grid grid-cols-3 gap-10">
+                 {/* <div className="grid grid-cols-3 gap-10">
                     <div className="flex flex-col gap-4 p-2 ">
                         <Image src={ginie} className='w-full h-full object-cover ' alt='Ginie Civil'/>
                         <div className="flex items-center gap-4">
@@ -35,7 +35,7 @@ const Formation = () => {
                                 </div>
                             </div>
                     </div>
-                 </div>
+                 </div> */}
                 
              </div>
      
