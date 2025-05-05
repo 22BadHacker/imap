@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Social from './component/Social'
-import Nav from "./component/Nav";
+import Nav from "./component/NavBar";
 import Footer from "./component/Footer";
 
 
@@ -26,29 +26,29 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} w-full bg-[#fff] h-auto    z-[1] relative ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} w-screen overflow-x-hidden bg-[#fff] h-auto    ${geistMono.variable} antialiased`}
       >
 
         
-        <div className="w-full">
+        {/* <div className="w-full">
 
-          <header className="max-w-[1450px]  z-20  px-5  py-[13px] mx-auto w-full h-auto">
+          <header className="  z-20   py-[18px] mx-auto w-full h-auto">
               <Nav />
 
           </header>
-        </div>
+        </div> */}
 
-        
-        
         <div className="">
           {children}
 
         </div>
-        <Social />
+        
+        
+        {/* <Social />
 
         <section className="relative  w-full h-auto ">
               <Footer />
-        </section>
+        </section> */}
           
 
       </body>

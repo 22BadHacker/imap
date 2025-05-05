@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,14 +27,45 @@
   src: url('./Assets/Font/MazzardH-Regular.otf');
 }
 
+@font-face {
+  font-family: 'metro';
+  src: url('./Assets/Font/Metropolis-Regular.ttf');
+}
+
+/* For modern browsers (WebKit-based) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 250ms ease-in-out;
+}
+
+
 :root {
   --mori: 'Mori', sans-serif;
   --mori1: 'Mori1', sans-serif;
   --morir: 'MoriR', sans-serif;
   --sussi: 'Sussi', sans-serif, Helvetica;
+  --metro: 'metro',Arial, sans-serif, Helvetica;
   --main: #1e539e;
   --main2: #e94531;
   --roboto: 'Roboto', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --noto-sans: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -293,21 +325,25 @@ body {
 
 .focuus.active{
   color: #f6f6f6;
-  transition: 200ms ease-in-out
+  transition: 200ms ease-in-out;
+  border: var(--main2) 1px solid;
 }
 
 .focuus.active::after{
   height: 100%;
-
-
+  border: var(--main2) 1px solid;
 }
 
+.focuus.active:hover{
+  border: var(--main2) 1px solid;
+  
+}
 .focuus::after{
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  background: #000;
+  background: var(--main2);
   width: 100%;
   height: 0%;
   z-index: -1;
@@ -326,7 +362,7 @@ body {
 
 .click::after, .click::before{
   content: '';
-  background: var(--main2);
+  background: var(--main);
   position: absolute;
   top: 0;
   left: 0;
@@ -337,7 +373,154 @@ body {
 }
 
 .click::after{
+  background: var(--main2);
+  height: 100%;
+  z-index: -2;
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  /* background-color: #f4f4f4; */
+  padding: 10px 0;
+}
+
+.marquee {
+  display: inline-flex;
+  gap: 30px;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* S'inscrire btn */
+
+.call::after, .call::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #e4e6ef;
+  transition: 200ms ease-in-out;
+}
+.call::after{
   background: var(--main);
   height: 100%;
   z-index: -2;
+}
+.call:hover::before{
+  height: 0%;
+}
+
+
+.navLink:nth-child(2):after, .navLink:nth-child(3):after{
+  content: '';
+  position: absolute;
+  right: -4px;
+  /* font-size: 14px; */
+  top: 3.5px;
+  /* rotate: 45deg; */
+  color: var(--main2);
+  background: var(--main2);
+  width: 4.5px;
+  height:4.5px;
+  border-radius: 100%;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink-on-hover:hover {
+  animation: blink 0.25s ease-in-out;
+  /* text-decoration: line-through; */
+ 
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-name: blink; */
+}
+
+
+.blink{
+  animation: blink .75s infinite;
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 50%;
+  background: var(--main2);
+}
+
+.high:hover * .blinkon{
+  
+  animation: blink 0.75s ease-in-out;
+}
+
+
+.contact-title:hover{
+  animation: blink 0.25s ease-in-out;
+  color: var(--main2);
+  cursor: pointer;
+  opacity: 100%;
+  transition: 200ms ease-in-out;
+}
+
+
+
+
+
+.inpuut:focus + .linee::before{
+  width: 100%;
+  transition: 400ms ease-in-out !important;
+}
+
+
+
+
+.linee::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1.5px;
+  background: var(--main2);
+  bottom: 0;
+  left: 0;
+  transition: .4s ease-in-out;
+}
+
+
+/* .select:focus > option{
+  background: rgb(249, 83, 2,.1);
+  background: #eee;
+  backdrop-filter: blur(10px);
+  opacity: .2;
+  color: black;
+  font-weight: 550;
+  position: relative;
+  margin-top: 10px;
+  border: 0;
+} */
+
+
+/* @layer utilities{
+  .inpuut{
+    @apply text-[17px] inpuut font-mori tracking-wide font-bold text-[#1c1d20]/90 outline-none bg-transparent   py-[10px] w-full;
+  }
+} */
+
+
+
+.text-strock{
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
 }

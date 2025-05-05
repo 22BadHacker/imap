@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import pics1 from '../../Assets/Work2/Nike.webp'
 import pics4 from '../../Assets/Work2/Moroc.webp'
-import pics5 from '../../Assets/Work2/viic.svg'
+import pics5 from '../../Assets/Work2/bussinessCard.webp'
 import pics3 from '../../Assets/Work2/drag-&-drab-notes.webp'
 import logo from '../../Assets/Work2/Logo.svg'
 import {motion} from 'framer-motion'
@@ -12,6 +12,7 @@ import pics8 from '../../Assets/Work2/sign.webp'
 import pics9 from '../../Assets/Work2/Headphones_Flyer.webp'
 import pics10 from '../../Assets/Work2/Sans-titre-1.webp'
 import pics12 from '../../Assets/Work2/illu.webp'
+import pics13 from '../../Assets/Work2/mag.webp'
 import { IoIosArrowRoundDown } from 'react-icons/io'
 import Cursors from './Cursor'
 import { TextLoopCustomVariantsTransition } from './TextLoop'
@@ -30,8 +31,7 @@ const imgs = [
     {src: pics4, alt:'',  desc1:'Poster', desc2:'Photoshop', name: 'Maroc Affiche'},
     {src: pics3, alt:'', desc1:'Drag & Drop', desc2:'JavaScript', name: 'Informatique'},
     {src: pics10, alt:'', desc1:'Informatique', desc2:'Web Design', name: 'Notification'},
-    // {src: pics5, alt:'', name: 'Victoria Logo', desc1:'Illustrator', desc2:'Logo Design',},
-    // {src: pics9, alt:'', desc1:'Flyer', desc2:'Informatique', name: 'Headphones Flyer'},   
+    {src: pics13, alt:'', desc1:'Magazin cover', desc2:'inDesign', name: 'Lenzone'},   
 ]
 
 
@@ -160,12 +160,10 @@ const Work = () => {
                 </div>
             
                 <div className="flex flex-col gap-2  w-full h-auto pb-5">
-                    <div className=' z-[1] flex  items-center justify-center  bg-[#239aad] overflow-hidden w-full relative     '>
-                        <Image src={pics5} className='object-cover saturate-150 '  alt="Victoria's Logo" />
-                        
-                    </div>
+                        <Image src={pics5} className='object-cover saturate-150 '  alt="Be Prod" />
+                    
 
-                    <Titlee title="Victoria's Logo" desc1='Logo' desc2='Illustartor'/>
+                    <Titlee title="Be Prod" desc1='Business Card' desc2='Illustartor'/>
                        
                 </div>
 

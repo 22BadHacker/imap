@@ -12,7 +12,11 @@ export default {
 			mori : 'var(--mori)',
 			morir : 'var(--morir)',
 			mori1 : 'var(--mori1)',
-			sussi: 'var(--sussi)'
+			sussi: 'var(--sussi)',
+			metro: 'var(--metro)',
+			roboto: 'var(--roboto)',
+			poppins: 'var(--poppins)',
+			noto_sans: 'var(--noto-sans)',
 		},
   		colors: {
   			background: 'hsl(var(--background))',

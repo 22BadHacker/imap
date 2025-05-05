@@ -74,7 +74,7 @@ const SignUp = () => {
 
 
   return (
-    <div className='z-[20] w-full h-auto grid gap-10  lg:grid-cols-[.9fr_1fr]'>
+    <div className='z-[20] w-full h-auto pb-20 grid gap-10  lg:grid-cols-[.9fr_1fr]'>
         <div className="flex flex-col gap-4">
             
             <p className='flex gap-2 opacity-90 items-center font-mori1 text-[19px]'><span className='size-2 rounded-full bg-black/80'></span> Inscrivez-vous maintenant</p>
@@ -90,7 +90,7 @@ const SignUp = () => {
                 {/* Prenom */}
                 <div className="flex flex-col gap-4">
                     <p className='text-black/80 font-normal text-[16.5px] '>Prenom</p>
-                    <input autoComplete="false" {...register("name", {
+                    <input autoComplete="false" name='Prenom'  {...register("Prenom", {
                     required: true,
                     
                   })} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder='Votre prenom' type="text"/>
@@ -98,7 +98,7 @@ const SignUp = () => {
                 {/* Nom */}
                 <div className="flex flex-col gap-4">
                     <p className='text-black/80 font-normal text-[16.5px] '>Nom</p>
-                    <input autoComplete="false"  {...register('Nom', {required: true})} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder='Votre nom' type="text"/>
+                    <input autoComplete="false" name='Nom'  {...register('Nom', {required: true})} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder='Votre nom' type="text"/>
                 </div>
                
             </div>
@@ -110,40 +110,40 @@ const SignUp = () => {
                     <input autoComplete="false"  {...register('Téléphone', {required: true})} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder='+212 612-345-678' type="text"/>
                 </div>
 
-                {/* Email */}
-                <div className="flex flex-col gap-4">
-                    <p className='text-black/80 font-normal text-[16.5px] '>Email</p>
-                    <input autoComplete="false"  {...register('Email', {required: true})} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder='example@gmail.com' type="email"/>
-                </div>
-             
-             
-            </div>
+                
+                        <div className="flex flex-col gap-4">
+                          <p className='text-black/80 font-normal text-[16.5px] '>Email</p>
+                          <input autoComplete="false"  {...register('Email', {required: true})} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder='example@gmail.com' type="email"/>
+                        </div>
+                       
+                       
+                      </div>
 
-              <div className="flex flex-col gap-5 pt-4">
-                  <p className='text-black/80 font-normal text-[16.5px] font-'>Je suis intéressé par...!</p>
+                        <div className="flex flex-col gap-5 pt-4">
+                          <p className='text-black/80 font-normal text-[16.5px] font-'>Je suis intéressé par...!</p>
 
-                  <div className="flex gap-4 items-center flex-wrap">  
+                          <div className="flex gap-4 items-center flex-wrap">  
+                            {
+                            selecte.map((item) => (
+                              <div 
+                              onClick={(e) => {
+                                handleButtonClick(item);
+                                setValue("interests", [...activeButtons, item].filter((btn, index, self) => self.indexOf(btn) === index));
+                              }} 
+                              className={`${activeButtons.includes(item) ? 'active' : ''} focuus size-fit overflow-hidden bg-transparent z-[1] text-[15px] font-morir relative border-[.5px] border-[#cccc] px-4 py-2 rounded-full text-black/70 hover:border-black cursor-pointer`} 
+                              key={item}
+                              >
+                              {item}
+                              </div>
+                            ))
+                            }
+                          </div>
+                          
+                        </div>
 
-                    {/* <input
-                    type="hidden"
-                    onChange={(e)=>setFormation([...formation , e.target.value])}
-                    value={formation}
-                    {...register('Formation')}
-                    readOnly
-                    className="hidden"
-                  />                */}
-
-                      {
-                        selecte.map((item) => <div  onClick={(e) => {handleButtonClick(item)}} className={`${activeButtons.includes(item) ? 'active' : ''} focuus size-fit overflow-hidden bg-transparent z-[1] text-[15px] font-morir relative border-[.5px] border-[#cccc] px-4 py-2 rounded-full text-black/70 hover:border-black cursor-pointer`} key={item}>
-                            {item}
-                        </div>)
-                      }
-                  </div>
-                  
-              </div>
-
-              
-              {/* Message */}
+                        <input type="hidden" {...register("intéressé")} />
+                        
+                        
               <div className="flex flex-col gap-5 pt-4">
                   <p className='text-black/80 font-normal text-[16.5px] font-'>Vous avez des questions ? </p>
 
@@ -187,18 +187,3 @@ const SignUp = () => {
 }
 
 export default SignUp
-
-
-
-
-//   const Input= ({head, holder, name}) => (
-//   <>
-//      <div className="flex flex-col gap-4">
-//           <p className='text-black/80 font-normal text-[16.5px] '>{head}</p>
-//           <input autoComplete="false" {...register('name', {
-//               required: "Full name is required",
-//               maxLength: 80,
-//             })} className='text-[14.5px] text-black/80 duration-200 outline-none bg-transparent hover:border-black border-b-[.5px] border-black/40 pb-2 w-full ' placeholder={holder} type="text" name={name}/>
-//       </div>
-//   </>
-// )
