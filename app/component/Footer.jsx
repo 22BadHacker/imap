@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="border-b-[1px]  pt-[130px] w-full border-[#e4ebf5]"></div>
-          <div className="grid grid-cols-[auto_1fr] pt-3">
+          <div className="grid grid-cols-[auto_1fr] pt-5">
                 <div className="w-full md:top-2 relative lg:w-[620px]">
                     <Image width={250}  src={Ima} alt='Ima Logo'/>
                 </div>
