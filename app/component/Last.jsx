@@ -8,10 +8,10 @@ const Last = () => {
        <div className="flex flex-col relative w-full gap-6 md:gap-12 py-20  items-center text-center justify-center  h-auto max-w-[1450px]  px-5 mx-auto ">
 
         {/* <div className="w-10 h-[1px] bg-main2 absolute top-0"></div> */}
-        <div className="absolute left-5 top-0 size-6 border-l-[2.5px] border-main2 border-t-[2.5px]"></div>
+        {/* <div className="absolute left-5 top-0 size-6 border-l-[2.5px] border-main2 border-t-[2.5px]"></div>
         <div className="absolute right-5 top-0 size-6 border-r-[2.5px] border-main border-t-[2.5px]"></div>
         <div className="absolute right-5 bottom-0 size-6  border-r-[2.5px] border-main2 border-b-[2.5px]"></div>
-        <div className="absolute left-5 bottom-0 size-6 border-l-[2.5px] border-main border-b-[2.5px]"></div>
+        <div className="absolute left-5 bottom-0 size-6 border-l-[2.5px] border-main border-b-[2.5px]"></div> */}
 
 
           <div className="absolute unset z-[2]  bg-red-500 w-[60%] h-[80px]  blur-[60px] rotate-[30deg]"></div>
