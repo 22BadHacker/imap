@@ -87,8 +87,9 @@ const Work = () => {
                         >
                             <Image
                                 alt=''
-                                className='w-full shadow-md z-30 first:mt-0 h-full object-cover md:mt-3'
+                                className='w-full   z-30 first:mt-0 h-full object-cover md:mt-3'
                                 src={items.src}
+                                loading='lazy'
                             />
 
                             <div className="absolute top-0 left-0 w-full h-full backdrop-blur-[20px] bg-black/20 flex justify-start p-6 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
@@ -118,7 +119,7 @@ const Work = () => {
                         />
                         <button
                             onClick={closeModal}
-                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-white bg-main2 -top-8 right-0 duration-200 rotate-[45deg] hover:rotate-[180deg] hover:scale-[1.1] shadow-md  hover:text-main2 text-white text-3xl font-bold"
+                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-main2 border-white border-dashed border-[1px] -top-8 right-0  duration-200  hover:rotate-[180deg] hover:scale-[1.1] shadow-md  text-white text-3xl font-bold"
                         >
                             <AiOutlineClose />
                         </button>

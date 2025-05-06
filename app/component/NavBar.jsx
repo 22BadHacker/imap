@@ -21,7 +21,7 @@ const NavBar = () => {
                 {navLinks.map((link, i) => (
                     <>
                         <Link key={i} href={link.url} className='text-[20px]  relative  items-center font-normal tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#2b2e3a]   hover:text-main2'>{link.title} </Link>
-                        {/* {link.id !== navLinks.length && <span className='text-[19px] font-light text-black/50'>|</span>} */}
+                        {/* {link.id !== navLinks.length && <span className='text-[19px] font-light text-black/50'>/</span>} */}
                     </>
                 ))}
             </div>

@@ -15,7 +15,7 @@ export function MagneticNested({click}) {
 
         onClick={click}
         type='button'
-        className='size-[200px] uppercase hover:bg-main rounded-full border-black/10 text-[16px]  font-medium duration-200 ease-in-out shadow-lg border-[.5px] bg-main2 text-white'
+        className='size-[170px]  in font-sans rounded-full text-[18px]  font-medium duration-200 ease-in-out shadow-lg  bg-main2 text-white'
       >
         <Magnetic
           intensity={0.1}

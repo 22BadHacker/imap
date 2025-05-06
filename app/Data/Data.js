@@ -21,6 +21,7 @@ export const navLinks = [
     {
         id: 3,
         // title: "Œuvres",
+        // title: "Réalisations",
         title: "Showcase",
         url: "/Showcase",
     },

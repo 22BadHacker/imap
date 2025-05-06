@@ -12,7 +12,7 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import { MagneticNested } from './Magnet2'
 
 const center = ['Accueil', 'Formations', 'Showcase', 'Contact', "S'inscrire"]
-const selecte = ['Informatique', 'Genie civil', "Bureautique", 'Comptabilité', 'Infographie', '....']
+const selecte = ['Informatique', 'Genie civil', "Bureautique", 'Comptabilité', 'Infographie']
 
 const socials = [
   { href: 'https://wa.me/+212604248395', name: 'WhatsApp' },
@@ -30,12 +30,17 @@ const Footer = () => {
             
 
             <div className="w-full lg:w-[30vw] flex flex-col justify-between ">
-              
-              <Link href={'/'} className="size-[214px] bg-white flex justify-center items-center rounded-full border-black/10  border-[.5px]">
+              <div className=""></div>
+              {/* <div className=""></div> */}
+              {/* <Link href={'/'} className="size-[214px] bg-white flex justify-center items-center rounded-full border-black/10  border-[.5px]">
                 <MagneticNested/>
-              </Link>
+              </Link> */}
+                {/* <p className='text-gray-800 cursor-pointer linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-semibold  text-[21px] sm:text-[17px]'>&copy; 2025 <span className='font-[800]'>IMAP</span>. All right reserved</p> */}
+                <Image className='w-[240px] relative top-[1px]' src={Ima} alt="logo" />
+              {/* <div className="flex flex-col gap-3">
 
-              <Image className='w-[200px] relative top-[1px]' src={Ima} alt="logo" />
+              </div> */}
+
               
             </div>
             

@@ -34,7 +34,7 @@
 
 /* For modern browsers (WebKit-based) */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   height: 8px;
 }
 
@@ -52,6 +52,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.3);
   transition: 250ms ease-in-out;
+}
+
+@media (max-width: 500px) {
+  ::-webkit-scrollbar {
+  width: 0px;
+  height: 8px;
+}
 }
 
 
@@ -519,8 +526,20 @@ body {
 
 
 
-.text-strock{
+.text-str{
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
   color: transparent;
+  filter: drop-shadow(.5px .5px 4px var(--main2));
+
+}
+
+
+.out:hover * .in{
+  background: var(--main);
+  transition: 250ms ease-in-out;
+}
+.out:hover {
+  border: dashed 1px var(--main);
+  transition: 250ms ease-in-out;
 }

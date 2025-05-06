@@ -71,7 +71,7 @@ const Form = () => {
 
 
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-[.8fr_1fr] gap-20 lg:gap-12 h-auto pt-[50px]'>
+    <div id='rejoignez-nous' className='grid grid-cols-1 lg:grid-cols-[.8fr_1fr] gap-20 lg:gap-12 h-auto pt-[40px]'>
         {/* <p className='uppercase opacity-70 pb-1 text-[14.5px] h-auto'>Inscrivez-vous maintenant</p> */}
         <div className="flex flex-col gap-2">
             
