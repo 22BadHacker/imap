@@ -458,6 +458,14 @@ body {
   animation-name: blink; */
 }
 
+.blink-on{
+  animation: blink 0.35s ease-in-out  infinite;
+}
+
+.blink-on2{
+  animation: blink 0.4s ease-in-out  infinite;
+}
+
 
 .blink{
   animation: blink .75s infinite;
@@ -530,12 +538,12 @@ body {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
   color: transparent;
-  filter: drop-shadow(.5px .5px 4px var(--main2));
+  /* filter: drop-shadow(.5px .5px 4px var(--main2)); */
 
 }
 
 
-.out:hover * .in{
+.out:hover > .in{
   background: var(--main);
   transition: 250ms ease-in-out;
 }

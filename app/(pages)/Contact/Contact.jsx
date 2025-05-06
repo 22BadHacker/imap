@@ -15,8 +15,8 @@ const Contact = () => {
         {/* {
             [...Array(20)].map((_, i) => <div className="absolute Bubbles duration-[200ms] ease-in-out w-[200px] h-[200px] even:bg-blue-500 blur-[100px] opacity-30 odd:bg-red-500 rounded-full" key={i} style={{top: `${Math.random() * 100}%`, left: `${Math.random() * 100}%`}} />)
         } */}
-        <div className="w-full flex flex-col gap-20  relative h-auto py-[120px] z-[1]">
-            <div className="flex gap-3  flex-col relative"> 
+        <div className="w-full flex flex-col gap-[100px] relative h-auto py-[120px] z-[1]">
+            <div className="flex gap-3  flex-col relative pb-6"> 
 
               {/* <div className="absolute right-10 top-0 blur-[80px] size-[250px] rounded-full bg-main2"></div>             */}
               {/* <div className="absolute right-10 top-5 blur-[0px] size-[250px] rounded-full border-[4px] border-main"></div>             */}

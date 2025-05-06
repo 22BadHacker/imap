@@ -49,10 +49,8 @@ const Work = () => {
         <div className='w-full container h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
 
             <div className="w-full coontain relative h-auto py-[120px] z-[1]">
-                <div className="flex gap-3 flex-col pb-10">
-                    {/* {
-                        [...Array(10)].map((_, i) => <div className="absolute Bubbles duration-[200ms] ease-in-out w-[200px] h-[200px] even:bg-blue-500 blur-[100px] z-[1] opacity-30 odd:bg-red-500 rounded-full" key={i} style={{top: `${Math.random() * 100}%`, left: `${Math.random() * 100}%`}} />)
-                    } */}
+                <div className="flex gap-3 flex-col pb-[120px] ">
+                   
                     <p className='font-semibold uppercase text-[14.5px] tracking-wider font-metro text-main2 flex gap-1 items-center'>
                         <span className='blink'></span> Showcase
                     </p>

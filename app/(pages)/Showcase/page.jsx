@@ -2,7 +2,7 @@ import React from 'react'
 import Work from './Work1'
 import Last from '@/app/component/Last';
 // import { MagneticNested } from '@/app/component/Magnet2';
-// import Link from 'next/link';
+import Link from 'next/link';
 // import Last from '@/app/component/Last';
 
 
@@ -14,8 +14,8 @@ const page = () => {
   return (
     <div className='w-full  h-auto  pb-[100px]'>
         <Work />
-        <Last />
        
+          <Last url='Contact/#rejoignez-nous' name='rejoignez-nous' title='Bien plus qu’un lieu d’apprentissage — une vraie impulsion pour votre avenir.'/>
     </div>
   )
 }
