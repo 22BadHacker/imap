@@ -123,7 +123,7 @@ const Footer = () => {
 
 
               <div className="lg:hidden flex  flex-col justify-between  gap-12">
-              <Image className='w-[330px] relative top-[1px]' src={Ima} alt="logo" />
+              <Image className='sm:w-[300px] w-[340px] relative top-[1px]' src={Ima} alt="logo" />
                 <p className='text-gray-800  cursor-pointer linkTo blink-on-hover hover:text-main2 flex lg:hidden items-center gap-[6px]  relative font-semibold  text-[15px] text-main sm:text-[17px]'>&copy; 2025 <span className='font-[800]'>IMAP</span>| Institut des Métiers Appliqués Privé</p>
               </div>
 
