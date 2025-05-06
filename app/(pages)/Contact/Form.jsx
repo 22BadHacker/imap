@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import useWeb3forms from '@web3forms/react'
 import { useForm, Controller } from 'react-hook-form'
 import { ChevronDown } from 'lucide-react'
+import { MdClose } from 'react-icons/md'
 
 
 const selecte = ['Développement informatique', 'Gestion des entreprises', "Bureautique", 'Comptabilité', 'Infographie','Informatique de Gestion','Transport et logistique','Génie Civil' ];
@@ -10,12 +11,13 @@ const selecte = ['Développement informatique', 'Gestion des entreprises', "Bure
 
 
 const Label = ({name}) => (
-  <label className='text-[16.5px] labeel font-medium uppercase tracking-wide  font-mori text-[#1a1918]/80' htmlFor="formations">{name} <span className='text-red-500 text-[19px]'>*</span></label>
+  <label className='text-[16.5px] labeel font-medium font-sans uppercase tracking-wide  text-[#1a1918]/80' htmlFor="formations">{name} <span className='text-red-500 text-[19px]'>*</span></label>
 )
 
 const Form = () => {
 
      const [formation, setFormation] = useState([''])
+      const [isActive, setIsActive] = useState(false);
     
     
     
@@ -71,7 +73,7 @@ const Form = () => {
 
 
   return (
-    <div id='rejoignez-nous' className='grid grid-cols-1 lg:grid-cols-[.8fr_1fr] gap-20 lg:gap-12 h-auto pt-[40px]'>
+    <div id='rejoignez-nous' className='grid grid-cols-1 lg:grid-cols-[.8fr_1fr] gap-20 lg:gap-12 h-auto pt-[40px] w-full relative'>
         {/* <p className='uppercase opacity-70 pb-1 text-[14.5px] h-auto'>Inscrivez-vous maintenant</p> */}
         <div className="flex flex-col gap-2">
             
@@ -80,7 +82,7 @@ const Form = () => {
             <h1 className='sm:text-[55px] text-[40px] leading-tight md:max-w-[80%] lg:max-w-[500px] text-black/80 font-semibold tracking-[.5x]'>Osez rêver plus grand, commencez aujourd’hui.</h1>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="flex gap-11 flex-col">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex gap-11 flex-col relative w-full">
         <input type="checkbox" id="" className="hidden" style={{ display: "none" }} {...register("botcheck")}/>
 
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-12">
@@ -153,9 +155,9 @@ const Form = () => {
 
             <div className="flex flex-col">
               
-                <label className='text-[16.5px] font-medium uppercase tracking-wide  font-mori text-[#1a1918]/80' htmlFor="message">Vous avez des questions ? <span className='text-green-500 text-[19px]'>*</span></label>
+                <label className='text-[16.5px] labeel font-medium font-sans uppercase tracking-wide  text-[#1a1918]/80' htmlFor="message">Vous avez des questions ? <span className='text-green-500 text-[19px]'>*</span></label>
                 <textarea style={{resize: 'none'}} autoComplete="false" {...register("Message", {required: false})} className='text-[17px] inpuut font-mori tracking-wide font-bold text-[#1c1d20]/90 outline-none bg-transparent   py-[10px]  w-full max-h-[200px] min-h-[200px]'></textarea>
-                <div className="w-full relative h-[1.2px] bg-gray-500/50 linee"></div>
+                <div className="w-full relative h-[1.25px] bg-gray-500/50 linee"></div>
             </div>
 
 
@@ -184,8 +186,9 @@ const Form = () => {
               </button>
 
               {isSubmitSuccessful && isSuccess && (
-                  <div className="mt-2 text-[15px] font-semibold text-green-500">
+                  <div  className={`z-[20] font-medium font-sans bg-[#f5f9ff] text-black p-[10px] rounded-md shadow-sm border-[.5px] border-black/20 fixed bottom-[60px] left-5 sm:left-10 lg:bottom-20 lg:left-20 flex  items-center gap-7 text-[12.5px] lg:text-[16px] transition-all duration-200 ease-in-out ${!isActive ? 'flex' : 'hidden pointer-events-none'}`}>
                   {message}
+                      <span onClick={()=>setIsActive(!isActive)} className='text-[17px] rounded-full cursor-pointer size-[22px] flex items-center justify-center border-main2 text-main2 hover:text-white hover:bg-main2 border-[1px] border-dashed'><MdClose /></span>
                   </div>
               )}
             
