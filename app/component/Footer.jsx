@@ -117,7 +117,7 @@ const Footer = () => {
                     <Link className='text-gray-800 font-metro text-[19px] font-medium' href={''}><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
                 </div>
                     <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>H : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
-                    <p className='text-gray-800  cursor-pointer linkTo blink-on-hover hover:text-main2 hidden lg:flex items-center gap-[6px]  relative font-semibold  text-[21px] sm:text-[17px]'>&copy; 2025 <span className='font-[800]'>IMAP</span>. All right reserved</p>
+                   
 
               </div>
 
