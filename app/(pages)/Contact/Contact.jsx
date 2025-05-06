@@ -19,7 +19,7 @@ const Contact = () => {
             <div className="flex gap-3  flex-col relative pb-6"> 
 
               {/* <div className="absolute right-10 top-0 blur-[80px] size-[250px] rounded-full bg-main2"></div>             */}
-              {/* <div className="absolute right-10 top-5 blur-[0px] size-[250px] rounded-full border-[4px] border-main"></div>             */}
+              {/* <div className="absolute right-10 top-5 blur-[0px] size-[250px] rounded-full border-[4px] border-main">highlight </div>             */}
                 <p className='font-semibold uppercase text-[14.5px] tracking-wider font-metro text-main2 flex gap-1 items-center'>
                     <span className='blink'></span> Contact
                 </p>

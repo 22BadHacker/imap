@@ -21,14 +21,12 @@ const NavBar = () => {
                 {navLinks.map((link, i) => (
                     <>
                         <Link key={i} href={link.url} className='text-[20px]  relative  items-center font-normal tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#2b2e3a]   hover:text-main2'>{link.title} </Link>
-                        {/* {link.id !== navLinks.length && <span className='text-[19px] font-light text-black/50'>/</span>} */}
                     </>
                 ))}
             </div>
             
             <div className="flex gap-1 items-center">
                 
-                {/* <span onClick={()=>setOpen(!open)} className='text-[17.5px] duration-200  border-[#e94531] border-[1px]  rounded-full px-[20px] py-[9px] flex items-center justify-center text-[#e94531]'>{open ? 'Close' : 'Open'}</span> */}
 
                 <div className="flex items-center gap-[2px] ">
                     {/* <span className='text-[19px] duration-200  bg-[#e4e6ef] border-[1px]  rounded-full size-[45px] flex items-center justify-center text-[#443938]'><HiArrowUpRight /></span> */}
@@ -53,6 +51,9 @@ const NavBar = () => {
                     
 
             </div>
+
+
+            
                     
 
         </nav>  

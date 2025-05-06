@@ -1,10 +1,13 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import ginie from './Assets/Construction-Management-and-Cost-Estimation-scaled.jpg'
+import StoryVideo from './StoryVideo'
+import Storys from './Storys'
 
 
 const Formation = () => {
+    
   return (
      <div className='w-full container h-screen max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
              <div className="w-full flex flex-col gap-20 coontain relative h-auto py-[120px] z-[1]">
@@ -20,22 +23,14 @@ const Formation = () => {
                      nos programmes
                      </h1>
                  </div>
-                     
-                 {/* <div className="grid grid-cols-3 gap-10">
-                    <div className="flex flex-col gap-4 p-2 ">
-                        <Image src={ginie} className='w-full h-full object-cover ' alt='Ginie Civil'/>
-                        <div className="flex items-center gap-4">
 
+                <div className="flex flex-col gap-10">
+                <p className='uppercase text-black contact-title opacity-70 pb-2 text-[14.5px] flex gap-1 items-center'> <span className=''>/</span>Highlights</p>
 
-                                
-                                <div className="flex  flex-col">
-                                    
-                                    <p className='uppercase text-black contact-title opacity-70 pb-1 text-[14.5px] flex gap-1 items-center'> <span className=''>/</span>Formation</p>
-                                    <h2 className='text-[40px] font-semibold'>Ginie Civil</h2>
-                                </div>
-                            </div>
-                    </div>
-                 </div> */}
+                    <Storys />
+                </div>
+
+                   
                 
              </div>
      

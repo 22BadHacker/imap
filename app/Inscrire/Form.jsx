@@ -73,18 +73,12 @@ const Form = () => {
 
 
   return (
-    <div id='rejoignez-nous' className='grid grid-cols-1 lg:grid-cols-[.8fr_1fr] gap-20 lg:gap-12 h-auto pt-[40px] w-full relative'>
-        {/* <p className='uppercase opacity-70 pb-1 text-[14.5px] h-auto'>Inscrivez-vous maintenant</p> */}
-        <div className="flex flex-col gap-2">
-            
-            {/* <p className='uppercase opacity-70 pb-1 text-[14.5px] h-auto'>Inscrivez-vous maintenant</p> */}
-            <p className='uppercase text-black contact-title opacity-70 pb-2 text-[14.5px] flex gap-1 items-center'> <span className=''>/</span>Inscrivez-vous maintenant</p>
-            <h1 className='sm:text-[55px] text-[40px] leading-tight md:max-w-[80%] lg:max-w-[500px] text-black/80 font-semibold tracking-[.5x]'>Osez rêver plus grand, commencez aujourd’hui.</h1>
-        </div>
+    <div id='rejoignez-nous' className='grid grid-cols-1 h-full gap-10 pr-7  pt-[40px] w-full relative '>
 
         <form onSubmit={handleSubmit(onSubmit)} className="flex gap-11 flex-col relative w-full">
         <input type="checkbox" id="" className="hidden" style={{ display: "none" }} {...register("botcheck")}/>
 
+            
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-12">
                 <div className="flex flex-col  relative">
                     <Label name='Nom complet' />
@@ -92,7 +86,7 @@ const Form = () => {
                     required: true,
                     
                     })} className='text-[17px] inpuut font-mori tracking-wide font-bold text-[#1c1d20]/90 outline-none bg-transparent   py-[10px] w-full ' type="text"/>
-                    <div className="w-full relative h-[1.5px] sm:bg-gray-500/50 bg-gray-500/40 linee"></div>
+                    <div className="w-full relative h-[1.5px] bg-gray-500/50 linee"></div>
                 </div>
 
                 <div className="flex flex-col">
@@ -101,7 +95,7 @@ const Form = () => {
                     required: true,
                     
                     })} className='text-[17px] inpuut font-mori tracking-wide font-bold text-[#1c1d20]/90 outline-none bg-transparent   py-[10px] w-full' type="text"/>
-                    <div className="w-full relative h-[1.5px] sm:bg-gray-500/50 bg-gray-500/40 linee"></div>
+                    <div className="w-full relative h-[1.5px] bg-gray-500/50 linee"></div>
                 </div>
 
             </div>
@@ -112,7 +106,7 @@ const Form = () => {
                   required: true,
                   
                   })} className='text-[17px] inpuut font-mori tracking-wide font-bold text-[#1c1d20]/90 outline-none bg-transparent   py-[10px] w-full ' type="text"/>
-                  <div className="w-full relative lg:h-[1.5px] h-[1.2px] sm:bg-gray-500/50 bg-gray-500/40 linee"></div>
+                  <div className="w-full relative h-[1.2px] bg-gray-500/50 linee"></div>
               </div>
           
                 <div className="flex flex-col ">
@@ -128,7 +122,7 @@ const Form = () => {
                     <option className='font-metro' value="Bac+2">Bac+2</option>
                     <option className='font-metro' value="Bac+3">Bac+3</option>
                   </select>
-                  <div className="w-full relative h-[1.5px] sm:bg-gray-500/50 bg-gray-500/40 linee"></div>
+                  <div className="w-full relative h-[1.5px] bg-gray-500/50 linee"></div>
                 </div>
 
 
@@ -157,7 +151,7 @@ const Form = () => {
               
                 <label className='text-[16.5px] labeel font-medium font-sans uppercase tracking-wide  text-[#1a1918]/80' htmlFor="message">Vous avez des questions ? <span className='text-green-500 text-[19px]'>*</span></label>
                 <textarea style={{resize: 'none'}} autoComplete="false" {...register("Message", {required: false})} className='text-[17px] inpuut font-mori tracking-wide font-bold text-[#1c1d20]/90 outline-none bg-transparent   py-[10px]  w-full max-h-[200px] min-h-[200px]'></textarea>
-                <div className="w-full relative h-[1.25px] sm:bg-gray-500/50 bg-gray-500/40 linee"></div>
+                <div className="w-full relative h-[1.3px] bg-gray-500/50 linee"></div>
             </div>
 
 
