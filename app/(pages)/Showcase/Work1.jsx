@@ -56,7 +56,7 @@ const Work = () => {
                     <p className='font-semibold uppercase text-[14.5px] tracking-wider font-metro text-main2 flex gap-1 items-center'>
                         <span className='blink'></span> Showcase
                     </p>
-                    <h1 className='sm:text-[60px] text-[#1f1f1f] font-morir text-[50px] flex text-wrap leading-snug font-bold opacity-90'>
+                    <h1 className='sm:text-[60px] text-[#1f1f1f] font-morir text-[40px] flex text-wrap leading-snug font-bold opacity-90'>
                         Galerie des Projets de<br />nos futurs ingénieurs
                         
                     </h1>

@@ -77,7 +77,7 @@ const Form = () => {
             
             {/* <p className='uppercase opacity-70 pb-1 text-[14.5px] h-auto'>Inscrivez-vous maintenant</p> */}
             <p className='uppercase text-black contact-title opacity-70 pb-2 text-[14.5px] flex gap-1 items-center'> <span className=''>/</span>Inscrivez-vous maintenant</p>
-            <h1 className='text-[55px] leading-tight md:max-w-[80%] lg:max-w-[500px] text-black/80 font-semibold tracking-[.5x]'>Osez rêver plus grand, commencez aujourd’hui.</h1>
+            <h1 className='sm:text-[55px] text-[40px] leading-tight md:max-w-[80%] lg:max-w-[500px] text-black/80 font-semibold tracking-[.5x]'>Osez rêver plus grand, commencez aujourd’hui.</h1>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="flex gap-11 flex-col">

@@ -48,7 +48,7 @@ const Footer = () => {
             {/* Second */}
 
             <div className="flex flex-col gap-[70px]">
-              <div className="w-full sm:flex sm:justify-between grid grid-cols-2 ">
+              <div className="w-full sm:flex sm:justify-between gap-8 sm:gap-0 grid grid-cols-2 ">
 
                 <div className="flex flex-col gap-3">
                   <h1 className='font-medium text-main  uppercase text-[12px] sm:text-[14px] pb-1'>/ NAVIGATION</h1>

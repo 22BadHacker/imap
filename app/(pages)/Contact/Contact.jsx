@@ -23,7 +23,7 @@ const Contact = () => {
                 <p className='font-semibold uppercase text-[14.5px] tracking-wider font-metro text-main2 flex gap-1 items-center'>
                     <span className='blink'></span> Contact
                 </p>
-                <h1 className='sm:text-[60px] font-morir text-[#1a1918] text-[50px] flex text-wrap leading-snug font-bold opacity-90'>
+                <h1 className='sm:text-[60px] font-morir text-[#1a1918] text-[40px] flex text-wrap leading-snug font-bold opacity-90'>
                     Ensemble, Créons <br />l'Avenir dès Aujourd'hui
                 </h1>
 
