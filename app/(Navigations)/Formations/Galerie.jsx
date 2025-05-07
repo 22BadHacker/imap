@@ -3,7 +3,7 @@ import devlopor from '@/public/Gallerie/Developer.jpeg'
 import Image from 'next/image'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
-import icon from '@/app/'
+import icon from '@/app/icon.svg'
 
 const dots = Array.from({ length: 16 });
 
