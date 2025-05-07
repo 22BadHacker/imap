@@ -7,29 +7,30 @@
 
 @font-face {
   font-family: 'Mori';
-  src: url('./Assets/Font/NeueHaasDisplayRoman.ttf') format('truetype');
+  /* src: url('../public/Assets/Font/NeueHaasDisplayRoman.ttf') format('truetype'); */
+  src: url('../public/Font/NeueHaasDisplayRoman.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Sussi';
-  src: url('./Assets/Font/SuisseIntl-Medium.ttf') format('truetype');
+  src: url('../public/Font/SuisseIntl-Medium.ttf') format('truetype');
 }
 
 
 
 @font-face {
   font-family: 'Mori1';
-  src: url('./Assets/Font/MazzardH-Medium.otf') format('truetype');
+  src: url('../public/Font/MazzardH-Medium.otf') format('truetype');
 }
 
 @font-face {
   font-family: 'MoriR';
-  src: url('./Assets/Font/MazzardH-Regular.otf') format('truetype');
+  src: url('../public/Font/MazzardH-Regular.otf') format('truetype');
 }
 
 @font-face {
   font-family: 'metro';
-  src: url('./Assets/Font/Metropolis-Regular.ttf') format('truetype');
+  src: url('../public/Font/Metropolis-Regular.ttf') format('truetype');
 }
 
 /* For modern browsers (WebKit-based) */
@@ -551,3 +552,18 @@ body {
   border: dashed 1px var(--main);
   transition: 250ms ease-in-out;
 }
+
+
+
+
+@keyframes rotate {
+  0% { rotate: 0deg;}
+  100% { rotate: 360deg }
+}
+
+
+
+.rotate{
+    animation: rotate 6s linear infinite;
+}
+

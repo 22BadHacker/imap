@@ -1,10 +1,8 @@
 'use client'
 import Image from 'next/image'
-import logo from '../Assets/IMAPLogo/IMAP1.svg'
+import logo from '@/public/IMAPLogo/IMAP1.svg'
 import Link from 'next/link'
-import { navLinks } from '../Data/Data'
-import { IoIosArrowRoundUp } from 'react-icons/io'
-import { HiArrowUpRight } from "react-icons/hi2";
+import { navLinks } from '../../Data/Data'
 import { useState } from 'react'
 
 
@@ -29,19 +27,11 @@ const NavBar = () => {
                 
 
                 <div className="flex items-center gap-[2px] ">
-                    {/* <span className='text-[19px] duration-200  bg-[#e4e6ef] border-[1px]  rounded-full size-[45px] flex items-center justify-center text-[#443938]'><HiArrowUpRight /></span> */}
+
                     <Link className='text-[19px]  px-[27px]  duration-200 hover:text-white  lg:py-[10px] py-[9px] call relative ease-in-out  text-[#2b2e3a] overflow-hidden border-[1px] border-[#e4e6ef]  font-normal  tracking-wide hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
 
                 </div>
                 
-                {/* <div onClick={() => setOpen(!open)} className={`flex duration-200 ease-in-out cursor-pointer flex-col size-[45px]  border-main2 border-[1px] rounded-full  items-center justify-center lg:hidden hover: ${!open ? 'gap-[5px] bg-main2 ' : 'gap-0'}`}>
-                    <span className={`w-[70%] duration-200 ease-in-out h-[.5px] ${!open ? 'bg-white' : 'bg-main2'}`}></span>
-                    <span className={`w-[70%] duration-200 ease-in-out h-[.5px] ${!open ? 'bg-white' : 'bg-main2'}`}></span>
-                </div> */}
-                {/* <div onClick={() => setOpen(!open)} className={`flex cursor-pointer size-[46px] gap-2 bg-[#e4e6ef] rounded-full  items-center justify-center lg:hidden hover: ${open ? 'flex-col bg-main2 ' : ''}`}>
-                    <span className={`size-[7.5px] rounded-full ${open ? 'bg-white' : 'bg-[#2b2e3a]/85'}`}></span>
-                    <span className={`size-[7.5px] rounded-full ${open ? 'bg-white' : 'bg-[#2b2e3a]/85'}`}></span>
-                </div> */}
 
                 <div className={` lg:hidden  p-[5px] rounded-full menu cursor-pointer md:w-[52px] size-[38px] flex flex-col gap-[6px] justify-center items-center `}>
                     <div className="w-full  border-b-[1.5px] border-black/80 bar1 relative"></div>

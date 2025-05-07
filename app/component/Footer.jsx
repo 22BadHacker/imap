@@ -1,10 +1,10 @@
 import React from 'react'
-import { Linkss, ContactInfo } from '../Data/Data'
+import { Linkss, ContactInfo } from '../../Data/Data'
 import Link from 'next/link'
-import Ima from '../Assets/IMAPLogo/Virtical_logo.svg'
+import Ima from '@/public/IMAPLogo/Vertical_logo.svg'
 import Image from 'next/image'
 import { HiArrowUpRight } from "react-icons/hi2";
-import { MagneticNested } from './Magnet2'
+
 
 const center = ['Accueil', 'Formations', 'Showcase', 'Contact', "S'inscrire"]
 const selecte = ['Informatique', 'Génie Civil',  "Bureautique", 'Comptabilité', 'Infographie']
