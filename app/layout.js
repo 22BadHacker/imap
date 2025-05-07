@@ -29,27 +29,14 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} w-screen overflow-x-hidden bg-[#fff] h-auto    ${geistMono.variable} antialiased`}
       >
 
-        
-        {/* <div className="w-full">
 
-          <header className="  z-20   py-[18px] mx-auto w-full h-auto">
-              <Nav />
-
-          </header>
-        </div> */}
 
         <div className="">
           {children}
 
         </div>
         
-        
-        {/* <Social />
 
-        <section className="relative  w-full h-auto ">
-              <Footer />
-        </section> */}
-          
 
       </body>
     </html>
