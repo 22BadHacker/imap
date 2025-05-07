@@ -92,3 +92,10 @@ export const FaqData = [
       "Cela dépend du programme, mais en général, vous apprendrez à utiliser des outils comme la suite Adobe (Photoshop, Illustrator, InDesign) pour l’infographie, Visual Studio Code pour le développement, AutoCAD pour le génie civil, ainsi que des logiciels bureautiques comme PowerPoint et Excel. Et bien sûr, d'autres outils spécialisés selon votre formation.",
   },
 ];
+
+
+
+
+export const Gallerie = [
+  {formation: '<div className="w-10 h-1 bg-main2"></div>'}
+]

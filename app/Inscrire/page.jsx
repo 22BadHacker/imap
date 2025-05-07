@@ -1,12 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
-// import img from '../Assets/Work2/colors.jpeg'
-import img from '../Assets/Work2/hand2.webp'
-import logo from '../Assets/IMAPLogo/IMAP1.svg'
-import Form from '../component/Form';
 import Form2 from '../component/Form';
-import { MdOutlineClose } from 'react-icons/md';
-import Preloader from '../component/Preloader';
+
 
 
 export const metadata = {

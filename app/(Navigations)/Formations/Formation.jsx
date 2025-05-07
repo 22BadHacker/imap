@@ -8,7 +8,7 @@ import Galerie from './Galerie'
 const Formation = () => {
     
   return (
-     <div className='w-full container h-screen max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
+     <div className='w-full  h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
              <div className="w-full flex flex-col gap-20 coontain relative h-auto py-[120px] z-[1]">
                  <div className="flex gap-3 flex-col">
                      
@@ -21,7 +21,7 @@ const Formation = () => {
                      </h1>
                  </div>
 
-
+                    
                 <Galerie />
                    
                 
