@@ -62,26 +62,33 @@ export const FaqData = [
   {
     question: "Quels sont les critères d’admission à IMAP ?",
     answer:
-      "Nos formations sont ouvertes à tous les candidats titulaires d’un baccalauréat ou équivalent. Certaines formations peuvent nécessiter un test ou un entretien.",
+      "Nos formations sont ouvertes à tous les profils ayant un niveau baccalauréat ou plus. Que vous soyez fraîchement diplômé ou en reconversion, vous êtes le bienvenu. ",
   },
   {
-    question: "Est-ce que les cours sont en présentiel ou en ligne ?",
+    question: "Les formations sont-elles en présentiel ou à distance ?",
     answer:
-      "Nous proposons les deux formats. Certaines formations sont hybrides pour plus de flexibilité.",
+      "Nos formations se déroulent en présentiel dans notre centre, afin de garantir un suivi personnalisé et un vrai contact humain. Certains modules complémentaires peuvent être proposés en ligne."
+
   },
   {
-    question: "Est-ce que IMAP délivre un diplôme reconnu ?",
+    question: "Comment puis-je m’inscrire à une formation ?",
     answer:
-      "Oui, nous délivrons des attestations de formation et des diplômes accrédités par les autorités compétentes.",
+      "C’est simple ! Cliquez sur le bouton “S’inscrire” dans le menu, remplissez le formulaire, et un membre de notre équipe vous contactera sous 24h. Vous pouvez aussi visiter notre centre si vous préférez échanger en personne."
+
   },
+  // {
+  //   question: "Est-ce que IMAP délivre un diplôme reconnu ?",
+  //   answer:
+  //     "Oui, nous délivrons des attestations de formation et des diplômes accrédités par les autorités compétentes.",
+  // },
   {
     question: "Ai-je besoin d’un ordinateur personnel pour suivre la formation ?",
     answer:
-      "Oui, surtout pour les formations en développement, design, ou marketing digital. Nous pouvons vous conseiller sur les spécifications recommandées.",
+      "Des ordinateurs sont disponibles dans nos salles, mais avoir votre propre machine est vraiment un plus — surtout si vous suivez une formation en développement informatique ou en infographie. Vous pourrez ainsi pratiquer chez vous, gagner en autonomie et progresser à votre rythme.",
   },
   {
     question: "Quels logiciels vais-je apprendre à utiliser ?",
     answer:
-      "Cela dépend du programme, mais en général : Adobe Suite (Photoshop, Illustrator, XD), Figma, Visual Studio Code, WordPress, et plus encore.",
+      "Cela dépend du programme, mais en général, vous apprendrez à utiliser des outils comme la suite Adobe (Photoshop, Illustrator, InDesign) pour l’infographie, Visual Studio Code pour le développement, AutoCAD pour le génie civil, ainsi que des logiciels bureautiques comme PowerPoint et Excel. Et bien sûr, d'autres outils spécialisés selon votre formation.",
   },
 ];

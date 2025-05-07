@@ -476,9 +476,9 @@ body {
   background: var(--main2);
 }
 
-.high:hover * .blinkon{
+.highlight:hover * .indeex{
   
-  animation: blink 0.75s ease-in-out;
+  animation: blink 0.25s ease-in-out;
 }
 
 

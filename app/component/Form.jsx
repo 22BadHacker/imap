@@ -9,7 +9,7 @@ import AnimatedCircle from './AnimatedCircle'
 
 import { motion } from 'framer-motion'
 
-const selecte = ['Développement informatique', 'Gestion des entreprises', "Bureautique", 'Comptabilité', 'Infographie','Informatique de Gestion','Transport et logistique','Génie Civil' ];
+const selecte = ['Développement informatique', 'Gestion des Entreprises', "Bureautique", 'Comptabilité Générale', 'Infographie','Gestion Informatique','Transport et logistique','Génie Civil' ];
 
 
 const Form2 = () => {
