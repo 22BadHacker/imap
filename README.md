@@ -22,7 +22,7 @@ Bienvenue chez IMAP.
 
 Le site présente :
 - Les différentes **formations** proposées
-- Des témoignages et projets étudiants
+- **projets étudiants**
 - Une interface de **candidature en ligne**
 
 ---
@@ -49,23 +49,23 @@ Le site présente :
 ## 📁 Structure du projet
 
 imap-website/
-├── components/ # Composants réutilisables (Navbar, Footer, Cards, etc.)
-├── pages/ # Pages Next.js (accueil, formations, contact…)
-├── public/ # Images, vidéos, favicons
-├── styles/ # Fichiers CSS globaux (si nécessaire)
-├── data/ # Données statiques (formations, FAQ, etc.)
-└── README.md
+### ├── components/ # Composants réutilisables (Navbar, Footer, Cards, etc.)
+### ├── pages/ # Pages Next.js (accueil, formations, contact…)
+### ├── public/ # Images, vidéos, favicons
+### ├── styles/ # Fichiers CSS globaux (si nécessaire)
+### ├── data/ # Données statiques (formations, FAQ, etc.)
+### └── README.md
 
  ## 📦 Déploiement
 Déployé facilement avec :
 - Vercel
 - Githup
-🌐 www.ima-privee.vercel.app
 
 
 ## 📮 Contact
 Pour toute contribution ou suggestion :
-📧 contact.imap@gmail.com
+- **📧 contact.imap@gmail.com**
+- **🌐 www.ima-privee.vercel.app**
 
 
 
