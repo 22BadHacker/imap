@@ -33,13 +33,13 @@ const Footer = () => {
             
             <div className="w-full lg:w-[34vw]  flex  flex-col justify-between ">
                 <div className="flex flex-col gap-6 md:gap-5">
-                  <Image className='md:w-[420px] w-full relative top-[2px]' src={Ima} alt="logo" />
-                  <p className=' md:text-[35px] font-bold text-[7vw] md:max-w-[450px] font-sans leading-tight md:leading-[40px] tracking-wide'>' <span className='text-str'>Chaque talent mérite un espace pour s’épanouirq</span> '</p>
+                  <Image className='md:w-[450px] pb-2 w-full relative top-[2px]' src={Ima} alt="logo" />
+                  <p className=' md:text-[30px]  pt-4 border-t-gray-200 font-bold uppercase text-gray-800 text-[7vw] md:max-w-[460px] font-sans leading-tight md:leading-[45px] tracking-wide'><span className=''>un espace pour apprendre, créer, et s’épanouir.</span></p>
 
-                  <div className="flex w-full sm:gap-10 items-center sm:justify-start flex-wrap justify-between  relative top-6">
+                  <div className="flex w-full gap-6 sm:gap-10 items-center sm:justify-start flex-wrap justify-between  relative top-1">
 
-                    <Link href={'/Contact'} className=' bg-main flex gap-3 items-center text-white px-4 py-[10px] rounded-full w-fit   cursor-pointer linkTo blink-on-hover hover:bg-main2   relative top-4  sm:text-[15px]'>Contact-nouz <HiArrowUpRight className='rotate-[45deg]'/></Link>
-                    <Link href={'/Contact'} className=' bg-[#e4e6ef] hover:text-white text-black/80 px-4 py-[10px] rounded-full w-fit   cursor-pointer linkTo blink-on-hover hover:bg-main2   relative top-4  sm:text-[15px]'>Découvrez nos programmes</Link>
+                    <Link href={'/Contact'} className=' bg-main flex gap-3 items-center text-white px-4 py-[10px] rounded-full w-fit   cursor-pointer linkTo blink-on-hover hover:bg-main2   relative top-4  sm:text-[13px]'>Contact-nouz <HiArrowUpRight className='rotate-[45deg]'/></Link>
+                    <Link href={'/Contact'} className=' bg-[#e4e6ef] hover:text-white text-black/80 px-4 py-[10px] rounded-full w-fit   cursor-pointer linkTo blink-on-hover hover:bg-main2   relative top-4  sm:text-[13px]'>Découvrez nos programmes</Link>
                   </div>
                 </div>
                 
@@ -56,9 +56,9 @@ const Footer = () => {
 
                 <div className="flex flex-col gap-3">
                   <h1 className='font-medium text-main font-sans   uppercase text-[12px] sm:text-[14px] pb-1'>/ NAVIGATION</h1>
-                  <div className="flex flex-col gap-[2px]">
+                  <div className="flex flex-col gap-[3px]">
                       {
-                        center.map((item, i)=> <Link href='/' key={i} className='text-black/80 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative  font-bold  text-[21px] sm:text-[26px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[18px] relative top-[1px] opacity-0'/></Link>)
+                        center.map((item, i)=> <Link href='/' key={i} className='text-black/80 linkTo font-sans blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative  font-semibold  text-[21px] sm:text-[25px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[18px] relative top-[1px] opacity-0'/></Link>)
                       }
                   </div>
 
@@ -66,19 +66,21 @@ const Footer = () => {
 
                 <div className="flex flex-col gap-3">
                   <h1 className='font-medium text-main font-sans  uppercase  text-[12px] sm:text-[14px] pb-1'>/ Formations</h1>
-                  <div className="flex flex-col gap-[2px]">
+                  <div className="flex flex-col gap-[3px]">
                       {
-                        selecte.map((item, i)=> <Link href='/' key={i} className='text-black/80 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[21px] sm:text-[26px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[17px] relative top-[2px] opacity-0'/></Link>)
+                        selecte.map((item, i)=> <Link href='/' key={i} className='text-black/80 font-sans linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-semibold  text-[21px] sm:text-[25px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[17px] relative top-[2px] opacity-0'/></Link>)
                       }
+                      
+
                   </div>
 
                 </div>
 
                 <div className="flex flex-col gap-3">
                   <h1 className='font-medium font-sans  text-main  uppercase  text-[12px] sm:text-[14px] pb-1'>/ Socials</h1>
-                  <div className="flex flex-col gap-[2px]">
+                  <div className="flex flex-col gap-[3px]">
                       {
-                        socials.map((item, i)=> <Link href={item.href} key={i} className='text-black/80 linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-bold  text-[21px] sm:text-[26px]'>{item.name}<HiArrowUpRight className='dir text-[16px] sm:text-[17px] relative top-[2px] opacity-0'/></Link>)
+                        socials.map((item, i)=> <Link href={item.href} key={i} className='text-black/80 font-sans linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-semibold  text-[21px] sm:text-[25px]'>{item.name}<HiArrowUpRight className='dir text-[14px] sm:text-[16px] relative top-[2px] opacity-0'/></Link>)
                       }
                   </div>
 

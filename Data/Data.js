@@ -9,6 +9,15 @@ import Portfolio from '@/public/Work2/Mockup.webp'
 import Center from '@/public/Work2/card2.webp'
 
 
+import devlopor from '@/public/Gallerie/Developer.jpeg'
+import Civil from '@/public/Gallerie/entreprise.jpg'
+import Design from '@/public/Gallerie/Design.jpeg'
+import comptable from '@/public/Gallerie/comptable.jpeg'
+import Logistique from '@/public/Gallerie/logistiique.jpg'
+
+// import code from '@/public/videos/coding.mp4'
+
+
 export const navLinks = [
     {
         id: 1,
@@ -97,5 +106,15 @@ export const FaqData = [
 
 
 export const Gallerie = [
-  {formation: '<div className="w-10 h-1 bg-main2"></div>'}
+  { srcView: <video className="absolute" height={400} width="400" controls>
+  <source src="/videos/coding.mp4" type="video/mp4" />
+</video>, formation: 'Développement informatique', src: devlopor, desc: 'Formation pratique au développement web et logiciel : langages (HTML, CSS, JavaScript, PHP), bases de données, frameworks (Laravel, React) et projets concrets pour devenir développeur.'},
+  { srcView: devlopor, formation: 'Ginie Civil', src: Civil, desc: 'Une formation en génie civil axée sur l’apprentissage des logiciels essentiels tels qu’AutoCAD pour le dessin technique, Revit , ainsi que d’autres outils professionnels utilisés dans la conception et l’analyse des structures.'},
+  { srcView: devlopor, formation: 'Infographie', src: Design, desc: 'Une formation en infographie axée sur la pratique des outils professionnels comme Photoshop, Illustrator et InDesign. Vous apprendrez à créer des logos, affiches, flyers, brochures et visuels pour le web et l’impression.'},
+  { srcView: devlopor, formation: 'Comptabilité Générale', src: comptable, desc: "Une formation en comptabilité générale pour apprendre à enregistrer, classer et interpréter les opérations comptables d'une entreprise : journaux, bilans, comptes de résultat, et principes comptables de base."},
+  { srcView: devlopor, formation: 'Transport et logistique', src: Logistique, desc: "Une formation en transport et logistique pour maîtriser la gestion des flux de marchandises, le stockage, la chaîne d’approvisionnement, ainsi que les outils et réglementations liés au transport national et international."},
 ]
+
+
+
+// Une formation en génie civil orientée logiciels : AutoCAD pour le dessin, Revit pour la 3D, et d'autres outils de conception et d’analyse.

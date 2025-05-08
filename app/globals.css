@@ -539,7 +539,7 @@ body {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
   color: transparent;
-  /* filter: drop-shadow(.5px .5px 4px var(--main2)); */
+  filter: drop-shadow(.5px .5px 14px var(--main2));
 
 }
 
@@ -567,26 +567,8 @@ body {
     animation: rotate 6s linear infinite;
 }
 
+.boox{
+  /* filter: drop-shadow(2px 2px 8px rgba(245, 245, 245, 0.3)) ; */
 
-
-@keyframes gradient-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-gradient-spin {
-  animation: gradient-spin 2s linear infinite;
-}
-
-
-
-.mask-image-gradient {
-  /* mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%); */
-
-  mask-image: linear-gradient(to bottom, black 80%, black 60%, transparent 100%);
+  /* box-shadow: 0 2px 4px rgba(240, 240, 240, 0.2), 0 4px 8px rgba(240, 240, 240, 0.2), 0 8px 16px rgba(240, 240, 240, 0.2); */
 }

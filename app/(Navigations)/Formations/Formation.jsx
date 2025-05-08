@@ -20,8 +20,11 @@ const Formation = () => {
                      nos programmes
                      </h1>
                  </div>
+                
+                 {/* <div className="w-[600px] absolute right-0 -rotate-12 h-[100px] top-[200px] opacity-55 bg-main2 blur-[80px]"></div>   
+                 <div className="w-[600px] absolute right-0 -rotate-12 opacity-60 h-[100px] bg-main blur-[80px]"></div>    */}
 
-                    
+                 
                 <Galerie />
                    
                 

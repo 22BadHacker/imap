@@ -12,7 +12,9 @@ export const metadata = {
 const page = () => {
   return (
     <div className='w-full h-auto  pb-[100px] '>
+    
     <Formation />
+
     <div className="pb-[100px]
     ">
 
