@@ -5,6 +5,7 @@ Bienvenue sur le dépôt du site officiel d’**IMAP** — une école spécialis
 ---
 
 ## ✨ À propos d’IMAP
+
 IMAP, c’est bien plus qu’un centre de formation.
 
 Basé au cœur de Casablanca, au Maroc, nous sommes un espace où les esprits créatifs se rencontrent, apprennent, et bâtissent leur avenir. Que vous soyez passionné par le design graphique, le développement web, ou tout simplement curieux de découvrir votre potentiel, IMAP vous accompagne à chaque étape.
@@ -12,7 +13,6 @@ Basé au cœur de Casablanca, au Maroc, nous sommes un espace où les esprits cr
 Notre mission ? Offrir des formations modernes, accessibles, et ancrées dans la réalité des métiers d’aujourd’hui. Ici, on apprend par la pratique, on échange avec des professionnels, et surtout, on grandit humainement et professionnellement.
 
 Bienvenue dans un lieu où chaque talent trouve sa voie.
-
 Bienvenue chez IMAP.
 
 
@@ -36,11 +36,11 @@ Le site présente :
 
 ## 🧳 Ressources utiles
 
-- [UI_Inspiration]: Awwwards, Dribble.....
+- [UI_Inspiration] : Awwwards, Dribble.....
 
-- [Icones]: React Icons
+- [Icones] : React Icons
 
-- [Fonts]: Google Fonts
+- [Fonts] : Google Fonts
 
 - [Design_Tool] : Figma, Illstrator, Photoshop ...
 
@@ -58,15 +58,12 @@ imap-website/
 
  ## 📦 Déploiement
 Déployé facilement avec :
-
 - Vercel
 
 
 ## 📮 Contact
 Pour toute contribution ou suggestion :
-
 📧 contact.imap@gmail.com
 
 
 
-## 💡 À propos d’IMAP
