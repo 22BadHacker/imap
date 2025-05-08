@@ -59,6 +59,8 @@ imap-website/
  ## 📦 Déploiement
 Déployé facilement avec :
 - Vercel
+- Githup
+🌐 www.ima-privee.vercel.app
 
 
 ## 📮 Contact
