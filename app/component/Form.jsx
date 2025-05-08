@@ -139,8 +139,8 @@ const Form2 = () => {
 
                   <div className="flex flex-col relative">
                       <p className='uppercase text-[14px] font-medium '>Vous avez des questions ?</p>
-                      <textarea style={{resize: 'none'}} autoComplete="false" {...register("Message", {required: false})} className='inpuut   outline-none pt-2 pb-1 bg-transparent  w-full max-h-[150px] min-h-[150px]'></textarea>
-                      <div className="h-[1.2px] relative linee bg-[#525356]"></div>
+                      <textarea style={{resize: 'none'}} autoComplete="false" {...register("Message", {required: false})} className='inpuut   outline-none pt-2 pb-1 bg-transparent  w-full max-h-[160px] min-h-[160px]'></textarea>
+                      <div className="h-[1.2px] relative linee bg-[#999ea5]"></div>
                   </div>
 
 

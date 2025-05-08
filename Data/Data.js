@@ -60,7 +60,7 @@ export const WorkGalerie = [
  
     { name:'Moroccan Affiche', desc:['Photoshope', 'Infographie'], src: MarocAfiche, category: 'Infographie' },
  
-    { name:'Portfolio Website', desc:['React', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },
+    { name:'Portfolio Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },
      
     { name:'Business Card', desc:['Illustrator', 'Infographie'], src: Center, category: 'Infographie' },
 ]

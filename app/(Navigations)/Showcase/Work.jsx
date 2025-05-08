@@ -5,6 +5,40 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { TfiArrowRight, TfiArrowTopRight } from "react-icons/tfi";
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
 import { WorkGalerie } from '@/Data/Data'
+import icon from '@/public/IMAPLogo/icon.svg'
+
+
+const dots = Array.from({ length: 18 });
+
+const Dots = () => {
+
+    return(
+        <>
+
+            <div  className="size-[45px] z-[1] cursor-pointer rounded-full backdrop-blur-[5px] absolute top-5 left-5 flex justify-center items-center rotate">
+                    {dots.map((_, i) => {
+                    const angle = (i / dots.length) * 2 * Math.PI;
+                    const x = 22 * Math.cos(angle); // radius
+                    const y = 22 * Math.sin(angle);
+                    return (
+                        <div
+                        
+                        key={i}
+                        className="absolute z-[2] translate-x-1/2 translate-y-1/2 cursor-pointer hover:bg-main2  size-[2.5px] bg-[#fff] rounded-full"
+                        style={{
+                            top: `calc(50% + ${y}px - 2px)`,
+                            left: `calc(50% + ${x}px - 2px)`
+                        }}
+                        />
+                    );
+
+                    })}
+                    <div  className="w-full cursor-pointer z-[4] h-full rounded-full absolute top-0 left-0 "></div>
+
+                </div>
+        </>
+    )
+}
 
 
 const Work = () => {
@@ -43,29 +77,34 @@ const Work = () => {
 
                
 
-                <div className="grid  md:grid-cols-3 grid-cols-2 gap-2 md:gap-3 mt-12 z-20">
+                <div className="grid  md:grid-cols-3 grid-cols-2 gap-2 md:gap-3 pt-12 z-20">
                     {filteredImgs.map((items, i) => (
                         <div
                             key={i}
                             className='w-full shadow-sm rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer' 
-                            onClick={() => openModal(items.src)}
-                        >
+                            onClick={() => openModal(items.src)}>
                             <Image
                                 alt=''
-                                className='w-full   z-30 first:mt-0 h-full object-cover md:mt-3'
+                                className='w-full saturate-[1.3]  z-30 first:mt-0 h-full object-cover md:mt-3'
                                 src={items.src}
                                 loading='lazy'
                             />
 
-                            <div className="absolute top-0 left-0 w-full h-full backdrop-blur-[20px] bg-black/20 flex justify-start p-6 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
-                               
-                                <div className="absolute top-0 left-0 text-black bg-white px-3 tracking-wide py-1 uppercase font-semibold text-[14px] ">/ {items.category}</div>
-                                <div className="flex flex-col gap-1 pt-2 ">
-                                    <span className=' w-fit text-white  bg-main2 px-4 py-1 tracking-wide  flex items-center justify-center rounded-full text-[12px]'>Voir l’aperçu</span> 
+                            <Dots />
+
+
+
+                            <div className="absolute z-[1] top-0 left-0 w-full h-full  flex justify-start px-6 pb-2 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
+
+                            <div class="absolute z-[-1] inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10 w-full h-full"></div>
+            
+                                <div className="flex flex-col gap-1 pt-0 ">
                                     <h1 className='md:text-[45px] leading-[44px] py-1 font-[500] text-[22px]  font-metro  text-white'>{items.name}.</h1>
-                                    <p className='md:text-[13px] text-[12px] text-white font-metro gap-2 flex md:gap-3 flex-wrap'>{Array.isArray(items.desc) ? items.desc.map((item, i) => (<span className='border-white border-[1px] px-3 shadow-md py-1 rounded-full' key={i}>{item}</span>)) : items.desc}</p>
+                                    <p className='md:text-[11px]  text-[12px] text-white font-sans uppercase gap-2 flex md:gap-3 flex-wrap'>{Array.isArray(items.desc) ? items.desc.map((item, i) => (<span className='border-white border-dashed backdrop-blur-[5px] border-[1px] px-3 shadow-md py-1 rounded-full' key={i}>{item}</span>)) : items.desc}</p>z
 
                                 </div>
+
+                                {/* <Image src={icon} alt='icon' className='w-[25px] absolute bottom-3 right-4'/> */}
 
                             </div>
                         </div>
@@ -80,11 +119,11 @@ const Work = () => {
                         <Image
                             src={selectedImage}
                             alt="Selected"
-                            className="max-w-[90vw] max-h-[90vh] object-contain  drop-shadow-[.5px_.5px_.25px_#fff] "
+                            className="max-w-[90vw] saturate-[1.3] max-h-[90vh] object-contain  drop-shadow-[.5px_.5px_.25px_#fff] "
                         />
                         <button
                             onClick={closeModal}
-                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-main2 border-white border-dashed border-[1px] -top-8 right-0  duration-200  hover:rotate-[180deg] hover:scale-[1.1] shadow-md  text-white text-3xl font-bold"
+                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-main2 border-white border-dashed border-[1px] -top-8 right-0  duration-200 hover:border-main2  hover:rotate-[180deg] hover:scale-[1.1] shadow-md  text-white/90 text-3xl font-bold"
                         >
                             <AiOutlineClose />
                         </button>
@@ -98,12 +137,3 @@ const Work = () => {
 export default Work
 
 
-// {/* <div className="absolute top-0 left-0 w-full h-full backdrop-blur-[20px] bg-black/20 flex justify-center  opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
-//                                 <div className="flex flex-col gap-0 pt-2">
-//                                     {[...Array(6)].map((_, index) => (
-//                                         <h1 key={index} className='md:text-[2.9vw] font-[800] text-[18px] leading-tight font-poppins text-white'>
-//                                             {items.name}.
-//                                         </h1>
-//                                     ))}
-//                                 </div>
-//                             </div> */}

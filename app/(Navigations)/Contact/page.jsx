@@ -14,7 +14,7 @@ const page = () => {
   return (
     <div className='w-full flex flex-col gap-[80px] relative h-auto  pb-[160px]'>
         <Contact />
-        <Last url='Showcase' name='rejoignez-nous' title='Des compétences, de l’expérience, un vrai tremplin.'/>
+        <Last url='Contact/#rejoignez-nous' name='rejoignez-nous' title='Des compétences, de l’expérience, un vrai tremplin.'/>
        
     </div>
   )
