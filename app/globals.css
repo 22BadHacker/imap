@@ -95,26 +95,7 @@ body {
   -webkit-text-stroke-color: black;
 }
 
-.menu{
-  transition: 200ms ease-in-out;
-}
 
-.menu.active{
-  transition: 200ms ease-in-out;
-
-}
-
-.bar1, .bar2{
-  transition: 250ms ease-in-out;
-}
-.menu.active > .bar1{
-  transform: rotate(-45deg) translate(-4px, 3px);
-  transition: 0.25s ease-in;
-}
-.menu.active > .bar2{
-  transform: rotate(45deg) translate(-4px, -3px);
-  transition: 0.25s ease-in;
-}
 
 
 
@@ -448,15 +429,7 @@ body {
 
 .blink-on-hover:hover {
   animation: blink 0.25s ease-in-out;
-  /* text-decoration: line-through; */
  
-  /* animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-  animation-name: blink; */
 }
 
 .blink-on{
@@ -567,8 +540,44 @@ body {
     animation: rotate 6s linear infinite;
 }
 
-.boox{
-  /* filter: drop-shadow(2px 2px 8px rgba(245, 245, 245, 0.3)) ; */
 
-  /* box-shadow: 0 2px 4px rgba(240, 240, 240, 0.2), 0 4px 8px rgba(240, 240, 240, 0.2), 0 8px 16px rgba(240, 240, 240, 0.2); */
+
+ /* Menu */
+    .bar1, .bar2{
+        transition: 250ms ease;
+    }
+
+    .menu.active > .bar1{
+        rotate: 45deg !important;
+        translate: 1px 2.5px !important;
+        width: 75% !important;
+        border-bottom: 2px solid rgb(0, 0, 0, .8) !important;
+      }
+      .menu.active > .bar2{
+        rotate: -45deg !important;
+        translate: 0px -2px !important;
+        width: 75% !important;
+        border-bottom: 2px solid rgb(0, 0, 0, .8) !important;
+    }
+
+
+    /* .menu{
+  transition: 200ms ease-in-out;
 }
+
+.menu.active{
+  transition: 200ms ease-in-out;
+
+}
+
+.bar1, .bar2{
+  transition: 250ms ease-in-out;
+}
+.menu.active > .bar1{
+  transform: rotate(-45deg) translate(-4px, 3px);
+  transition: 0.25s ease-in;
+}
+.menu.active > .bar2{
+  transform: rotate(45deg) translate(-4px, -3px);
+  transition: 0.25s ease-in;
+} */

@@ -44,6 +44,35 @@ export const navLinks = [
         url: "/Contact",
     },
 ];
+export const navLinks2 = [
+    {
+        id: 1,
+        title: "Accueil",
+        url: "/",
+    },
+    {
+        id: 2,
+        title: "Formations",
+        url: "/Formations",
+    },
+    {
+        id: 3,
+        // title: "Œuvres",
+        // title: "Réalisations",
+        title: "Showcase",
+        url: "/Showcase",
+    },
+    {
+        id: 4,
+        title: "Contact",
+        url: "/Contact",
+    },
+    {
+        id: 4,
+        title: "S'inscrire",
+        url: "/inscription",
+    },
+];
 
 
 

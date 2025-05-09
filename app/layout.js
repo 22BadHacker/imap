@@ -3,6 +3,7 @@ import "./globals.css";
 import Social from './component/Social'
 import Nav from "./component/NavBar";
 import Footer from "./component/Footer";
+import Head from "next/head";
 
 
 const geistSans = Geist({
