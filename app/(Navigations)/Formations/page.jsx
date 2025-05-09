@@ -6,7 +6,7 @@ import Banner from '@/app/component/Banner';
 
 
 export const metadata = {
-  title: "𝗜𝗠𝗔𝗣 | Formations",
+  title: "𝗜𝗠𝗔𝗣 -- Formations",
   description: "IMAP.ma",
 };
 

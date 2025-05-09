@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "𝗜𝗠𝗔𝗣 | Institut des Métiers Appliqués Privée",
+  title: "𝗜𝗠𝗔𝗣 -- Institut des Métiers Appliqués Privée",
   description: "IMAP.ma",
 };
 

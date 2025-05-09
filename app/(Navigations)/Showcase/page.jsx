@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 
 export const metadata = {
-  title: "𝗜𝗠𝗔𝗣 | Showcase",
+  title: "𝗜𝗠𝗔𝗣 -- Showcase",
   description: "IMAP.ma",
 };
 const page = () => {

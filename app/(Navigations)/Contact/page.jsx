@@ -5,7 +5,7 @@ import Link from 'next/link';
 // import Sign from './Sign'
 
 export const metadata = {
-  title: "𝗜𝗠𝗔𝗣 | Contact",
+  title: "𝗜𝗠𝗔𝗣 -- Contact",
   description: "IMAP.ma",
 };
 
