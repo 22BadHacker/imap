@@ -32,9 +32,9 @@ const page = () => {
 
 
           <div className="lg:flex w-full lg:flex-row lg:justify-between grid grid-cols-1 gap-6 md:grid-cols-2 items-center py-6 pt-20 ">
-            {/* <div className=""></div> */}
             <p className=' cursor-pointer   text-black   relative font-semibold  sm:text-[17px]'>&copy; 2025 <span className='font-[800]'>IMAP</span> | Institut des Métiers Appliqués Privé</p>
-            <Image src={'/IMAPLogo/vertical_logo.svg'} width={500} height={100} alt='' className='w-[350px]' />
+            <div className=""></div>
+            {/* <Image src={'/IMAPLogo/vertical_logo.svg'} width={500} height={100} alt='' className='w-[350px]' /> */}
           </div>
 
         </div>
