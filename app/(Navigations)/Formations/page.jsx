@@ -2,6 +2,7 @@ import React from 'react'
 import Formation from './Formation'
 import Last from '@/app/component/BiigButton';
 import FAQAccordion from '@/app/component/FAQAccordion';
+import Banner from '@/app/component/Banner';
 
 
 export const metadata = {
@@ -12,6 +13,7 @@ export const metadata = {
 const page = () => {
   return (
     <div className='w-full h-auto  pb-[100px] '>
+
     
     <Formation />
 

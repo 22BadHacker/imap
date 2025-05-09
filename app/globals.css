@@ -539,7 +539,7 @@ body {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
   color: transparent;
-  filter: drop-shadow(.5px .5px 14px var(--main2));
+  /* filter: drop-shadow(.5px .5px 14px var(--main2)); */
 
 }
 

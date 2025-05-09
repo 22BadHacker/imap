@@ -3,13 +3,14 @@ import React from 'react'
 import Social from '../component/Social'
 import Footer from '../component/Footer';
 import NavBar from '../component/NavBar';
+import Banner from '../component/Banner';
 
 
 const layout = ({ children }) => {
   return (
-    <div className='grid  grid-rows-[auto_1fr_auto] h-screen overflow-y-scroll'>
+    <div className='grid  md:pt-[14px] pt-[16px] grid-rows-[auto_1fr_auto] h-screen overflow-y-scroll'>
             
-              <header className="  z-20   py-[18px] mx-auto w-full h-auto">
+              <header className="  z-20    mx-auto w-full h-auto">
                   <NavBar/>
 
               </header>
@@ -21,11 +22,19 @@ const layout = ({ children }) => {
               </div>
 
             
-
-            <section className="relative  w-full h-auto bg-[#f5f9ff] pb-4 pt-[50px] ">
+          <div className="grid grid-cols-1 ">
+            <section className="relative pb-4  w-full h-auto bg-[#f5f9ff]  pt-[50px] ">
                 
                 <Footer />
             </section>
+            {/* <div className="w-full sm:flex hidden bg-[#e4e6ef]/60 py-3">
+
+              <div className="w-full overflow-hidden  h-auto max-w-[1450px] sm:px-5 px-5 mx-auto ">
+              
+                    <Banner />
+                  </div>
+            </div> */}
+          </div>
     </div>
   )
 }

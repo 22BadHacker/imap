@@ -1,110 +1,78 @@
+'use client';
+import { motion } from 'framer-motion';
 import React, {useState} from 'react'
-import devlopor from '@/public/Gallerie/Developer.jpeg'
 import Image from 'next/image'
-import { FaLongArrowAltRight } from 'react-icons/fa'
-import { LiaLongArrowAltRightSolid } from "react-icons/lia";
-import { Gallerie } from '@/Data/Data';
-import icon from '@/public/IMAPLogo/icon.svg'
-import { AiOutlineClose } from 'react-icons/ai';
+import { LiaLongArrowAltRightSolid } from 'react-icons/lia'
+import devlopor from '@/public/Gallerie/web.gif'
 
-const dots = Array.from({ length: 18 });
+import { Gallerie } from '@/Data/Data'
+import Banner from '@/app/component/Banner'
+
 
 const Galerie = () => {
-     const [isModalOpen, setIsModalOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState(null)
-
-
-
-    const openModal = (img) => {
-        setSelectedImage(img)
-        setIsModalOpen(true)
-    }
-
-    const closeModal = () => {
-        setIsModalOpen(false)
-        setSelectedImage(null)
-    }
-
+ 
 
   return (
-    <div className='w-full grid grid-cols-3 pt-12 gap-7'>
-
-        {Gallerie.map((item, i) => (
-
-            <div key={i} className="flex boox  flex-col relative h-[600px] gap-4 overflow-hidden rounded-xl">
-                <Image className='object-cover  saturate-200 h-full w-full ' src={item.src} alt='Formations'/>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/10 w-full h-full"></div>
-
-                <div  className="size-[45px] z-[1] cursor-pointer rounded-full backdrop-blur-[5px] absolute top-5 left-5 flex justify-center items-center rotate">
-                    {dots.map((_, i) => {
-                    const angle = (i / dots.length) * 2 * Math.PI;
-                    const x = 22 * Math.cos(angle); // radius
-                    const y = 22 * Math.sin(angle);
-                    return (
-                        <div
-                        
-                        key={i}
-                        className="absolute z-[2] translate-x-1/2 translate-y-1/2 cursor-pointer hover:bg-main2  size-[2.5px] bg-[#fff] rounded-full"
-                        style={{
-                            top: `calc(50% + ${y}px - 2px)`,
-                            left: `calc(50% + ${x}px - 2px)`
-                        }}
-                        />
-                    );
-
-                    })}
-                    <div  className="w-full cursor-pointer z-[4] h-full rounded-full absolute top-0 left-0 "></div>
-
-                </div>
-
-                {/* <div onClick={() => openModal(item.srcView)} className="w-full cursor-pointer z-[4] h-full rounded-full absolute top-0 left-0 "></div> */}
-                <div className="flex flex-col w-full h-full items-start justify-end gap-1  p-4 absolute top-0 left-0">
-                    <div className="w-10 h-1 bg-main2"></div>
-                    <p className='text-[#fff] text-[25px]  font-bold'>{item.formation}</p>
-                    <h5 className='text-white/90 uppercase text-[12.5px] tracking-wide leading-tight max-w-[400px]'>{item.desc}</h5>
-
-                    <div className="flex w-full  gap-4 items-center pt-5">
-                        <p className='text-white text-[17px] font-medium'>Voir Plus</p>
-                        <p className='text-white text-[18px] font-semibold px-3 bg-main2 rounded-full'><LiaLongArrowAltRightSolid /></p>
-                    </div>
-                    <Image src={icon} alt='icon' className=" absolute right-4 bottom-4 w-6"/>
-                </div>
-            </div>
+    <div className='w-full grid grid-cols-1 pt-12 '>
 
 
-                    
+  <div  className="grid md:sticky md:top-[40px] top-0 duration-200 ease-in-out bg-white left-0 md:grid-cols-3 grid-cols-1 md:gap-6 gap-10 w-full py-12 first:border-t-[1px] border-b-[1px] border-b-[#d9d9d9]">
+          <div className="flex flex-col justify-between gap-6">
+              <p className='text-[40px] relative -top-4 font-bold text-str  font-mono'>01</p>
+              <p className='text-[25px] md:max-w-[300px] leading-tight font-bold uppercase'>Développement informatique</p>
+          </div>
+            <Image src={devlopor} alt='' width={370} height={280} className='md:h-[280px] shadow-sm size-full md:w-[370px] saturate-150 object-cover rounded-md'/>
+          <div className="flex flex-col justify-between md:gap-0 gap-10">
+              <p className=' md:text-[15px] text-[17.5px] md:max-w-[450px] font-semibold leading-snug'>Une formation pratique pour apprendre à concevoir et développer des  web. Au programme : langages de programmation (HTML, CSS, JavaScript, PHP...), bases de données, frameworks modernes (Laravel, React...), et projets concrets pour se préparer au métier de développeur.</p>
 
+              <div className="flex  border-main2 w-fit text-main2 border-[1px] hover:bg-main2 hover:text-white duration-200 ease-in-out cursor-pointer px-4 rounded-full py-3 md:py-2  items-center gap-2 font-semibold md:text-[11px] text-[14px]"> 
+                Découvrir davantage
+                <LiaLongArrowAltRightSolid  className='text-[20px] relative top-[1px]'/>
 
-        ))}
+              </div>
 
-        {
-            isModalOpen &&
-                <div className='w-full h-screen bg-black fixed top-0 left-0 flex items-center justify-center z-[100]'>
+          </div>
+       </div>
 
-                    <div className="w-full flex  h-[80%] object-contain">
-                        
-                        {selectedImage}
-                    
-                        <button
-                            onClick={closeModal}
-                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-main2 border-white border-dashed border-[1px] top-8 right-8  duration-200  hover:rotate-[180deg] hover:scale-[1.1] shadow-md  text-white text-3xl font-bold"
-                        >
-                            <AiOutlineClose />
-                        </button>
+      {Gallerie.map((item, i) => (
+       
+       <motion.div key={i} initial={{ opacity: 0, y: 10 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{ duration: 0.3,delay:.3, ease: 'easeOut' }}
+       viewport={{ once: false, amount: 0.2 }} className="grid md:sticky md:top-[40px] duration-200 ease-in-out bg-white left-0 md:grid-cols-3 grid-cols-1 gap-6 w-full py-12  border-b-[1px] border-b-[#d9d9d9]">
+          <div className="flex flex-col justify-between gap-6">
+              <p className='text-[40px] relative -top-4 font-bold text-str  font-mono'>0{i+2}</p>
+              <p className='text-[25px] md:max-w-[300px] leading-tight font-bold uppercase'>{item.formation}</p>
+          </div>
+            <Image src={item.src} alt='' width={370} height={280} className='md:h-[280px] shadow-sm size-full md:w-[370px] saturate-150 object-cover rounded-md'/>
+          <div className="flex flex-col justify-between md:gap-0 gap-10">
+              <p className='md:text-[15px] text-[17.5px] md:max-w-[450px] font-semibold leading-snug'>{item.desc}</p>
 
-                    </div>
+              <div className="flex  border-main2 w-fit text-main2 border-[1px] hover:bg-main2 hover:text-white duration-200 ease-in-out cursor-pointer py-3 md:py-2 px-4 rounded-full   items-center gap-2 font-semibold md:text-[11px] text-[14px]">
+                Découvrir davantage
+                <LiaLongArrowAltRightSolid  className='text-[20px] relative top-[1px]'/>
 
+              </div>
 
-                </div>
-
-                
-            
-        }
-            
-
+          </div>
+       </motion.div>
+           
+      ))}
        
     </div>
   )
 }
 
 export default Galerie
+
+
+
+
+// <div className="grid grid-cols-2 grid-rows-2 gap-4">
+//             <div className="h-[450px] flex-col gap-4 uppercase text-[30px] font-bold leading-snug text-center flex justify-center items-center p-3 text-bold bg-[#f5f9ff] relative rounded-lg shadow-sm border-gray-200 border-[.5px]">
+//                 <Image className='w-[100px]' height={200} width={200} src='/IMAPLogo/Vertical_logo.svg' alt='IMAP'/>
+//                 Développement informatique
+//             <span className=' text-[25px] absolute top-3 left-3 text-str'>01</span>
+//             </div>
+
+//         </div> 
