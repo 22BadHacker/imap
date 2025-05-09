@@ -42,13 +42,13 @@ const Galerie = () => {
        viewport={{ once: false, amount: 0.2 }} className="grid md:sticky md:top-[40px] duration-200 ease-in-out bg-white left-0 md:grid-cols-3 grid-cols-1 gap-6 w-full py-12  border-b-[1px] border-b-[#d9d9d9]">
           <div className="flex flex-col justify-between gap-6">
               <p className='text-[40px] relative -top-4 font-bold text-str  font-mono'>0{i+2}</p>
-              <p className='text-[25px] md:max-w-[300px] leading-tight font-bold uppercase'>{item.formation}</p>
+              <p className='md:text-[30px] text-[28px] md:max-w-[300px] leading-tight font-bold uppercase'>{item.formation}</p>
           </div>
             <Image src={item.src} alt='' width={370} height={280} className='md:h-[280px] shadow-sm size-full md:w-[370px] saturate-150 object-cover rounded-md'/>
           <div className="flex flex-col justify-between md:gap-0 gap-10">
               <p className='md:text-[15px] text-[17.5px] md:max-w-[450px] font-semibold leading-snug'>{item.desc}</p>
 
-              <div className="flex  border-main2 w-fit text-main2 border-[1px] hover:bg-main2 hover:text-white duration-200 ease-in-out cursor-pointer py-3 md:py-2 px-4 rounded-full   items-center gap-2 font-semibold md:text-[11px] text-[14px]">
+              <div className="flex  border-main2 w-fit text-main2 border-[1px] hover:bg-main2 hover:text-white duration-200 ease-in-out cursor-pointer py-3 md:py-[11px] px-4 rounded-full   items-center gap-2 font-semibold md:text-[12px] text-[14px]">
                 Découvrir davantage
                 <LiaLongArrowAltRightSolid  className='text-[20px] relative top-[1px]'/>
 
