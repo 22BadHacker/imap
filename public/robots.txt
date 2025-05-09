@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ima-privee.vercel.app/
+
+# Sitemaps
+Sitemap: https://ima-privee.vercel.app/sitemap.xml
