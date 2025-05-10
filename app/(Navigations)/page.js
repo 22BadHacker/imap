@@ -49,8 +49,12 @@ const page = () => {
         />
       </Head>
 
-      <div className="w-full h-screen relative pb-[100px]">
-          <Hero />
+      <div className="w-full h-auto relative pb-[100px]">
+        <div className="w-full h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]">
+            <Hero />
+
+        </div>
+          <video src="/videos/hats.mp4" autoPlay loop muted className="w-full object-cover h-[700px]"></video>
       </div>
     </>
   )
