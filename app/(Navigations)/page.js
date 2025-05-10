@@ -1,6 +1,7 @@
 // 'use client'
 import React from 'react'
 import Head from 'next/head';
+import Hero from '../component/Hero';
 
 
 
@@ -49,7 +50,7 @@ const page = () => {
       </Head>
 
       <div className="w-full h-screen relative pb-[100px]">
-        {/* Your content goes here */}
+          <Hero />
       </div>
     </>
   )

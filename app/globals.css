@@ -23,7 +23,7 @@
   src: url('../public/Font/MazzardH-Medium.otf') format('truetype');
 }
 
-@font-face {
+/* @font-face {
   font-family: 'MoriR';
   src: url('../public/Font/MazzardH-Regular.otf') format('truetype');
 }
@@ -31,7 +31,7 @@
 @font-face {
   font-family: 'metro';
   src: url('../public/Font/Metropolis-Regular.ttf') format('truetype');
-}
+} */
 
 /* For modern browsers (WebKit-based) */
 ::-webkit-scrollbar {
@@ -66,9 +66,9 @@
 :root {
   --mori: 'Mori', sans-serif;
   --mori1: 'Mori1', sans-serif;
-  --morir: 'MoriR', sans-serif;
+  --morir:  sans-serif;
   --sussi: 'Sussi', sans-serif, Helvetica;
-  --metro: 'metro',Arial, sans-serif, Helvetica;
+  --metro: Arial, sans-serif, Helvetica;
   --main: #1e539e;
   --main2: #e94531;
   --roboto: 'Roboto', sans-serif;
@@ -442,11 +442,13 @@ body {
 
 
 .blink{
-  animation: blink .75s infinite;
+  animation: blink 1s infinite;
   width: 7.5px;
   height: 7.5px;
   border-radius: 50%;
   background: var(--main2);
+  position: relative;
+  top: -1.5px;
 }
 
 .highlight:hover * .indeex{

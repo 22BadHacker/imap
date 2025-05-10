@@ -6,6 +6,7 @@ import { TfiArrowRight, TfiArrowTopRight } from "react-icons/tfi";
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
 import { WorkGalerie } from '@/Data/Data'
 import icon from '@/public/IMAPLogo/icon.svg'
+import {motion} from 'framer-motion'
 
 
 const dots = Array.from({ length: 18 });
@@ -15,24 +16,25 @@ const Dots = () => {
     return(
         <>
 
-            <div  className="size-[45px] z-[1] cursor-pointer rounded-full backdrop-blur-[5px] absolute top-5 left-5 flex justify-center items-center rotate">
+            <div  className="size-[40px] z-[1] cursor-pointer rounded-full backdrop-blur-[2px] absolute top-4 left-4 flex justify-center items-center rotate">
                     {dots.map((_, i) => {
                     const angle = (i / dots.length) * 2 * Math.PI;
-                    const x = 22 * Math.cos(angle); // radius
-                    const y = 22 * Math.sin(angle);
+                    const x = 19 * Math.cos(angle); // radius
+                    const y = 19 * Math.sin(angle);
                     return (
                         <div
                         
                         key={i}
-                        className="absolute z-[2] translate-x-1/2 translate-y-1/2 cursor-pointer hover:bg-main2  size-[2.5px] bg-[#fff] rounded-full"
+                        className="absolute z-[2] translate-x-1/2 translate-y-1/2 cursor-pointer   size-[2px] border-[1.8px] border-main2 bg-main2 "
                         style={{
-                            top: `calc(50% + ${y}px - 2px)`,
-                            left: `calc(50% + ${x}px - 2px)`
+                            top: `calc(50% + ${y}px - 2.5px)`,
+                            left: `calc(50% + ${x}px - 2.5px)`
                         }}
                         />
                     );
 
                     })}
+                    {/* <div className="size-1 bg-white rounded-full"></div> */}
                     <div  className="w-full cursor-pointer z-[4] h-full rounded-full absolute top-0 left-0 "></div>
 
                 </div>
@@ -79,7 +81,11 @@ const Work = () => {
 
                 <div className="grid  lg:grid-cols-3 grid-cols-2 gap-2 md:gap-3 pt-12 z-20">
                     {filteredImgs.map((items, i) => (
-                        <div
+                        <motion.div
+                        initial={{ opacity: 0, y: 10, filter: 'blur(5px)' }}
+                        whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                        transition={{ duration: 0.25,delay:i*.25, ease: 'easeOut' }}
+                        viewport={{ once: true, amount: 0.2 }}
                             key={i}
                             className='w-full lg:last:col-span-1 sm:last:col-span-2 sm:col-span-1 col-span-2 shadow-sm rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer' 
                             onClick={() => openModal(items.src)}>
@@ -107,19 +113,19 @@ const Work = () => {
                                 {/* <Image src={icon} alt='icon' className='w-[25px] absolute bottom-3 right-4'/> */}
 
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
 
             {isModalOpen && (
-                <div className="fixed top-0 left-0 w-full h-full bg-black/70  backdrop-blur-[5px] flex items-center justify-center z-50">
+                <div className="fixed top-0 left-0 w-full h-full bg-black/70  backdrop-blur-[10px] flex items-center justify-center z-50">
                     
-                    <div className="relative">
+                    <motion.div initial={{opacity: 0, filter: 'blur(10px)'}} transition={{duration: .3, delay:.3, ease: 'easeOut'}} animate={{opacity: 1,filter: 'blur(0px)' }} className="relative">
                         <Image
                             src={selectedImage}
                             alt="Selected"
-                            className="max-w-[90vw] saturate-[1.3] max-h-[90vh] object-contain  drop-shadow-[.5px_.5px_.25px_#fff] "
+                            className="max-w-[90vw] saturate-[1.3] max-h-[90vh] object-contain  drop-shadow-[.5px_.5px_.25px_black] "
                         />
                         <button
                             onClick={closeModal}
@@ -127,7 +133,7 @@ const Work = () => {
                         >
                             <AiOutlineClose />
                         </button>
-                    </div>
+                    </motion.div>
                 </div>
             )}
         </div>
