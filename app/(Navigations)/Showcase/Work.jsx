@@ -64,7 +64,7 @@ const Work = () => {
         <div className='w-full container h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
 
             <div className="w-full coontain relative h-auto py-[120px] z-[1]">
-                <div className="flex gap-3 flex-col pb-[120px] ">
+                <div className="flex gap-3 flex-col md:pb-[120px] ">
                    
                     <p className='font-semibold uppercase text-[14.5px] tracking-wider font-metro text-main2 flex gap-1 items-center'>
                         <span className='blink'></span> Showcase
@@ -77,11 +77,11 @@ const Work = () => {
 
                
 
-                <div className="grid  md:grid-cols-3 grid-cols-2 gap-2 md:gap-3 pt-12 z-20">
+                <div className="grid  lg:grid-cols-3 grid-cols-2 gap-2 md:gap-3 pt-12 z-20">
                     {filteredImgs.map((items, i) => (
                         <div
                             key={i}
-                            className='w-full shadow-sm rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer' 
+                            className='w-full lg:last:col-span-1 sm:last:col-span-2 sm:col-span-1 col-span-2 shadow-sm rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer' 
                             onClick={() => openModal(items.src)}>
                             <Image
                                 alt=''
@@ -94,7 +94,7 @@ const Work = () => {
 
 
 
-                            <div className="absolute z-[1] top-0 left-0 w-full h-full  flex justify-start px-6 pb-2 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
+                            <div className="absolute z-[1] top-0 left-0 w-full h-full  flex justify-start px-6 md:pb-2 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
 
                             <div class="absolute z-[-1] inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10 w-full h-full"></div>
             
