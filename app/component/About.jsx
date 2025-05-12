@@ -1,4 +1,9 @@
-import React from 'react'
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import AnimatedCounter from './AnimatedCounter';
+
 
 const About = () => {
   return (
@@ -6,18 +11,22 @@ const About = () => {
       <h1 className=' max-w-[400px] font-morir text-[40px] flex text-wrap leading-[1.2] font-[800] opacity-90'>
           {/* Ensemble, allons plus loin. */}
       </h1>
-      <div className="gap-[50px] flex-wrap flex justify-between  w-full">
-        <div className="flex flex-col border-t-[.5px] border-[#c4cede]">
-            <p className='text-[17.5px] relative top-7 font-semibold'>Fondée <span className='text-main2'>*</span></p>
-            <p className='text-[150px] font-sans font-[800] leading-tight '>2016</p>
+      <div className="gap-[70px]  md:grid-cols-2 grid sm:grid-cols-2 grid-cols-1  w-full">
+        <div className="flex flex-col border-t-[.5px] border-[#c4cede] ">
+            <p className='text-[17.5px] relative md:top-7 font-semibold md:pt-0 pt-6'>Fondée <span className='text-main2'>*</span></p>
+            <p className='md:text-[150px] text-[100px] font-sans font-[800] leading-tight '><AnimatedCounter target={2016} /></p>
         </div>
         <div className="flex flex-col border-t-[.5px] border-[#c4cede">
-            <p className='text-[17.5px] relative top-7 font-semibold'>Formations <span className='text-main2'>*</span></p>
-            <p className='text-[150px] font-sans font-[800] leading-tight'>08</p>
+            <p className='text-[17.5px] relative md:top-7 font-semibold md:pt-0 pt-6'>Formations disponibles <span className='text-main2'>*</span></p>
+            <p className='md:text-[150px] text-[100px] font-sans font-[800] leading-tight '>0<AnimatedCounter target={8} /></p>
         </div>
         <div className="flex flex-col border-t-[.5px] border-[#c4cede">
-            <p className='text-[17.5px] relative top-7 font-semibold'>Étudiants <span className='text-main2'>*</span></p>
-            <p className='text-[150px] font-sans font-[800] leading-tight'>100 <span className='text-[18px]'>/ année</span></p>
+            <p className='text-[17.5px] relative md:top-7 font-semibold md:pt-0 pt-6'>Étudiants formés / année <span className='text-main2'>*</span></p>
+            <p className='md:text-[150px] text-[100px] font-sans font-[800] leading-tight '>+<AnimatedCounter target={120} /> <span className='text-[18px]'></span></p>
+        </div>
+        <div className="flex flex-col border-t-[.5px] border-[#c4cede">
+            <p className='text-[17.5px] relative md:top-7 font-semibold md:pt-0 pt-6'>Projets réalisés par les étudiants <span className='text-main2'>*</span></p>
+            <p className='md:text-[150px] text-[100px] font-sans font-[800] leading-tight '>+<AnimatedCounter target={350} /> <span className='text-[18px]'></span></p>
         </div>
 
       </div>

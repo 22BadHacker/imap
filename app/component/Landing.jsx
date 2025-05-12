@@ -39,8 +39,8 @@ const Landing = () => {
 
           <p className='text-[17.5px] font-semibold h-fit lg:col-span-1 md:col-span-2'> à propos de nous <span className='text-main2'>*</span></p>
 
-          <h5 className='text-[22px] font-semibold leading-snug '>IMAP est un centre de formation basé au cœur de Casablanca, au Maroc. Ici, on accueille celles et ceux qui veulent apprendre autrement, se former à un métier concret, et avancer avec confiance dans leur avenir. </h5>
-          <h5 className='text-[22px] font-semibold leading-snug'>Que vous soyez passionné par le design graphique, le développement web, ou tout simplement curieux de découvrir votre potentiel, IMAP vous accompagne à chaque étape. </h5>
+          <h5 className='text-[21px] font-semibold leading-snug '>IMAP est un centre de formation basé au cœur de Casablanca, au Maroc. Ici, on accueille celles et ceux qui veulent apprendre autrement, se former à un métier concret, et avancer avec confiance dans leur avenir. </h5>
+          <h5 className='text-[21px] font-semibold leading-snug'>Que vous soyez passionné par le design graphique, le développement web, ou tout simplement curieux de découvrir votre potentiel, IMAP vous accompagne à chaque étape. </h5>
         </div>
 
 
