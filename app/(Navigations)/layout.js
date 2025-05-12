@@ -8,9 +8,9 @@ import Banner from '../component/Banner';
 
 const layout = ({ children }) => {
   return (
-    <div className='grid  md:pt-[14px] pt-[16px] grid-rows-[auto_1fr_auto] h-screen overflow-y-scroll'>
+    <div className='grid md:pt-[14px] pt-[16px]  grid-rows-[auto_1fr_auto] h-screen overflow-y-scroll'>
             
-              <header className="  z-20    mx-auto w-full h-auto">
+              <header className="  z-20  relative    w-full h-auto">
                   <NavBar/>
 
               </header>

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "𝗜𝗠𝗔𝗣 — Institut des Métiers Appliqués Privée",
+  title: "𝗜𝗠𝗔𝗣 — Institut des Métiers Appliqués Privé",
   description: 'Formations professionnelles en design graphique, développement web, comptabilité, bureautique, et plus. Apprenez, créez, innovez à IMAP.',
   keywords: ['IMAP', 'Institut des Métiers Appliqués', 'école privée', 'formation professionnelle', 'design', 'développement web'],
   authors: [{ name: 'Institut IMAP', url: 'https://ima-privee.vercel.app' }],

@@ -3,6 +3,7 @@ import React from 'react'
 import Head from 'next/head';
 import Hero from '../component/Hero';
 import About from '../component/About';
+import Landing from '../component/Landing';
 
 
 
@@ -51,18 +52,21 @@ const page = () => {
       </Head>
 
       <div className="w-full h-auto  pb-[100px]">
-        <div class="absolute top-0 z-[-2] blur-[100px] h-screen w-screen bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+
+          <Landing />
+
+        {/* <div class="absolute top-0 z-[-2] blur-[100px] h-screen w-screen bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
 
         {/* <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"><div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[410px] w-[410px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div></div> */}
         
-        <div className="w-full h-auto max-w-[1450px] sm:px-5 px-5 mx-auto ">
+        {/* <div className="w-full h-auto max-w-[1450px] sm:px-5 px-5 mx-auto ">
             <Hero />
         </div>
           <video src="/videos/hats.mp4" autoPlay loop muted className="w-full object-cover h-[850px]"></video>
 
           <div className="w-full h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px] py-20">
               <About />
-          </div>
+          </div> */}
 
       </div>
     </>
