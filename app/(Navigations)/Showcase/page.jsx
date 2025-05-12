@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 
 export const metadata = {
-  title: "𝗜𝗠𝗔𝗣 -- Showcase",
+  title: "𝗜𝗠𝗔𝗣 — Showcase",
   description: "IMAP.ma",
 };
 const page = () => {

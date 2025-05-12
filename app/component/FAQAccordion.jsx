@@ -26,9 +26,9 @@ export default function FAQAccordion() {
           >
             <button
               onClick={() => toggle(index)}
-              className="flex pb-1 justify-between font-[450] items-center w-full text-left truncate  text-[15px]  sm:text-[18px] md:text-[27px] focus:outline-none  pt-5"
+              className="flex pb-1 justify-between font-[450] items-center w-full text-left truncate  text-[16px]  sm:text-[17.5px] md:text-[27px] focus:outline-none  pt-5"
             >
-              <div className="flex gap-7 md:items-center md:font-medium md:max-w-[900px] max-w-[400px]   font-bold text-wrap">
+              <div className="flex md:gap-7 gap-2 md:items-center md:font-medium md:max-w-[900px] max-w-[450px] sm:max-w-[600px]   font-bold text-wrap">
                 <span className="text-[12px] font-normal font-mono indeex">[{index}]</span>
                 {faq.question}
               </div>
@@ -46,7 +46,7 @@ export default function FAQAccordion() {
               }`}
               style={{ maxHeight: openIndex === index ? "500px" : "0" }}
             >
-              <div className="pt-3 leading-snug pb-12 pl-11 font-[450] tracking-[.08px] text-[13px] text-[#0e0e0e] md:w-[600px] md:text-[16.5px]">
+              <div className="pt-3 leading-snug pb-12 pl-11 font-[450] tracking-[.08px] text-[13px] text-[#0e0e0e] md:w-[800px] md:text-[16.5px]">
                 {faq.answer}
               </div>
             </div>

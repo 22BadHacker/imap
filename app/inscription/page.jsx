@@ -7,7 +7,7 @@ import Social from '../component/Social';
 
 
 export const metadata = {
-    title: " 𝗜𝗠𝗔𝗣 -– inscription",
+    title: " 𝗜𝗠𝗔𝗣 — Inscription",
     description: "IMAP.ma",
   };
 

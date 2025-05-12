@@ -137,7 +137,7 @@ export const FaqData = [
 
 
 export const Gallerie = [
-  // { formation: 'Développement informatique', src: devlopor, desc: 'Une formation pratique pour apprendre à concevoir et développer des  web. Au programme : langages de programmation (HTML, CSS, JavaScript, PHP...), bases de données, frameworks modernes (Laravel, React...), et projets concrets pour se préparer au métier de développeur.'},
+  { formation: 'Développement informatique', src: devlopor, desc: 'Une formation pratique pour apprendre à concevoir et développer des  web. Au programme : langages de programmation (HTML, CSS, JavaScript, PHP...), bases de données, frameworks modernes (Laravel, React...), et projets concrets pour se préparer au métier de développeur. '},
   { formation: 'Ginie Civil', src: Civil, desc: 'Une formation en génie civil axée sur l’apprentissage des logiciels essentiels tels qu’AutoCAD pour le dessin technique, Revit pour la modélisation, ainsi que d’autres outils professionnels utilisés dans la conception et l’analyse des structures.'},
   { formation: 'Infographie', src: Design, desc: 'Une formation en infographie axée sur la pratique des outils professionnels comme Photoshop, Illustrator et InDesign. Vous apprendrez à créer des logos, affiches, flyers, brochures et visuels pour le web et l’impression.'},
   { formation: 'Comptabilité Générale', src: comptable, desc: "Une formation en comptabilité générale pour apprendre à enregistrer, classer et interpréter les opérations comptables d'une entreprise : journaux, bilans, comptes de résultat, et principes comptables de base."},
