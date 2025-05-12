@@ -426,6 +426,16 @@ body {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+@keyframes rotatee {
+  0%{ rotate: 0deg; }
+  100% { rotate: 360deg; }
+  
+}
+
+/* .rroo{
+  animation: rotatee 10s linear infinite;
+
+} */
 
 .blink-on-hover:hover {
   animation: blink 0.25s ease-in-out;

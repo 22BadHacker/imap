@@ -101,8 +101,9 @@ const Form2 = () => {
 
                   <select defaultValue="" {...register("Niveau Éducatif", {required: true})} className='outline-none pt-3 pb-1 bg-transparent inpuut' >
                     <option className='font-bold text-black/80' value="" disabled>--Choisissez votre niveau d'étude--</option>
+                      <option className='font-metro' value="Niveau Bac">Niveau 4eme</option>
                       <option className='font-metro' value="Niveau Bac">Niveau Bac</option>
-                      <option className='font-metro' value="Baccalauréat">Bac ( diplôme obtenu )</option>
+                      <option className='font-metro' value="Baccalauréat">Baccalauréat ( diplôme obtenu )</option>
                       <option className='font-metro' value="Bac+2">Bac+2</option>
                       <option className='font-metro' value="Bac+3">Bac+3</option>
                   </select>
