@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="flex flex-col gap-5 h-fit">
                 <h1 className='text-[29px] font-metro max-w-[450px] leading-[1.32] text-[#111111] font-bold'>Des parcours créatifs qu’on ne voit nulle part ailleurs.</h1>
 
-                <div className="flex gap-8 items-center">
+                <div className="flex gap-8 items-center flex-wrap">
                     <Link className='bg-main flex gap-3 items-center text-white px-5 py-[11px] rounded-full w-fit font-medium hover:bg-main2   relative top-4  sm:text-[14px]' href={'/'}>Contact-nouz</Link>
                     <Link href={'/Contact'} className=' bg-[#e4e6ef] hover:text-white text-black/80 px-5 py-[11px] rounded-full font-medium w-fit  hover:bg-main2   relative top-4  sm:text-[14px]'>Découvrez nos programmes</Link>
                 </div>
