@@ -68,7 +68,7 @@ const NavBar = () => {
                             <div className="flex flex-col pt-[130px] ">
                                 {navLinks2.map((link, i) => (
                                     <>
-                                    <Link onClick={()=>setOpen(false)} key={i} href={link.url} className='text-[35px] flex border-b-[1px] border-b-gray-200 justify-between leading-tight transition-all  h-[56px] overflow-hidden    relative  items-center font-semibold tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#2b2e3a]   hover:text-main2'><motion.div className='relative  w-full flex items-center justify-between' transition={{duration: 0.4, delay: i * 0.05, ease: 'easeInOut', type: 'tween'}}  exit={{opacity: 0, filter: 'blur(5px)', transition: {delay: i * 0.1}}} animate={{y: 0, opacity: 1}} initial={{y: 60, opacity: 0}} >{link.title} <span><HiArrowUpRight className='text-[25px]' /></span></motion.div>  </Link>
+                                    <Link onClick={()=>setOpen(false)} key={i} href={link.url} className='text-[35px] flex border-b-[1px] border-b-[#1f1f1f]/20 justify-between leading-tight transition-all  h-[56px] overflow-hidden    relative  items-center font-semibold tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#2b2e3a]   hover:text-main2'><motion.div className='relative  w-full flex items-center justify-between' transition={{duration: 0.4, delay: i * 0.05, ease: 'easeInOut', type: 'tween'}}  exit={{opacity: 0, filter: 'blur(5px)', transition: {delay: i * 0.1}}} animate={{y: 0, opacity: 1}} initial={{y: 60, opacity: 0}} >{link.title} <span><HiArrowUpRight className='text-[25px]' /></span></motion.div>  </Link>
                                     </>
                                 ))}
                             </div>
@@ -84,7 +84,7 @@ const NavBar = () => {
                                 <div className="flex flex-col gap-0">
                                     <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>E : </span> contact.imap@gmail.com</Link>
 
-                                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href={''}><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
+                                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href={'https://www.google.com/maps/place/37-15+Rue+du+Yamen,+Casablanca/@33.5731104,-7.5898433,17z/data=!3m1!4b1!4m6!3m5!1s0xda7a2f8c9e0d5b7:0x8a2f8c9e0d5b7!8m2!3d33.5731104!4d-7.5898433!16s%2Fg%2F11c1gqj_6h'}><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
                                 </div>
                                     <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>H : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
                                 

@@ -80,26 +80,26 @@ export const navLinks2 = [
 
 
 export const WorkGalerie = [
-    { name:'Nike Poster', desc:['Photoshope', 'Infographie'], src: Nike, category: 'Infographie' },
+    {colSpan: 'col-span-1', name:'Nike Poster', desc:['Photoshope', 'Infographie'], src: Nike, category: 'Infographie' },
  
-    { name:'Sign Up Page', desc:['HTML', 'CSS', 'Informatique'], src:  SignUp, category: 'Informatique' },
+    {colSpan: 'col-span-1', name:'Sign Up Page', desc:['HTML', 'CSS', 'Informatique'], src:  SignUp, category: 'Informatique' },
  
-    { name:'Be Point PROD', desc:['Illustrator', 'Business Card', 'Infographie'], src: BeProd, category: 'Infographie' },
+    {colSpan: 'col-span-1', name:'Be Point PROD', desc:['Illustrator', 'Business Card', 'Infographie'], src: BeProd, category: 'Infographie' },
  
-    { name:'Drag & Drop Notes', desc:['HTML', 'CSS','JS', 'Informatique'], src: DragNotes, category: 'Informatique' },
+    {colSpan: 'col-span-1', name:'Drag & Drop Notes', desc:['HTML', 'CSS','JS', 'Informatique'], src: DragNotes, category: 'Informatique' },
  
-    { name:'Notification Page', desc:['HTML', 'CSS', 'Informatique'], src: Message, category: 'Informatique' },
+    {colSpan: 'col-span-1', name:'Notification Page', desc:['HTML', 'CSS', 'Informatique'], src: Message, category: 'Informatique' },
  
-    { name:'Magazine Cover', desc:['Photoshope', 'Infographie'], src: Magazin, category: 'Infographie' },
+    {colSpan: 'col-span-1', name:'Magazine Cover', desc:['Photoshope', 'Infographie'], src: Magazin, category: 'Infographie' },
  
-    { name:'Moroccan Affiche', desc:['Photoshope', 'Infographie'], src: MarocAfiche, category: 'Infographie' },
+    {colSpan: 'col-span-1', name:'Moroccan Affiche', desc:['Photoshope', 'Infographie'], src: MarocAfiche, category: 'Infographie' },
  
-    { name:'Portfolio Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },
+    {colSpan: 'col-span-1', name:'Portfolio Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },
      
-    { name:'Business Card', desc:['Illustrator', 'Infographie'], src: Center, category: 'Infographie' },
-    { name:'the archive', desc:['Logo','Illustrator', 'Infographie'], src: Archive, category: 'Infographie' },
-    { name:'Carrot', desc:['Logo','Illustrator', 'Infographie'], src: Carrot, category: 'Infographie' },
-    { name:'Megasoft Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: mega, category: 'Infographie' },
+    {colSpan: 'col-span-1', name:'Business Card', desc:['Illustrator', 'Infographie'], src: Center, category: 'Infographie' },
+    {colSpan: 'col-span-1', name:'the archive', desc:['Logo','Illustrator', 'Infographie'], src: Archive, category: 'Infographie' },
+    {colSpan: 'col-span-2', name:'Carrot', desc:['Logo','Illustrator', 'Infographie'], src: Carrot, category: 'Infographie' },
+    {colSpan: 'col-span-2', name:'Megasoft Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: mega, category: 'Infographie' },
 ]
 
 

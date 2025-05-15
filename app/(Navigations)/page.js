@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Hero from '../component/Hero';
 import About from '../component/About';
 import Landing from '../component/Landing';
+import Home from '../component/Home';
 
 
 
@@ -53,7 +54,7 @@ const page = () => {
 
       <div className="w-full h-auto  pb-[100px]">
 
-         
+         <Home/>
 
       </div>
     </>

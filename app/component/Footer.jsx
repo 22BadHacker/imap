@@ -60,19 +60,19 @@ const Footer = () => {
 
           <div className="grid lg:grid-cols-2 gap-6 w-full items-end sm:py-8 py-10 ">
             <div className="">
-              <Link href={'/'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>ouverture : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
+              <Link href={'tel:+212604248395'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>ouverture : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
             </div>
 
             <div className="flex sm:flex-row flex-col justify-between sm:items-end gap-6">
 
             <div className="flex flex-col gap-1 flex-wrap">
-                    <Link href={'/'} className='text-[#1f1f1f] font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>téléphone : </span>+212 (0)6 04 24 83 95</Link>
-                    <Link href={'/'} className='text-[#1f1f1f] font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>téléphone : </span>+212 (0)6 91 99 02 59</Link>
+                    <Link href={'tel:+212604248395'} className='text-[#1f1f1f] font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>téléphone : </span>+212 (0)6 04 24 83 95</Link>
+                    <Link href={'tel:+212691990259'} className='text-[#1f1f1f] font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>téléphone : </span>+212 (0)6 91 99 02 59</Link>
 
             </div>
             <div className="flex flex-col gap-2 sm:items-end flex-wrap">
-                    <Link href={'/'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>Email : </span>contact.imap@gmail.com</Link>
-                    <Link href={'/'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>Address : </span>37-15 Rue du Yamen, Casablanca</Link>
+                    <Link href={'mailto:contact.imap@gmail.com'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>Email : </span>contact.imap@gmail.com</Link>
+                    <Link href={'https://www.google.com/maps/place/37-15+Rue+du+Yamen,+Casablanca/@33.5731104,-7.5898433,17z/data=!3m1!4b1!4m6!3m5!1s0xda7a2f8c9e0d5b7:0x8a2f8c9e0d5b7!8m2!3d33.5731104!4d-7.5898433!16s%2Fg%2F11c1gqj_6h'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>Address : </span>37-15 Rue du Yamen, Casablanca</Link>
 
             </div>
             </div>
