@@ -7,6 +7,9 @@ import Magazin from '@/public/Work2/mag.webp'
 import SignUp from '@/public/Work2/sign.webp'
 import Portfolio from '@/public/Work2/Mockup.webp'
 import Center from '@/public/Work2/card2.webp'
+import Archive from '@/public/Work2/the_archive.jpg'
+import Carrot from '@/public/Work2/Carrot.png'
+import mega from '@/public/Work2/megaWeb.webp'
 
 
 import devlopor from '@/public/Gallerie/web.gif'
@@ -94,6 +97,9 @@ export const WorkGalerie = [
     { name:'Portfolio Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },
      
     { name:'Business Card', desc:['Illustrator', 'Infographie'], src: Center, category: 'Infographie' },
+    { name:'the archive', desc:['Logo','Illustrator', 'Infographie'], src: Archive, category: 'Infographie' },
+    { name:'Carrot', desc:['Logo','Illustrator', 'Infographie'], src: Carrot, category: 'Infographie' },
+    { name:'Megasoft Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: mega, category: 'Infographie' },
 ]
 
 

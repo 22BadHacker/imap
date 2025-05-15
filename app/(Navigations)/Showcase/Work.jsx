@@ -87,7 +87,7 @@ const Work = () => {
                         transition={{ duration: 0.25,delay:i*.25, ease: 'easeOut' }}
                         viewport={{ once: true, amount: 0.2 }}
                             key={i}
-                            className='w-full lg:last:col-span-1 sm:last:col-span-2 sm:col-span-1 col-span-2 shadow-sm rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer' 
+                            className='w-full  lg:last:col-span-1 sm:last:col-span-2 sm:col-span-1 col-span-2 shadow-md rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer' 
                             onClick={() => openModal(items.src)}>
                             <Image
                                 alt=''
@@ -100,13 +100,13 @@ const Work = () => {
 
 
 
-                            <div className="absolute z-[1] top-0 left-0 w-full h-full  flex justify-start px-6 md:pb-2 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
+                            <div className="absolute z-[1] top-0 left-0 w-full h-full  flex justify-start px-6 md:pb-6 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
 
                             <div class="absolute z-[-1] inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10 w-full h-full"></div>
             
                                 <div className="flex flex-col gap-1 pt-0 ">
                                     <h1 className='md:text-[45px] leading-[44px] py-1 font-[500] text-[22px]  font-metro  text-white'>{items.name}.</h1>
-                                    <p className='md:text-[11px]  text-[12px] text-white font-sans uppercase gap-2 flex md:gap-3 flex-wrap'>{Array.isArray(items.desc) ? items.desc.map((item, i) => (<span className='border-white border-dashed backdrop-blur-[5px] border-[1px] px-3 shadow-md py-1 rounded-full' key={i}>{item}</span>)) : items.desc}</p>z
+                                    <p className='md:text-[11px]  text-[12px] text-white font-sans uppercase gap-2 flex md:gap-3 flex-wrap'>{Array.isArray(items.desc) ? items.desc.map((item, i) => (<span className='border-white border-dashed backdrop-blur-[5px] border-[1px] px-3 shadow-md py-1 rounded-full' key={i}>{item}</span>)) : items.desc}</p>
 
                                 </div>
 
@@ -129,7 +129,7 @@ const Work = () => {
                         />
                         <button
                             onClick={closeModal}
-                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-main2 border-white border-dashed border-[1px] -top-8 right-0  duration-200 hover:border-main2  hover:rotate-[180deg] hover:scale-[1.1] shadow-md  text-white/90 text-3xl font-bold"
+                            className="absolute rounded-full size-11 flex items-center justify-center hover:bg-main2 bg-black/10 backdrop-blur-[10px] -top-8 right-0  duration-200 hover:border-main2  hover:rotate-[180deg] hover:scale-[1.1]   text-white/90 text-3xl font-bold"
                         >
                             <AiOutlineClose />
                         </button>
