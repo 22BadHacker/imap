@@ -22,11 +22,9 @@ const layout = ({ children }) => {
               </div>
 
             
-          <div className="grid grid-cols-1 ">
-            <section className="relative pb-4  w-full h-auto bg-[#f5f9ff]  pt-[50px] ">
-                
+          <section className="grid grid-cols-1 ">
+           
                 <Footer />
-            </section>
             {/* <div className="w-full sm:flex hidden bg-[#e4e6ef]/60 py-3">
 
               <div className="w-full overflow-hidden  h-auto max-w-[1450px] sm:px-5 px-5 mx-auto ">
@@ -34,7 +32,7 @@ const layout = ({ children }) => {
                     <Banner />
                   </div>
             </div> */}
-          </div>
+          </section>
     </div>
   )
 }

@@ -153,5 +153,34 @@ export const Gallerie = [
 ]
 
 
+// export const center = ['Accueil', 'Formations', 'Showcase', 'Contact', "S'inscrire"]
+export const center = [
+  { href: '/', name: 'Accueil' },
+  { href: '/Formations', name: 'Formations' },
+  { href: '/Showcase', name: 'Showcase' },
+  { href: '/Contact', name: 'Contact' },
+  { href: '/inscription', name: "S'inscrire" }
+]
+
+export const socials = [
+  { href: 'https://wa.me/+212604248395', name: 'WhatsApp' },
+  { href: 'https://www.instagram.com/imap.ma/', name: 'Instagram' },
+  { href: 'https://www.facebook.com/IMAP.ma/', name: 'Facebook' },
+  { href: 'https://www.linkedin.com/company/imap-ma/', name: 'LinkedIn' },
+  { href: 'https://twitter.com/imap_ma', name: 'Gmail' },
+
+]
+
+
+// export const selecte = ['Informatique', 'Génie Civil',  "Bureautique", 'Comptabilité', 'Infographie']
+export const formation = [
+  { href: '/Formations/Informatique', name: 'Informatique' },
+  { href: '/Formations/Génie Civil', name: 'Génie Civil' },
+  { href: '/Formations/Bureautique', name: "Bureautique" },
+  { href: '/Formations/Comptabilité', name: 'Comptabilité' },
+  { href: '/Formations/Infographie', name: 'Infographie' }]
+
+
+
 
 // Une formation en génie civil orientée logiciels : AutoCAD pour le dessin, Revit pour la 3D, et d'autres outils de conception et d’analyse.

@@ -4,19 +4,12 @@ import Link from 'next/link'
 import Ima from '@/public/IMAPLogo/Vertical_logo.svg'
 import Image from 'next/image'
 import { HiArrowUpRight } from "react-icons/hi2";
+import { center, socials, formation } from '../../Data/Data'
 
 
-const center = ['Accueil', 'Formations', 'Showcase', 'Contact', "S'inscrire"]
-const selecte = ['Informatique', 'Génie Civil',  "Bureautique", 'Comptabilité', 'Infographie']
 
-const socials = [
-  { href: 'https://wa.me/+212604248395', name: 'WhatsApp' },
-  { href: 'https://www.instagram.com/imap.ma/', name: 'Instagram' },
-  { href: 'https://www.facebook.com/IMAP.ma/', name: 'Facebook' },
-  { href: 'https://www.linkedin.com/company/imap-ma/', name: 'LinkedIn' },
-  { href: 'https://twitter.com/imap_ma', name: 'Gmail' },
 
-]
+
 
 const info = [
   { href: 'tel:+212604248395', name: '06 042 483 95' },
@@ -27,118 +20,70 @@ const info = [
 
 const Footer = () => {
   return (
-    <footer className='max-w-[1450px]  z-20  px-5  py-[13px] mx-auto w-full h-auto '>
+    <footer className='max-w-[1450px] relative z-10  px-5  pb-[20px] mx-auto w-full h-fit'>
 
-        <div className="w-full h-full  lg:gap-10 gap-[130px] grid md:grid-cols-1 lg:grid-cols-[auto_1fr]">
-            
-            <div className="w-full lg:w-[34vw]  flex  flex-col justify-between ">
-                <div className="flex flex-col gap-6 md:gap-5">
-                  <Image className='md:w-[450px] pb-2 w-full relative top-[2px]' src={Ima} alt="logo" />
-                  <p className=' md:text-[30px]  pt-4 border-t-gray-200 font-bold uppercase text-gray-800 text-[7vw] md:max-w-[460px] font-sans leading-tight md:leading-[45px] tracking-wide'><span className=''>un espace pour apprendre, créer, et s’épanouir.</span></p>
 
-                  <div className="flex w-full gap-6 sm:gap-10 items-center sm:justify-start flex-wrap justify-between  relative top-1">
+        <div className="grid lg:grid-cols-2 grid-cols-1  lg:gap-6 gap-20 border-t-[#e4ebf5] border-t-[1.5px] pb-[140px] pt-[110px]">
+            <div className="flex flex-col gap-5 h-fit">
+                <h1 className='text-[29px] font-metro max-w-[450px] leading-[1.32] text-[#111111] font-bold'>Des parcours créatifs qu’on ne voit nulle part ailleurs.</h1>
 
-                    <Link href={'/Contact'} className=' bg-main flex gap-3 items-center text-white px-4 py-[10px] rounded-full w-fit   cursor-pointer linkTo blink-on-hover hover:bg-main2   relative top-4  sm:text-[13px]'>Contact-nouz <HiArrowUpRight className='rotate-[45deg]'/></Link>
-                    <Link href={'/Contact'} className=' bg-[#e4e6ef] hover:text-white text-black/80 px-4 py-[10px] rounded-full w-fit   cursor-pointer linkTo blink-on-hover hover:bg-main2   relative top-4  sm:text-[13px]'>Découvrez nos programmes</Link>
-                  </div>
+                <div className="flex gap-8 items-center">
+                    <Link className='bg-main flex gap-3 items-center text-white px-5 py-[11px] rounded-full w-fit font-medium hover:bg-main2   relative top-4  sm:text-[14px]' href={'/'}>Contact-nouz</Link>
+                    <Link href={'/Contact'} className=' bg-[#e4e6ef] hover:text-white text-black/80 px-5 py-[11px] rounded-full font-medium w-fit  hover:bg-main2   relative top-4  sm:text-[14px]'>Découvrez nos programmes</Link>
                 </div>
-                
-                
-                <p className='text-main  cursor-pointer linkTo blink-on-hover hover:text-main2 hidden lg:block   relative font-semibold  sm:text-[17px]'>&copy; 2025 <span className='font-[800]'>IMAP</span> | Institut des Métiers Appliqués Privé</p>
-              
             </div>
-            
 
-            {/* Second */}
 
-            <div className="flex flex-col gap-[70px] pb-1">
-              <div className="w-full lg:flex lg:justify-between gap-8 sm:gap-12 grid grid-cols-2 sm:grid-cols-3 pb-5">
-
-                <div className="flex flex-col gap-3">
-                  <h1 className='font-medium text-main font-sans   uppercase text-[12px] sm:text-[14px] pb-1'>/ NAVIGATION</h1>
-                  <div className="flex flex-col gap-[3px]">
-                      {
-                        center.map((item, i)=> <Link href='/' key={i} className='text-black/80 linkTo font-sans blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative  font-semibold  text-[21px] sm:text-[25px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[18px] relative top-[1px] opacity-0'/></Link>)
-                      }
-                  </div>
-
+            <div className="lg:flex lg:justify-between  grid sm:grid-cols-3 grid-cols-2 gap-20  lg:gap-4  place-content-center">
+                <div className="flex flex-col gap-[6px]">
+                    <h4 className='lg:text-[14px] text-[13px] font-sans uppercase font-normal text-main pb-[10px]'>Navigations</h4>
+                    {center.map((item, i) => (
+                      <Link key={i} className='lg:text-[26px] text-[24px] text-nowrap blink-on-hover hover:text-main2 font-metro max-w-[450px] leading-snug text-[#111111] font-semibold' href={item.href}>{item.name}</Link>
+                    ))}
                 </div>
-
-                <div className="flex flex-col gap-3">
-                  <h1 className='font-medium text-main font-sans  uppercase  text-[12px] sm:text-[14px] pb-1'>/ Formations</h1>
-                  <div className="flex flex-col gap-[3px]">
-                      {
-                        selecte.map((item, i)=> <Link href='/' key={i} className='text-black/80 font-sans linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-semibold  text-[21px] sm:text-[25px]'>{item}<HiArrowUpRight className='dir text-[16px] sm:text-[17px] relative top-[2px] opacity-0'/></Link>)
-                      }
-                      
-
-                  </div>
-
-                </div>
-
-                <div className="flex flex-col gap-3">
-                  <h1 className='font-medium font-sans  text-main  uppercase  text-[12px] sm:text-[14px] pb-1'>/ Socials</h1>
-                  <div className="flex flex-col gap-[3px]">
-                      {
-                        socials.map((item, i)=> <Link href={item.href} key={i} className='text-black/80 font-sans linkTo blink-on-hover hover:text-main2 flex items-center gap-[6px]  relative font-semibold  text-[21px] sm:text-[25px]'>{item.name}<HiArrowUpRight className='dir text-[14px] sm:text-[16px] relative top-[2px] opacity-0'/></Link>)
-                      }
-                  </div>
-
-                </div>
-
-                    
-              </div>
-
-              <div className="lg:justify-between items-end hidden md:grid md:gap-10 md:grid-cols-2 lg:flex w-full pt-[25px] lg:border-t-[.5px] border-gray-200">
-                
-                
-                <div className="flex flex-col gap-0">
-                    <Link className='text-gray-800  text-[17.5px] font-sans  font-normal' href='tel:+212604248395'><span className='font-[700]  pr-[4px] '>T : </span>  06 042 483 95</Link>
-                    <Link className='text-gray-800  text-[17.5px] font-sans font-normal' href={''}><span className='font-[700]  pr-[4px] '>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
-                    <p className='text-gray-800  text-[17.5px] font-sans  font-normal' href=''><span className='font-[700]  pr-[4px] '>H : </span> Du lundi au samedi, de 8h30 à 21h00</p>
-                    
-                  
-                </div>
-                <div className="flex flex-col">
-                  <Link className='text-gray-800  text-[17.5px] font-sans  font-normal' href='tel:+212691990259' ><span className='font-[700]  pr-[4px] '>T : </span> 06 919 902 59</Link>
-                  <Link className='text-gray-800  text-[17.5px] font-sans  font-normal' href='mailto:contact.imap@gmail.com'><span className='font-[700]  pr-[4px]'>E : </span> contact.imap@gmail.com</Link>
-                  
-                </div>
-
-
-              </div>
-
-
-              <div className="w-full md:hidden grid grid-cols-1 gap-4">
-
-                <div className="flex flex-col gap-0">
-                    <Link className='text-gray-800  font-metro text-[19px] font-medium' href='tel:+212604248395'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>T : </span>  06 042 483 95</Link>
-                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='tel:+212691990259' ><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>T : </span> 06 919 902 59</Link>
-
-                </div>
-
-                <div className="flex flex-col gap-0">
-                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>E : </span> contact.imap@gmail.com</Link>
-
-                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href={''}><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>A : </span> 37-15 Rue du Yamen, Casablanca</Link>
-                </div>
-                    <Link className='text-gray-800 font-metro text-[19px] font-medium' href='mailto:contact.imap@gmail.com'><span className='font-[700] font-mori1 pr-[4px] text-[18px]'>H : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
+                <div className="flex flex-col gap-[6px] ">
+                    <h4 className='text-[14px] font-sans uppercase font-normal text-main pb-[10px]'>Formations</h4>
+                    {formation.map((item, i) => (
+                      <Link key={i} className='lg:text-[26px] text-[24px] text-nowrap blink-on-hover hover:text-main2 font-metro max-w-[450px] leading-snug text-[#111111] font-semibold' href={item.href}>{item.name}</Link>
+                    ))}
                    
+                </div>
+                <div className="flex flex-col gap-[6px] h-fit">
+                    <h4 className='text-[14px] font-sans uppercase font-normal text-main pb-[10px]'>Réseaux sociaux</h4>
+                    {socials.map((item, i) => (
+                      <Link key={i} className='lg:text-[26px] text-[24px] text-nowrap blink-on-hover hover:text-main2 font-metro max-w-[450px] leading-snug text-[#111111] font-semibold' href={item.href}>{item.name}</Link>
+                    ))}
+                </div>
+            </div>
+        </div> 
+        
 
-              </div>
-
-
-              <div className="lg:hidden flex  flex-col justify-between  gap-12">
-                <p className='text-gray-800  cursor-pointer linkTo blink-on-hover hover:text-main2 flex lg:hidden items-center gap-[6px]  relative font-semibold  text-[15.5px] text-main sm:text-[17px]'>&copy; 2025 <span className='font-[800]'>IMAP</span>| Institut des Métiers Appliqués Privé</p>
-              </div>
-
+          <div className="grid lg:grid-cols-2 gap-6 w-full items-end sm:py-8 py-10 ">
+            <div className="">
+              <Link href={'/'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>ouverture : </span>Du lundi au samedi, de 8h30 à 21h00</Link>
             </div>
 
+            <div className="flex sm:flex-row flex-col justify-between sm:items-end gap-6">
 
+            <div className="flex flex-col gap-1 flex-wrap">
+                    <Link href={'/'} className='text-[#1f1f1f] font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>téléphone : </span>+212 (0)6 04 24 83 95</Link>
+                    <Link href={'/'} className='text-[#1f1f1f] font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>téléphone : </span>+212 (0)6 91 99 02 59</Link>
 
+            </div>
+            <div className="flex flex-col gap-2 sm:items-end flex-wrap">
+                    <Link href={'/'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>Email : </span>contact.imap@gmail.com</Link>
+                    <Link href={'/'} className='text-[#1f1f1f] uppercase font-bold tracking-wide  cursor-pointer  relative   sm:text-[14.5px] '><span className='font-normal uppercase'>Address : </span>37-15 Rue du Yamen, Casablanca</Link>
+
+            </div>
+            </div>
+                
+          </div>
+
+        <div className="flex lg:flex-row flex-col gap-6  justify-between items-start sm:py-5 py-10 border-t-[#e4ebf5] border-t-[1px]">
+              <Image className='lg:w-[410px] md:w-[500px] pb-2 w-full relative top-[2px]' src={Ima} alt="logo" />
+               <p className='text-[#1f1f1f]  cursor-pointer  relative font-medium  lg:text-[15px]'>&copy; 2025 <span className='font-[900]'>IMAP</span> — Institut des Métiers Appliqués Privé.</p>
         </div>
 
-        
     </footer>
   )
 }
@@ -148,3 +93,5 @@ export default Footer
 
 
 // <p className='text-gray-800 font-metro text-[19px] font-medium'>IMAP est un centre de formation professionnelle qui propose des formations de qualité dans divers domaines, notamment l'informatique, le génie civil, la bureautique, la comptabilité et l'infographie. Notre objectif est de fournir aux apprenants les compétences nécessaires pour réussir sur le marché du travail.</p>
+
+//  <h4 className='text-[14px] font-sans uppercase font-normal text-main pb-[10px] flex items-center gap-1'><span className='w-[15px] h-[1.5px] bg-main relative top-1'></span>Navigations</h4>
