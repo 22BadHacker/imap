@@ -7,7 +7,7 @@ const Last = ({title, name, url}) => {
   const springOptions = { bounce: 0.1 };
   return (
     <>
-       <div className="flex flex-col relative w-full gap-6 md:gap-12 py-20  pb-[130px] items-center text-center justify-center  h-auto max-w-[1450px]  px-5 mx-auto ">
+       <div className="flex flex-col relative w-full gap-6 md:gap-12  pt-[150px] pb-[130px] items-center text-center justify-center  h-auto max-w-[1450px]  px-5 mx-auto ">
           
           <div className="absolute unset z-[2]  bg-red-500 w-[70%] h-[80px]  blur-[70px] rotate-[30deg]"></div>
           <div className="absolute unset z-[2]   bg-blue-500 w-[70%] h-[80px]   blur-[70px] rotate-[-30deg]"></div>

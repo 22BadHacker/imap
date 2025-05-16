@@ -164,9 +164,9 @@ export const center = [
 
 export const socials = [
   { href: 'https://wa.me/+212604248395', name: 'WhatsApp' },
-  { href: 'https://www.instagram.com/imap.ma/', name: 'Instagram' },
-  { href: 'https://www.facebook.com/IMAP.ma/', name: 'Facebook' },
-  { href: 'https://twitter.com/imap_ma', name: 'Gmail' },
+  { href: 'https://www.instagram.com/institut.ima/', name: 'Instagram' },
+  { href: 'https://www.facebook.com/share/1EcT1aCryx/', name: 'Facebook' },
+  { href: 'mailto:contact.imap@gmail.com', name: 'Gmail' },
   { href: 'https://www.linkedin.com/company/imap-ma/', name: 'LinkedIn' },
 
 ]
