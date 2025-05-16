@@ -18,21 +18,21 @@ export default function Banner() {
      
      <div className={`flex gap-5  items-center`}>
             <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
-            <p className='text-[#343434]   text-[14px]'>Inscriptions ouvertes ! Ne ratez pas votre place.</p>
-            <p className='text-[#232323]    opacity-95 font-bold  text-[14px]'>Your Creativity Has No Limits—Show It Off on IMAP!</p>
-            <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
-            <PiSmileyXEyesThin className='text-[#000] emo' size={18}/>
-            <p className='text-[#343434] font-apercu   text-[14px]'>Formation 100% pratique avec des projets réels !</p>
-            <p className='text-[#232323]   opacity-95 font-bold  text-[14px]'>Dare to Dream, Learn, and Achieve!</p>
-            <CiFaceSmile className='text-[#000] emo' size={17}/>
-            <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
-            <p className='text-[#343434]   text-[14px]'>Inscriptions ouvertes ! Ne ratez pas votre place.</p>
-            <p className='text-[#232323]    opacity-95 font-bold  text-[14px]'>Your Creativity Has No Limits—Show It Off on IMAP!</p>
-            <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
-            <PiSmileyXEyesThin className='text-[#000] emo' size={18}/>
-            <p className='text-[#343434] font-apercu   text-[14px]'>Formation 100% pratique avec des projets réels !</p>
-            <p className='text-[#232323]   opacity-95 font-bold  text-[14px]'>Dare to Dream, Learn, and Achieve!</p>
-            <CiFaceSmile className='text-[#000] emo' size={17}/>
+            <p className='text-white   text-[14px]'>Inscriptions ouvertes ! Ne ratez pas votre place.</p>
+            <p className='text-white    opacity-95 font-bold  text-[14px]'>Your Creativity Has No Limits—Show It Off on IMAP!</p>
+            <PiSmileyWinkLight className='text-white' size={18}/>
+            <PiSmileyXEyesThin className='text-white' size={18}/>
+            <p className='text-white font-apercu   text-[14px]'>Formation 100% pratique avec des projets réels !</p>
+            <p className='text-white   opacity-95 font-bold  text-[14px]'>Dare to Dream, Learn, and Achieve!</p>
+            <CiFaceSmile className='text-white' size={17}/>
+            <PiSmileyWinkLight className='text-white' size={18}/>
+            <p className='text-white   text-[14px]'>Inscriptions ouvertes ! Ne ratez pas votre place.</p>
+            <p className='text-white    opacity-95 font-bold  text-[14px]'>Your Creativity Has No Limits—Show It Off on IMAP!</p>
+            <PiSmileyWinkLight className='text-white' size={18}/>
+            <PiSmileyXEyesThin className='text-white' size={18}/>
+            <p className='text-white font-apercu   text-[14px]'>Formation 100% pratique avec des projets réels !</p>
+            <p className='text-white   opacity-95 font-bold  text-[14px]'>Dare to Dream, Learn, and Achieve!</p>
+            <CiFaceSmile className='text-white' size={17}/>
         </div>
     </Marquee>
   );

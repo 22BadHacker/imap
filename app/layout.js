@@ -1,20 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
-import Social from './component/Social'
-import Nav from "./component/NavBar";
-import Footer from "./component/Footer";
 import Head from "next/head";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "𝗜𝗠𝗔𝗣 — Institut des Métiers Appliqués Privé",
@@ -45,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} w-screen overflow-x-hidden bg-[#fff] h-auto    ${geistMono.variable} antialiased`}
+        className={` w-screen overflow-x-hidden bg-[#fff] h-auto    antialiased`}
       >
 
 
