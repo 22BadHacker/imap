@@ -25,7 +25,7 @@ const Dots = () => {
                         <div
                         
                         key={i}
-                        className="absolute z-[2] translate-x-1/2 translate-y-1/2 cursor-pointer   size-[2px] border-[1.8px] border-main2 bg-main2 "
+                        className="absolute z-[2] rounded-full translate-x-1/2 translate-y-1/2 cursor-pointer   size-[2px] border-[1.8px] border-main2 bg-main2 "
                         style={{
                             top: `calc(50% + ${y}px - 2.5px)`,
                             left: `calc(50% + ${x}px - 2.5px)`
@@ -89,6 +89,7 @@ const Work = () => {
                             key={i}
                             className={`w-full  lg:col-span-1 sm:${items.colSpan} shadow-md rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer`} 
                             onClick={() => openModal(items.src)}>
+
                             <Image
                                 alt=''
                                 className='w-full saturate-[1.3]  z-30 first:mt-0 h-full object-cover md:mt-3'
@@ -99,7 +100,7 @@ const Work = () => {
                             <Dots />
 
 
-
+                            
                             <div className="absolute z-[1] top-0 left-0 w-full h-full  flex justify-start px-6 pb-6 items-end   opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out">
 
                             <div class="absolute z-[-1] inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10 w-full h-full"></div>
