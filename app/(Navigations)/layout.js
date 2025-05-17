@@ -10,7 +10,7 @@ const layout = ({ children }) => {
   return (
     <div className='grid   grid-rows-[auto_1fr_auto] h-screen overflow-y-scroll'>
             
-              <header className="  z-20  relative    w-full h-auto md:pt-[14px] pt-[16px]">
+              <header className="  z-20  relative    w-full h-auto py-[14px] ">
                   <NavBar/>
 
               </header>

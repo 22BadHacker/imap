@@ -20,36 +20,36 @@ const NavBar = () => {
 
         <>
         
-            <nav className='max-w-[1450px]  z-[40]  px-5  py-[10px] mx-auto w-full h-auto  flex items-center justify-between'>
+            <nav className='max-w-[1450px]  z-[40]  px-5  py-[13px] mx-auto w-full h-auto  flex items-center justify-between'>
                 
                 
                 <Image src={logo}  className='sm:w-[140px] w-[115px] z-[20]'  alt='logo'/> 
 
                     
-                <div className=" gap-[55px] lg:flex hidden  items-center">
+                <div className=" gap-[60px] lg:flex hidden  items-center">
                     {navLinks.map((link, i) => (
                         <>
-                            <Link key={i} href={link.url} className='text-[19.5px]  relative font-sans  items-center font-[500]  tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#111111]   hover:text-main2'>{link.title} </Link>
+                            <Link key={i} href={link.url} className='text-[20px]  relative  items-center font-medium tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#2b2e3a]   hover:text-main2'>{link.title} </Link>
                         </>
                     ))}
-                <div className="flex gap-1 items-center pl-9">
+                </div>
+                
+                <div className="flex gap-1 items-center">
                     
 
                     <div className="flex items-center gap-[2px] ">
 
-                        <Link className='text-[18px] pb-[14px] tracking-[.3px] font-sans  px-[23px]  duration-200 hover:text-white  py-[13px] call relative ease-in-out  text-[#fff] overflow-hidden  font-bold   hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
+                        <Link className='text-[19px]  px-[25px]  duration-200 hover:text-white  py-[10px] call relative ease-in-out  text-[#2b2e3a] overflow-hidden border-[1px] border-[#e4e6ef]  font-medium  tracking-wide hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
 
                     </div>
                     
 
+                    <div onClick={toggle} className={` ${toggleClass} menu lg:hidden z-[30] duration-300 ease-out   rounded-full menu cursor-pointer size-[64px]  flex flex-col gap-[4px] justify-center items-center `}>
+                        <div className={`w-full  border-b-[2px]  border-black/80 bar1  `}></div>
+                        <div className={`w-full border-b-[2px] border-black/80 bar2  `}></div>
+                    </div>
                         
 
-                </div>
-                </div>
-                
-                <div onClick={toggle} className={` ${toggleClass} menu lg:hidden z-[30] duration-300 ease-out   rounded-full menu cursor-pointer sm:size-[64px] w-[50px]  flex flex-col gap-[4px] justify-center items-center `}>
-                    <div className={`w-full  border-b-[2px]  border-black/80 bar1  `}></div>
-                    <div className={`w-full border-b-[2px] border-black/80 bar2  `}></div>
                 </div>
 
 
