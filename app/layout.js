@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` w-screen overflow-x-hidden bg-[#fff] h-auto    antialiased`}
+        className={` w-screen overflow-x-hidden bg-[#f4f4f4] h-auto    antialiased`}
       >
 
 

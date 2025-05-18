@@ -63,7 +63,7 @@ const Work = () => {
     }
 
     return (
-        <div className='w-full container h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
+        <div className='w-full  h-auto max-w-[1450px]  px-5 mx-auto grid grid-cols-1 gap-[40px]'>
 
             <div className="w-full relative h-auto py-[120px] z-[1]">
                 <div className="flex gap-2 flex-col md:pb-[120px] ">
