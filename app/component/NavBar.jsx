@@ -26,26 +26,20 @@ const NavBar = () => {
                 <Image src={logo}  className='sm:w-[140px] w-[115px] z-[20]'  alt='logo'/> 
 
                     
-                <div className=" gap-[55px] lg:flex hidden  items-center">
+                <div className=" gap-[56px] lg:flex hidden  items-center">
                     {navLinks.map((link, i) => (
                         <>
-                            <Link key={i} href={link.url} className='text-[19.5px]  relative font-sans  items-center font-[500]  tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#111111]   hover:text-main2'>{link.title} </Link>
+                            <Link key={i} href={link.url} className='text-[19px]  relative   items-center   font-[450]   tracking-[.3px] duration-200 blink-on-hover ease-in-out text-[#111111]   hover:text-main2'>{link.title} </Link>
                         </>
                     ))}
-                <div className="flex gap-1 items-center pl-9">
+                <div className="flex gap-1 items-center pl-0">
                     
+                </div>                 
 
-                    <div className="flex items-center gap-[2px] ">
-
-                        <Link className='text-[18px] pb-[14px] tracking-[.3px] font-sans  px-[23px]  duration-200 hover:text-white  py-[13px] call relative ease-in-out  text-[#fff] overflow-hidden  font-bold   hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
-
-                    </div>
-                    
-
-                        
+                
 
                 </div>
-                </div>
+                    <Link className='text-[18px] py-[13px] tracking-[.3px]   px-[23px]  duration-200 hover:text-white   call relative ease-in-out  text-[#fff] overflow-hidden  font-bold   hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
                 
                 <div onClick={toggle} className={` ${toggleClass} menu lg:hidden z-[30] duration-300 ease-out   rounded-full menu cursor-pointer sm:size-[64px] w-[50px]  flex flex-col gap-[4px] justify-center items-center `}>
                     <div className={`w-full  border-b-[2px]  border-black/80 bar1  `}></div>

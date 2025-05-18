@@ -11,12 +11,12 @@ const Formation = () => {
   return (
      <div className='w-full  h-auto max-w-[1450px] sm:px-5 px-5 mx-auto grid grid-cols-1 gap-[40px]'>
              <div className="w-full flex flex-col gap-20 coontain relative h-auto py-[120px] z-[1]">
-                 <div className="flex gap-3 flex-col">
+                 <div className="flex gap-2 flex-col">
                      
-                     <p className='font-semibold uppercase text-[14.5px] tracking-wider font-metro text-main2 flex gap-1 items-center'>
+                     <p className='font-bold uppercase text-[17.5px] tracking-wider font-morir text-main2 flex gap-1 items-center'>
                          <span className='blink'></span> Formations
                      </p>
-                     <h1 className='sm:text-[60px] leading-tight max-w-[800px] font-morir text-[#1a1918] text-[40px] flex text-wrap  font-bold opacity-90'>
+                     <h1 className='sm:text-[60px] leading-[1.1] max-w-[800px] font-sans text-[#1a1918] text-[40px] flex text-wrap  font-bold opacity-90'>
                      Façonnez votre avenir avec 
                      nos programmes
                      </h1>

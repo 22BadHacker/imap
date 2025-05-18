@@ -59,7 +59,7 @@ const page = () => {
 
               <div className="flex items-center text-md gap-1  uppercase font-mono">01 <span className='w-4 h-[1.5px] relative top-1 bg-black'></span>à propos de nous</div>
 
-              <h1 className=' max-w-[600px] font-morir text-[45px] flex text-wrap leading-[1.2] font-[700] text-main2 opacity-90'>
+              <h1 className=' max-w-[600px] font-sans text-[45px] flex text-wrap leading-[1.2] font-[700] text-main2 opacity-90'>
                   Ensemble, allons plus loin.
               </h1>
           </div>

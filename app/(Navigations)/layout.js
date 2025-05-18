@@ -27,7 +27,8 @@ const layout = ({ children }) => {
               </header>
 
             <div className="">
-                {isLoading ? <Preloader /> : children}
+                {/* {isLoading ? <Preloader /> : children} */}
+                {children}
                 {/* <Preloader />  */}
 
                 <Social />

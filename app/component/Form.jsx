@@ -78,13 +78,13 @@ const Form2 = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-[45px] sm:gap-12">
               <div className="flex flex-col relative">
                   <p className='uppercase text-[14px] font-medium '>Nom complet *</p>
-                  <input autoComplete='false' name='Nom_complete' {...register("Nom Complet", {required: true})}  type="text" className='outline-none pt-2 pb-1 bg-transparent inpuut' />
-                  <div className="h-[1.4px] bg-[#999ea5] relative linee"></div>
+                  <input autoComplete='false' name='Nom_complete' {...register("Nom Complet", {required: true})}  type="text" className='outline-none sm:pt-2 pt-4 pb-1 bg-transparent inpuut' />
+                  <div className="sm:h-[1.4px] overflow-hidden h-[1px] bg-[#999ea5] relative linee"></div>
               </div>
               <div className="flex flex-col relative">
                   <p className='uppercase text-[14px] font-medium '>numéro de téléphone *</p>
-                  <input autoComplete='false' name='tele' {...register("Numéro de Téléphone", {required: true})} type="text" className='outline-none pt-2 pb-1 bg-transparent inpuut' />
-                  <div className="h-[1.4px] relative linee bg-[#999ea5]"></div>
+                  <input autoComplete='false' name='tele' {...register("Numéro de Téléphone", {required: true})} type="text" className='outline-none sm:pt-2 pt-4 pb-1 bg-transparent inpuut' />
+                  <div className="sm:h-[1.4px] overflow-hidden h-[1.2px] bg-[#999ea5] relative linee"></div>
               </div>
 
         </div>
@@ -93,13 +93,13 @@ const Form2 = () => {
 
             <div className="flex flex-col relative">
                 <p className='uppercase text-[14px] font-medium '>Ville de résidence *</p>
-                <input autoComplete='false' name='Ville' {...register("Ville de résidence", {required: true})} type="text" className='outline-none pt-2 pb-1 bg-transparent inpuut' />
-                <div className="h-[1.4px] bg-[#999ea5] relative linee"></div>
+                <input autoComplete='false' name='Ville' {...register("Ville de résidence", {required: true})} type="text" className='outline-none sm:pt-2 pt-4 pb-1 bg-transparent inpuut' />
+                <div className="sm:h-[1.4px] overflow-hidden h-[1.2px] bg-[#999ea5] relative linee"></div>
             </div>
               <div className="flex flex-col relative">
                   <p className='uppercase text-[14px] font-medium '>votre niveau d'étude *</p>
 
-                  <select defaultValue="" {...register("Niveau Éducatif", {required: true})} className='outline-none pt-3 pb-1 bg-transparent inpuut' >
+                  <select defaultValue="" {...register("Niveau Éducatif", {required: true})} className='outline-none sm:pt-3 pt-5 pb-1 bg-transparent inpuut' >
                     <option className='font-bold text-black/80' value="" disabled>--Choisissez votre niveau d'étude--</option>
                       <option className='font-metro' value="Niveau Bac">Niveau 4eme</option>
                       <option className='font-metro' value="Niveau Bac">Niveau Bac</option>
@@ -107,7 +107,7 @@ const Form2 = () => {
                       <option className='font-metro' value="Bac+2">Bac+2</option>
                       <option className='font-metro' value="Bac+3">Bac+3</option>
                   </select>
-                  <div className="h-[1.4px] bg-[#999ea5]"></div>
+                  <div className="sm:h-[1.4px] overflow-hidden h-[1.4px] bg-[#999ea5] relative linee"></div>
               </div>
 
         </div>
@@ -125,7 +125,7 @@ const Form2 = () => {
                     handleButtonClick(item);
                     setValue("formation", [...activeButtons, item].filter((btn, index, self) => self.indexOf(btn) === index));
                     }} 
-                    className={`${activeButtons.includes(item) ? 'active' : ''} ${isSubmitSuccessful && isSuccess ? '' : 'focuus'}  size-fit overflow-hidden border-dashed  z-[1]  text-[15px]  relative border-[.5px] border-black/40 bg-transparent  px-4 py-[9px] rounded-full text-black/70 hover:border-black cursor-pointer`} 
+                    className={`${activeButtons.includes(item) ? 'active' : ''} ${isSubmitSuccessful && isSuccess ? '' : 'focuus'}  size-fit font-morir overflow-hidden border-dashed  z-[1]  text-[16.5px]  relative border-[.5px] border-black/50 bg-transparent  px-4 py-[9px] rounded-full  text-black/85  hover:border-solid cursor-pointer`} 
                     key={item}
                     >
                     {item}
@@ -140,8 +140,8 @@ const Form2 = () => {
 
                   <div className="flex flex-col relative">
                       <p className='uppercase text-[14px] font-medium '>Vous avez des questions ?</p>
-                      <textarea style={{resize: 'none'}} autoComplete="false" {...register("Message", {required: false})} className='inpuut   outline-none pt-2 pb-1 bg-transparent  w-full max-h-[160px] min-h-[160px]'></textarea>
-                      <div className="h-[1.2px] relative linee bg-[#999ea5]"></div>
+                      <textarea style={{resize: 'none'}} autoComplete="false" {...register("Message", {required: false})} className='inpuut   outline-none sm:pt-2 pt-4 pb-1 bg-transparent  w-full max-h-[160px] min-h-[160px]'></textarea>
+                      <div className="sm:h-[1.4px] overflow-hidden h-[1.4px] bg-[#999ea5] relative linee"></div>
                   </div>
 
 
@@ -149,7 +149,7 @@ const Form2 = () => {
                   
                 <div className="flex sm:flex-row flex-col  sm:justify-between sm:items-end sm:gap-6 gap-10 ">
 
-                      <button  type='submit' className="flex text-[#030303] items-center justify-start gap-4  text-[45px] tracking-wide">
+                      <button  type='submit' className="flex text-[#030303] font-morir items-center justify-start gap-4  text-[57px] tracking-wide">
 
                         {
                           isSubmitting ? <LoadingCircle /> : <AnimatedCircle />
