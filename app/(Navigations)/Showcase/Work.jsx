@@ -87,7 +87,7 @@ const Work = () => {
                         transition={{ duration: 0.25,delay:i*.25, ease: 'easeOut' }}
                         viewport={{ once: true, amount: 0.2 }}
                             key={i}
-                            className={`w-full  lg:col-span-1 sm:${items.colSpan} shadow-md rounded-sm first:mt-2 h-full gap-3 relative mt-2 cursor-pointer`} 
+                            className={`w-full  lg:col-span-1 sm:${items.colSpan} shadow  overflow-hidden first:mt-2 h-full gap-3 relative mt-2 cursor-pointer`} 
                             onClick={() => openModal(items.src)}>
 
                             <Image
@@ -120,9 +120,10 @@ const Work = () => {
             </div>
 
             {isModalOpen && (
-                <div className="fixed top-0 left-0 w-full h-full bg-black/70  backdrop-blur-[10px] flex items-center justify-center z-50">
+                <div className="fixed top-0 left-0 w-full h-full bg-black/75  backdrop-blur-[15px] flex items-center justify-center z-50">
                     
                     <motion.div initial={{opacity: 0, filter: 'blur(10px)'}} transition={{duration: .3, delay:.3, ease: 'easeOut'}} animate={{opacity: 1,filter: 'blur(0px)' }} className="relative">
+                        
                         <Image
                             src={selectedImage}
                             alt="Selected"

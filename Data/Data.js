@@ -13,12 +13,12 @@ import mega from '@/public/Work2/megaWeb.webp'
 
 
 import devlopor from '@/public/Gallerie/web.gif'
-import Civil from '@/public/Gallerie/ginie.gif'
-import Design from '@/public/Gallerie/graphic.webp'
+import Civil from '@/public/Gallerie/Ginie.jpg'
+import Design from '@/public/Gallerie/desiign.gif'
 import comptable from '@/public/Gallerie/comp.gif'
-import Logistique from '@/public/Gallerie/logii.gif'
+import Logistique from '@/public/Gallerie/Logistique.jpg'
 import entre from '@/public/Gallerie/entre.gif'
-import buro from '@/public/Gallerie/buro.gif'
+import buro from '@/public/Gallerie/banner.webp'
 
 // import code from '@/public/videos/coding.mp4'
 
@@ -80,22 +80,14 @@ export const navLinks2 = [
 
 
 export const WorkGalerie = [
-    {colSpan: 'col-span-1', name:'Nike Poster', desc:['Photoshope', 'Infographie'], src: Nike, category: 'Infographie' },
- 
-    {colSpan: 'col-span-1', name:'Sign Up Page', desc:['HTML', 'CSS', 'Informatique'], src:  SignUp, category: 'Informatique' },
- 
-    {colSpan: 'col-span-1', name:'Be Point PROD', desc:['Illustrator', 'Business Card', 'Infographie'], src: BeProd, category: 'Infographie' },
- 
-    {colSpan: 'col-span-1', name:'Drag & Drop Notes', desc:['HTML', 'CSS','JS', 'Informatique'], src: DragNotes, category: 'Informatique' },
- 
-    {colSpan: 'col-span-1', name:'Notification Page', desc:['HTML', 'CSS', 'Informatique'], src: Message, category: 'Informatique' },
- 
-    {colSpan: 'col-span-1', name:'Magazine Cover', desc:['Photoshope', 'Infographie'], src: Magazin, category: 'Infographie' },
- 
-    {colSpan: 'col-span-1', name:'Moroccan Affiche', desc:['Photoshope', 'Infographie'], src: MarocAfiche, category: 'Infographie' },
- 
-    {colSpan: 'col-span-1', name:'Portfolio Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },
-     
+    {colSpan: 'col-span-1', name:'Nike Poster', desc:['Photoshope', 'Infographie'], src: Nike, category: 'Infographie' }, 
+    {colSpan: 'col-span-1', name:'Sign Up Page', desc:['HTML', 'CSS', 'Informatique'], src:  SignUp, category: 'Informatique' }, 
+    {colSpan: 'col-span-1', name:'Be Point PROD', desc:['Illustrator', 'Business Card', 'Infographie'], src: BeProd, category: 'Infographie' }, 
+    {colSpan: 'col-span-1', name:'Drag & Drop Notes', desc:['HTML', 'CSS','JS', 'Informatique'], src: DragNotes, category: 'Informatique' }, 
+    {colSpan: 'col-span-1', name:'Notification Page', desc:['HTML', 'CSS', 'Informatique'], src: Message, category: 'Informatique' }, 
+    {colSpan: 'col-span-1', name:'Magazine Cover', desc:['Photoshope', 'Infographie'], src: Magazin, category: 'Infographie' }, 
+    {colSpan: 'col-span-1', name:'Moroccan Affiche', desc:['Photoshope', 'Infographie'], src: MarocAfiche, category: 'Infographie' }, 
+    {colSpan: 'col-span-1', name:'Portfolio Website', desc:['React JS', 'Tailwind Css', 'Informatique'], src: Portfolio, category: 'Informatique' },     
     {colSpan: 'col-span-1', name:'Business Card', desc:['Illustrator', 'Infographie'], src: Center, category: 'Infographie' },
     {colSpan: 'col-span-1', name:'the archive', desc:['Logo','Illustrator', 'Infographie'], src: Archive, category: 'Infographie' },
     {colSpan: 'col-span-2', name:'Carrot', desc:['Logo','Illustrator', 'Infographie'], src: Carrot, category: 'Infographie' },
@@ -144,13 +136,14 @@ export const FaqData = [
 
 export const Gallerie = [
   // {keys: ['Programmation', 'Algorithmes', 'Full Stack'], formation: 'Développement informatique', src: devlopor, desc: 'Une formation pratique pour apprendre à concevoir et développer des  web. Au programme : langages de programmation (HTML, CSS, JavaScript, PHP...), bases de données, frameworks modernes (Laravel, React...), et projets concrets pour se préparer au métier de développeur. '},
-  {keys: ['Programmation', 'Algorithmes', 'Full Stack'], formation: 'Développement informatique', src: BeProd, desc: ['Maîtrisez les bases et les outils avancés du web.', "De la création d'interfaces modernes (HTML, CSS, JavaScript, React...)", "à la construction de systèmes robustes côté serveur (PHP, Laravel, MySQL...), ", "vous apprendrez à concevoir des sites et des applications dynamiques, fonctionnels et sécurisés — du concept à la mise en ligne." ]},
-  {keys: ['Programmation', '', ''], formation: 'Ginie Civil', src: Civil, desc: 'Une formation en génie civil axée sur l’apprentissage des logiciels essentiels tels qu’AutoCAD pour le dessin technique, Revit pour la modélisation, ainsi que d’autres outils professionnels utilisés dans la conception et l’analyse des structures.'},
-  {keys: ['Programmation', '', ''], formation: 'Infographie', src: Design, desc: 'Une formation en infographie axée sur la pratique des outils professionnels comme Photoshop, Illustrator et InDesign. Vous apprendrez à créer des logos, affiches, flyers, brochures et visuels pour le web et l’impression.'},
-  {keys: ['Programmation', '', ''], formation: 'Comptabilité Générale', src: comptable, desc: "Une formation en comptabilité générale pour apprendre à enregistrer, classer et interpréter les opérations comptables d'une entreprise : journaux, bilans, comptes de résultat, et principes comptables de base."},
-  {keys: ['Programmation', '', ''], formation: 'Transport et logistique', src: Logistique, desc: "Une formation en transport et logistique pour maîtriser la gestion des flux de marchandises, le stockage, la chaîne d’approvisionnement, ainsi que les outils et réglementations liés au transport national et international."},
-  {keys: ['Programmation', '', ''], formation: 'Gestion des Entreprises', src: entre, desc: "Une formation complète pour apprendre à piloter une entreprise : gestion financière, ressources humaines, marketing, comptabilité et prise de décision stratégique à l’aide d’outils professionnels."},
-  {keys: ['Programmation', '', ''], formation: 'Bureautique', src: buro, desc: "Une formation pour maîtriser les outils bureautiques essentiels comme Word, Excel, et PowerPoint, afin de gagner en efficacité dans le travail administratif et la gestion de documents."},
+  {title: "site Web de portfolio",keys: "Programmation - website - Front end - portfolio", formation: 'Développement informatique', src: Portfolio, desc: "Maîtrisez les bases et les outils avancés du web. De la création d'interfaces modernes (HTML, CSS, JavaScript, React...) à la construction de systèmes robustes côté serveur (PHP, Laravel, MySQL...), vous apprendrez à concevoir des sites et des applications dynamiques, fonctionnels et sécurisés — du concept à la mise en ligne."},
+  // {title: "",keys: ['Programmation', '', ''], formation: 'Ginie Civil', src: Civil, desc: 'Une formation en génie civil axée sur l’apprentissage des logiciels essentiels tels qu’AutoCAD pour le dessin technique, Revit pour la modélisation, ainsi que d’autres outils professionnels utilisés dans la conception et l’analyse des structures.'},
+  {title: "Projet bâtiment",keys: "AutoCAD - Plans techniques - Architecture - Ingénierie ", formation: 'Ginie Civil', src: Civil, desc: "Apprenez les bases de la conception, du calcul et de la réalisation d’infrastructures. Des fondations aux structures, vous serez formé à lire des plans, utiliser les outils de DAO/CAO (AutoCAD, Revit…), comprendre les matériaux et respecter les normes de construction."},
+  {title: "Business Card",keys: "Design graphique - Illustrator - Photoshop - Créativité", formation: 'Infographie', src: BeProd, desc: "Un parcours concret et stimulant pour maîtriser les outils pros — Photoshop, Illustrator, InDesign — et apprendre à donner vie à vos idées. Logos, affiches, flyers, visuels web ou imprimés… ici, vous créez, testez, explorez, et développez votre propre style."},
+  {title: "",keys: ['Programmation', '', ''], formation: 'Comptabilité Générale', src: comptable, desc: "Une formation en comptabilité générale pour apprendre à enregistrer, classer et interpréter les opérations comptables d'une entreprise : journaux, bilans, comptes de résultat, et principes comptables de base."},
+  {title: "",keys: ['Programmation', '', ''], formation: 'Transport et logistique', src: Logistique, desc: "Une formation en transport et logistique pour maîtriser la gestion des flux de marchandises, le stockage, la chaîne d’approvisionnement, ainsi que les outils et réglementations liés au transport national et international."},
+  {title: "",keys: ['Programmation', '', ''], formation: 'Gestion des Entreprises', src: entre, desc: "Une formation complète pour apprendre à piloter une entreprise : gestion financière, ressources humaines, marketing, comptabilité et prise de décision stratégique à l’aide d’outils professionnels."},
+  {title: "Logiciels de bureautique",keys: "PowerPoint - Word - exel - Outlook - Microsoft Office", formation: 'Bureautique', src: buro, desc: "Maîtrisez les outils essentiels du monde professionnel : Word, Excel, PowerPoint, Outlook... Apprenez à rédiger des documents clairs, créer des tableaux dynamiques, automatiser vos tâches et concevoir des présentations efficaces. Une formation indispensable pour booster votre efficacité au quotidien."},
 ]
 
 

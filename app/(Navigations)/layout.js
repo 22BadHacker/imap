@@ -18,6 +18,7 @@ const layout = ({ children }) => {
 
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <div className='grid   grid-rows-[auto_1fr_auto] h-screen overflow-y-scroll'>
             
@@ -28,6 +29,7 @@ const layout = ({ children }) => {
 
             <div className="">
                 {/* {isLoading ? <Preloader /> : children} */}
+                
                 {children}
                 {/* <Preloader />  */}
 
@@ -36,14 +38,6 @@ const layout = ({ children }) => {
 
             
           <section className="grid grid-cols-1 ">
-           
-            {/* <div className="w-full max-w-[1450px]  px-5 mx-auto  sm:flex hidden ">
-
-              <div className="w-full overflow-hidden  h-auto  border-y-[1.5px] border-y-[#e4e6ef]/60 py-3 bg-[#ff391e] px-6">
-              
-                    <Banner />
-                  </div>
-            </div> */}
                 <Footer />
           </section>
     </div>

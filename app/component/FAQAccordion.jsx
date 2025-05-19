@@ -28,7 +28,7 @@ export default function FAQAccordion() {
               onClick={() => toggle(index)}
               className="flex pb-1 justify-between font-[450] items-center w-full text-left truncate  text-[16px]  sm:text-[17.5px] md:text-[27px] focus:outline-none  pt-5"
             >
-              <div className="flex md:gap-7 gap-2 md:items-center md:font-medium md:max-w-[900px] max-w-[450px] sm:max-w-[600px]   font-bold text-wrap">
+              <div className="flex md:gap-7 gap-2 md:items-center  md:font-medium md:max-w-[900px] max-w-[450px] sm:max-w-[600px]   font-bold text-wrap">
                 <span className="text-[12px] font-normal font-mono indeex">[{index}]</span>
                 {faq.question}
               </div>

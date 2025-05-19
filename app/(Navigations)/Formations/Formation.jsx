@@ -25,7 +25,7 @@ const Formation = () => {
                     </div>
 
 
-                    <div className="grid grid-cols-2 gap-10">
+                    <div className="grid sm:grid-cols-2 gap-10 pt-5">
                         <h5 className='uppercase max-w-[250px] h-fit font-morir font-medium text-[16.5px] tracking-wide  '> / Un lieu où l’on apprend, crée et évolue.</h5>
                         <div className="flex flex-col gap-5">
                             <h6 className='text-[15px] font-noto_sans leading-relaxed'>chaque formation est pensée pour être plus qu’un simple apprentissage : c’est une passerelle vers un métier, une passion ou un avenir que vous choisissez.</h6>

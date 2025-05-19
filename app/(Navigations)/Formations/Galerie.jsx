@@ -9,21 +9,34 @@ import { CgQuote } from "react-icons/cg";
 
 import { Gallerie } from '@/Data/Data'
 import Banner from '@/app/component/Banner'
+import Link from 'next/link';
 
 
 const Galerie = () => {
 
   return (
-    <div className='w-full grid grid-cols-1 pt-[100px] '>
+    <div className='w-full grid grid-cols-1 py-[100px] '>
+      <Banner />
       {Gallerie.map((item, i) => (
-        <div key={i} className="grid grid-cols-2 gap-10 pt-8 pb-12 border-t-[1px] border-t-[#2a2a2a]/50 last:border-b-[1px] last:border-b-[#2a2a2a]/50">
-            <div className="flex flex-col gap-6">
-                <h1 className='text-[30px] text-[#2a2a2a] font-semibold uppercase max-w-[300px] font-noto_sans leading-[1.1]'>{item.formation}</h1>
-                <h6 className='text-[14.5px] flex flex-col gap-4 font-noto_sans leading-relaxed max-w-[560px] text-[#2a2a2a]'>{item.desc}</h6>
+        <div key={i} className="grid md:grid-cols-2 gap-10 pt-8 pb-8 border-t-[1px] border-t-[#2a2a2a]/50 last:border-b-[1px] last:border-b-[#2a2a2a]/50">
+            <div className="flex flex-col gap-4 md:pt-4">
+              {/* <div className="flex gap-6 items-start">
+              </div> */}
+                <h1 className='text-[35px] text-[#2a2a2a] tracking-tight  uppercase  font-morir font-semibold leading-[1.1]'>{item.formation}</h1>
+                <h6 className='text-[15px] leading-relaxed font-poppins font-semi md:max-w-[560px] text-[#2d2626]'>{item.desc}</h6>
+
+                <Link className='bg-main2 font-morir uppercase w-fit text-white px-4 py-2 relative top-5 md:top-7 text-[12.5px] tracking-wide hover:bg-main duration-200 ease-in-out rounded-full flex gap-2 items-center' href='/'><span className='size-[7.5px] rounded-full bg-white'></span> Découvrir davantage</Link>
+                
             </div>
 
             <div className="flex flex-col gap-5">
-              <Image src={item.src} alt='pic' className='w-full shadow h-[500px] object-cover'/>
+              <Image src={item.src} alt='pic' className='w-full saturate-[1.2] shadow-sm h-[450px] sm:h-[550px] object-cover'/>
+
+              <div className="flex flex-col gap-2">
+                  <h5 className="uppercase text-[14px] font-sans tracking-wide text-wrap">{item.keys}</h5>
+                  <p className='uppercase text-[25px] font-sans flex gap-2 items-center'><span className='bg-black/90 rounded-full size-[10px]'></span>{item.title}</p>
+
+              </div>
             </div>
         </div>
         

@@ -1,9 +1,7 @@
 // 'use client'
 import React from 'react'
 import Head from 'next/head';
-import About from '../component/About';
-import Landing from '../component/Landing';
-import Home from '../component/Home';
+
 import Hero from '../Heroo/Hero';
 
 
