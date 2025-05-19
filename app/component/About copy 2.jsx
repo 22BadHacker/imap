@@ -15,9 +15,9 @@ const About = () => {
           Ensemble, allons plus loin.
       </h1> */}
       <div className="gap-[50px]  md:grid-cols-2 grid sm:grid-cols-2 grid-cols-1  w-full">
-        <div className="flex max-w-[550px]  rounded-[25px] px-10 py-6 gap-20 flex-col bg-[#eef3f3] ">
-            <p className='md:text-[80px] font-mono text-[#3f4144] text-[100px]  font-[700] leading-tight '><AnimatedCounter target={2016} /></p>
-            <p className='text-[30px] w-full text-right uppercase md:pt-0 pt-6 font-medium opacity-80'>Fondée </p>
+        <div className="flex flex-col ">
+            <p className='text-[16px]  md:pt-0 pt-6 font-medium opacity-80'>Fondée <span className='text-main2'>*</span></p>
+            <p className='md:text-[40px] text-[100px] font-sans font-[700] leading-tight '><AnimatedCounter target={2016} /></p>
         </div>
         <div className="flex flex-col ">
             <p className='text-[16px]  md:pt-0 pt-6 font-medium opacity-80'>Formations disponibles <span className='text-main2'>*</span></p>

@@ -25,7 +25,7 @@ const page = () => {
     <div className='w-full  h-auto  pb-[100px]'>
         <Work />
        
-          <Last url='Contact/#rejoignez-nous' name='rejoignez-nous' title='Bien plus qu’un lieu d’apprentissage — une vraie impulsion pour votre avenir.'/>
+          <Last url='Contact/#rejoignez-nous' name='Rejoignez-nous' title='Bien plus qu’un lieu d’apprentissage — une vraie impulsion pour votre avenir.'/>
     </div>
     </>
   )

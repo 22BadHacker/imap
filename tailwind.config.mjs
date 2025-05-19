@@ -26,6 +26,12 @@ export default {
 			roboto: 'var(--roboto)',
 			poppins: 'var(--poppins)',
 			noto_sans: 'var(--noto-sans)',
+			space_grotesk: 'var(--Space-Grotesk)',
+			inter: 'var(--Inter)',
+			// bebas_neue: 'var(--Bebas-Neue)',
+			// ancizar_sans: 'var(--Ancizar-Sans)',
+			// lato: 'var(--Lato)',
+			// poppins: 'var(--Poppins)',
 		},
   		colors: {
   			background: 'hsl(var(--background))',

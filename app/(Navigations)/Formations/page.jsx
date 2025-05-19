@@ -33,7 +33,7 @@ const page = () => {
 
           <FAQAccordion /> 
         </div>
-        <Last url='Contact/#rejoignez-nous' name='rejoignez-nous' title='Tout ce dont vous avez besoin pour commencer à construire votre avenir.'/>
+        <Last url='Contact/#rejoignez-nous' name='Rejoignez-nous' title='Tout ce dont vous avez besoin pour commencer à construire votre avenir.'/>
     </div>
     </>
   )

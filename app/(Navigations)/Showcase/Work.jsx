@@ -71,7 +71,7 @@ const Work = () => {
                     <p className='font-bold uppercase text-[17.5px] tracking-wider font-morir text-main2 flex gap-1 items-center'>
                         <span className='blink'></span> Showcase
                     </p>
-                    <h1 className='sm:text-[60px] text-[#1f1f1f] max-w-[750px] font-sans text-[40px] flex text-wrap leading-tight font-bold opacity-90'>
+                    <h1 className='sm:text-[60px] text-[#1f1f1f] opacity-95 max-w-[750px] font-sans text-[40px] flex text-wrap leading-[1.2] font-bold '>
                         Galerie des Projets de nos futurs ingénieurs
                         
                     </h1>

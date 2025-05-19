@@ -1,6 +1,7 @@
 // 'use client'
 import React from 'react'
 import Head from 'next/head';
+import Hero from '../component/Hero';
 
 // import Hero from '../Heroo/Hero';
 
@@ -52,7 +53,8 @@ const page = () => {
 
       <div className="w-full h-auto  pb-[100px]">
 
-         {/* <Hero/> */}
+         <Hero/>
+         
 
       </div>
     </>

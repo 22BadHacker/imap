@@ -12,7 +12,7 @@ const Contact = () => {
                 <p className='font-bold uppercase text-[17.5px] tracking-wider font-morir text-main2 flex gap-1 items-center'>
                     <span className='blink'></span> Contact
                 </p>
-                <h1 className='sm:text-[60px] max-w-[720px] leading-tight font-sans text-[#1a1918] text-[40px] flex text-wrap  font-bold opacity-90'>
+                <h1 className='sm:text-[60px] max-w-[720px] leading-tight font-sans text-[#1f1f1f] text-[40px] flex text-wrap  font-bold opacity-95'>
                     Ensemble, Créons l'Avenir dès Aujourd'hui
                 </h1>
 
