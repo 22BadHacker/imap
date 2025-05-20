@@ -15,11 +15,11 @@ import Link from 'next/link';
 const Galerie = () => {
 
   return (
-    <div className='w-full grid grid-cols-1 py-[100px] '>
-      <Banner />
+    <div className='w-full grid grid-cols-1 pb-[100px] '>
+      {/* <Banner /> */}
       {Gallerie.map((item, i) => (
-        <div key={i} className="grid md:grid-cols-2 gap-10 pt-8 pb-8 border-t-[1px] border-t-[#2a2a2a]/50 last:border-b-[1px] last:border-b-[#2a2a2a]/50">
-            <div className="flex flex-col gap-4 md:pt-4">
+        <div key={i} className="grid md:grid-cols-2 gap-10 pt-8 pb-8 first:border-t-[0px] border-t-[1px] border-t-[#2a2a2a]/50 last:border-b-[1px] last:border-b-[#2a2a2a]/50">
+            <div className="flex flex-col gap-4 ">
               {/* <div className="flex gap-6 items-start">
               </div> */}
                 <h1 className='text-[35px] text-[#2a2a2a] tracking-tight  uppercase  font-morir font-semibold leading-[1.1]'>{item.formation}</h1>
@@ -32,11 +32,11 @@ const Galerie = () => {
             <div className="flex flex-col gap-5">
               <Image src={item.src} alt='pic' className='w-full saturate-[1.2] shadow-sm h-[450px] sm:h-[550px] object-cover'/>
 
-              <div className="flex flex-col gap-2">
+              {/* <div className="flex flex-col gap-2">
                   <h5 className="uppercase text-[14px] font-sans tracking-wide text-wrap">{item.keys}</h5>
                   <p className='uppercase text-[25px] font-sans flex gap-2 items-center'><span className='bg-black/90 rounded-full size-[10px]'></span>{item.title}</p>
 
-              </div>
+              </div> */}
             </div>
         </div>
         

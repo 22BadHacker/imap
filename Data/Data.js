@@ -177,4 +177,10 @@ export const formation = [
 
 
 
+
+  export const formation2 = [
+    { href: '/Formations/Informatique', name: 'Développement web', desc: 'Donnez vie à vos idées avec du code. Cette formation vous prépare à devenir développeur web ou logiciel, prêt pour le monde pro.' },
+  ];
+
+
 // Une formation en génie civil orientée logiciels : AutoCAD pour le dessin, Revit pour la 3D, et d'autres outils de conception et d’analyse.

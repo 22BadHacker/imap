@@ -12,11 +12,11 @@ export default function Banner() {
             <div className="w-[.5px] h-5"></div>
             <p className="text-[16px] font-semibold uppercase">Formation 100% pratique avec des projets réels !</p>
 
-
+          border-t-[1px] border-t-[#2a2a2a]/50
 
         </div> */}
      
-     <div className={`flex gap-5  items-center py-2 border-t-[1px] border-t-[#2a2a2a]/50`}>
+     <div className={`flex gap-5  items-center py-2 `}>
             <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
             <p className='text-black   text-[14px]'>Inscriptions ouvertes ! Ne ratez pas votre place.</p>
             <p className='text-black    opacity-95 font-bold  text-[14px]'>Votre créativité n'a pas de limites : montrez-la sur IMAP</p>

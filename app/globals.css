@@ -519,7 +519,7 @@ body {
 
 .text-str{
   -webkit-text-stroke-width: .8px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: var(--main);
   color: transparent;
   /* filter: drop-shadow(.5px .5px 14px var(--main2)); */
 
@@ -625,5 +625,10 @@ body {
   left:0;
   background: var(--main2);
   z-index: -1;
+  transition: 200ms ease-in-out;
+}
+
+.liink:hover > .spaaan{
+  color: var(--main2);
   transition: 200ms ease-in-out;
 }
