@@ -42,12 +42,12 @@ const Hero = () => {
 
 
             {/* <Banner /> */}
-            <div className="pt-[130px] w-full flex flex-col gap-6 " >
+            {/* <div className="pt-[130px] w-full flex flex-col gap-6 " >
                 <div className="grid grid-cols-2 w-full  gap-8 " >
 
                     <div className="flex flex-col">
                         <p className='uppercase font-inter   text-black contact-title opacity-70 pb-3 text-[15px] flex gap-1 items-center'> <span className=''>/</span>Nos programmes</p>
-                        {/* <p className='max-w-[600px] h-fit text-[25px]   leading-snug font-semibold text-[#111111] opacity-95 flex items-center gap-2 '> Nos programmes</p> */}
+
                         <h3 className='max-w-[400px] text-[32px] leading-tight font-semibold text-[#111111] opacity-95 flex items-center gap-2 '>Nos programmes, votre tremplin vers le succès.</h3>
 
                     </div>
@@ -74,8 +74,7 @@ const Hero = () => {
 
                 </div>
 
-                {/* <ImageSlider /> */}
-            </div>
+            </div> */}
     </div>
     
    
