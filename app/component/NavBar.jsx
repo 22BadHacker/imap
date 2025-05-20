@@ -39,7 +39,7 @@ const NavBar = () => {
                 
 
                 </div>
-                    <Link className='text-[18px] py-[13px] tracking-[.3px]   px-[23px]  duration-200 hover:text-white   call relative ease-in-out  text-[#fff] overflow-hidden  font-bold   hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
+                    <Link className='text-[18px] py-[12px] tracking-[.3px]   px-[22.5px]  duration-200 hover:text-white   call relative ease-in-out  text-[#fff] overflow-hidden  font-bold   hidden lg:block  rounded-full' href={'/inscription'}>S'inscrire</Link>
                 
                 <div onClick={toggle} className={` ${toggleClass} menu lg:hidden z-[30] duration-300 ease-out   rounded-full menu cursor-pointer sm:size-[64px] w-[50px]  flex flex-col gap-[4px] justify-center items-center `}>
                     <div className={`w-full  border-b-[2px]  border-black/80 bar1  `}></div>

@@ -106,8 +106,8 @@ const Work = () => {
                             <div class="absolute z-[-1] inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10 w-full h-full"></div>
             
                                 <div className="flex flex-col gap-1 pt-0 ">
-                                    <h1 className='md:text-[45px] leading-[44px] py-1 font-[500] text-[22px]  font-metro  text-white'>{items.name}.</h1>
-                                    <p className='md:text-[11px]  text-[12px] text-white font-sans uppercase gap-2 flex md:gap-3 flex-wrap'>{Array.isArray(items.desc) ? items.desc.map((item, i) => (<span className='border-white border-dashed backdrop-blur-[5px] border-[1px] px-3 shadow-md py-1 rounded-full' key={i}>{item}</span>)) : items.desc}</p>
+                                    <h1 className='md:text-[44px] leading-[44px] py-1 font-[500] text-[22px]  font-  text-white'>{items.name}.</h1>
+                                    <p className='md:text-[11px]  text-[10px] text-white  uppercase gap-2 flex md:gap-3 flex-wrap'>{Array.isArray(items.desc) ? items.desc.map((item, i) => (<span className='border-white bg-black/30 backdrop-blur-[5px] border-[1px] px-3 shadow-md py-1 rounded-full' key={i}>{item}</span>)) : items.desc}</p>
 
                                 </div>
 
