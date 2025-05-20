@@ -2,18 +2,14 @@
 import React from 'react'
 import Head from 'next/head';
 import Hero from '../component/Hero';
+import Landing from '../component/Landing';
+import Last from '../component/BiigButton';
+import Marquee from '../component/Marquee';
+import Programmes from '../component/Programmes';
 
 // import Hero from '../Heroo/Hero';
 
 
-
-
-  <Head>
-    <title>𝗜𝗠𝗔𝗣 -- Institut des Métiers Appliqués Privée</title>
-    <meta name="description" content="A short, keyword-rich description of your site." />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.yourdomain.com" />
-</Head>
 const page = () => {
   return (
 
@@ -54,8 +50,15 @@ const page = () => {
       <div className="w-full h-auto  pb-[100px]">
 
          <Hero/>
-         
+         {/* <Landing />
+          <div className="w-full h-auto ">
+            <Programmes />
 
+          </div> */}
+
+         <div className="pt-[120px]">
+            <Last url='Contact/#rejoignez-nous' name='Rejoignez-nous' title='Plus qu’une institut, un tremplin vers l’avenir professionnel.'/>
+         </div>
       </div>
     </>
   )

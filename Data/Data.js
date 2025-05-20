@@ -13,12 +13,13 @@ import mega from '@/public/Work2/megaWeb.webp'
 
 
 import devlopor from '@/public/Gallerie/web.gif'
-import Civil from '@/public/Gallerie/Ginie.jpg'
+import Civil from '@/public/Gallerie/plan.png'
 import Design from '@/public/Gallerie/desiign.gif'
 import comptable from '@/public/Gallerie/comp.gif'
-import Logistique from '@/public/Gallerie/Logistique.jpg'
+import Logistique from '@/public/Gallerie/Logistiquee.jpeg'
 import entre from '@/public/Gallerie/entre.gif'
 import buro from '@/public/Gallerie/banner.webp'
+import { PiSmileyWinkLight } from 'react-icons/pi'
 
 // import code from '@/public/videos/coding.mp4'
 
@@ -138,11 +139,11 @@ export const Gallerie = [
   // {keys: ['Programmation', 'Algorithmes', 'Full Stack'], formation: 'Développement informatique', src: devlopor, desc: 'Une formation pratique pour apprendre à concevoir et développer des  web. Au programme : langages de programmation (HTML, CSS, JavaScript, PHP...), bases de données, frameworks modernes (Laravel, React...), et projets concrets pour se préparer au métier de développeur. '},
   {title: "site Web de portfolio",keys: "Programmation - website - Front end - portfolio", formation: 'Développement informatique', src: Portfolio, desc: "Maîtrisez les bases et les outils avancés du web. De la création d'interfaces modernes (HTML, CSS, JavaScript, React...) à la construction de systèmes robustes côté serveur (PHP, Laravel, MySQL...), vous apprendrez à concevoir des sites et des applications dynamiques, fonctionnels et sécurisés — du concept à la mise en ligne."},
   // {title: "",keys: ['Programmation', '', ''], formation: 'Ginie Civil', src: Civil, desc: 'Une formation en génie civil axée sur l’apprentissage des logiciels essentiels tels qu’AutoCAD pour le dessin technique, Revit pour la modélisation, ainsi que d’autres outils professionnels utilisés dans la conception et l’analyse des structures.'},
-  {title: "Projet bâtiment",keys: "AutoCAD - Plans techniques - Architecture - Ingénierie ", formation: 'Ginie Civil', src: Civil, desc: "Apprenez les bases de la conception, du calcul et de la réalisation d’infrastructures. Des fondations aux structures, vous serez formé à lire des plans, utiliser les outils de DAO/CAO (AutoCAD, Revit…), comprendre les matériaux et respecter les normes de construction."},
+  {title: "Plan d’un bâtiment résidentiel",keys: "AutoCAD - Plans techniques - Architecture - Ingénierie ", formation: 'Ginie Civil', src: Civil, desc: "Apprenez les bases de la conception, du calcul et de la réalisation d’infrastructures. Des fondations aux structures, vous serez formé à lire des plans, utiliser les outils de DAO/CAO (AutoCAD, Revit…), comprendre les matériaux et respecter les normes de construction."},
   {title: "Business Card",keys: "Design graphique - Illustrator - Photoshop - Créativité", formation: 'Infographie', src: BeProd, desc: "Un parcours concret et stimulant pour maîtriser les outils pros — Photoshop, Illustrator, InDesign — et apprendre à donner vie à vos idées. Logos, affiches, flyers, visuels web ou imprimés… ici, vous créez, testez, explorez, et développez votre propre style."},
-  {title: "",keys: ['Programmation', '', ''], formation: 'Comptabilité Générale', src: comptable, desc: "Une formation en comptabilité générale pour apprendre à enregistrer, classer et interpréter les opérations comptables d'une entreprise : journaux, bilans, comptes de résultat, et principes comptables de base."},
-  {title: "",keys: ['Programmation', '', ''], formation: 'Transport et logistique', src: Logistique, desc: "Une formation en transport et logistique pour maîtriser la gestion des flux de marchandises, le stockage, la chaîne d’approvisionnement, ainsi que les outils et réglementations liés au transport national et international."},
-  {title: "",keys: ['Programmation', '', ''], formation: 'Gestion des Entreprises', src: entre, desc: "Une formation complète pour apprendre à piloter une entreprise : gestion financière, ressources humaines, marketing, comptabilité et prise de décision stratégique à l’aide d’outils professionnels."},
+  {title: "Analyse financière",keys: "Gestion budgétaire - Comptabilité financière", formation: 'Comptabilité Générale', src: comptable, desc: "Une formation en comptabilité générale pour apprendre à enregistrer, classer et interpréter les opérations comptables d'une entreprise : journaux, bilans, comptes de résultat, et principes comptables de base."},
+  {title: " Simulation de gestion de stock",keys: "Gestion des stocks - Transport international", formation: 'Transport et logistique', src: Logistique, desc: "Une formation en transport et logistique pour maîtriser la gestion des flux de marchandises, le stockage, la chaîne d’approvisionnement, ainsi que les outils et réglementations liés au transport national et international."},
+  {title: "Organisation d’entreprise",keys: "Planification stratégique - Gestion de projet", formation: 'Gestion des Entreprises', src: entre, desc: "Une formation complète pour apprendre à piloter une entreprise : gestion financière, ressources humaines, marketing, comptabilité et prise de décision stratégique à l’aide d’outils professionnels."},
   {title: "Logiciels de bureautique",keys: "PowerPoint - Word - exel - Outlook - Microsoft Office", formation: 'Bureautique', src: buro, desc: "Maîtrisez les outils essentiels du monde professionnel : Word, Excel, PowerPoint, Outlook... Apprenez à rédiger des documents clairs, créer des tableaux dynamiques, automatiser vos tâches et concevoir des présentations efficaces. Une formation indispensable pour booster votre efficacité au quotidien."},
 ]
 
@@ -181,6 +182,24 @@ export const formation = [
   export const formation2 = [
     { href: '/Formations/Informatique', name: 'Développement web', desc: 'Donnez vie à vos idées avec du code. Cette formation vous prépare à devenir développeur web ou logiciel, prêt pour le monde pro.' },
   ];
+
+
+
+
+  export const MarqueeData = () =>{
+    return(
+    <>
+        <div className={`flex gap-5  items-center`}>
+            <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
+            <p className='text-[#343434] font-apercu  text-[13px]'>New year, New Challenges!</p>
+            <p className='text-[#232323]    opacity-95 font-bold  text-[13px]'>Your Creativity Has No Limits—Show It Off on OUTLOUD!</p>
+            <PiSmileyWinkLight className='text-[#000] emo' size={18}/>
+            <p className='text-[#343434] font-apercu   text-[13px]'>Quizzes, Challenges, Projects—Ready to Conquer?</p>
+            <p className='text-[#232323]   opacity-95 font-bold  text-[13px]'>Dare to Dream, Learn, and Achieve!</p>
+        </div>
+    </>
+    )
+}
 
 
 // Une formation en génie civil orientée logiciels : AutoCAD pour le dessin, Revit pour la 3D, et d'autres outils de conception et d’analyse.

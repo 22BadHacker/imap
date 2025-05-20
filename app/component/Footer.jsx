@@ -41,7 +41,7 @@ const Footer = () => {
               <div className="flex flex-col gap-0">
                 <h6 className='uppercase text-[12px]  font-noto_sans font-normal pb-[22px] w-fit hover:text-main cursor-pointer blink-on-hover'>/ navigation</h6>
                 {center.map((item, i) => (
-                  <Link target='_blank' key={i} className='text-[20px] pb-[1.5px] font-poppins font-semibold leading-snug hover:text-main2 flex gap-1 items-center linkTo duration-200 ease-out w-fit' href={item.href}> {item.name} <HiArrowUpRight className='dir text-[15px] relative top-[1.2px] opacity-0'/></Link>
+                  <Link  key={i} className='text-[20px] pb-[1.5px] font-poppins font-semibold leading-snug hover:text-main2 flex gap-1 items-center linkTo duration-200 ease-out w-fit' href={item.href}> {item.name} <HiArrowUpRight className='dir text-[15px] relative top-[1.2px] opacity-0'/></Link>
                 ))}
                
               </div>                

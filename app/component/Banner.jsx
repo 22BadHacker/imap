@@ -32,6 +32,7 @@ export default function Banner() {
             <PiSmileyXEyesThin className='text-black' size={18}/>
             <p className='text-black font-apercu   text-[14px]'>Formation 100% pratique avec des projets réels !</p>
             <p className='text-black   opacity-95 font-bold  text-[14px]'>osez rêver, apprendre et réussir !</p>
+            <PiSmileyXEyesThin className='text-black' size={18}/>
             <CiFaceSmile className='text-black' size={17}/>
         </div>
     </Marquee>

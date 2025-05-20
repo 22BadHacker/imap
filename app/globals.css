@@ -632,3 +632,20 @@ body {
   color: var(--main2);
   transition: 200ms ease-in-out;
 }
+
+
+
+
+.paused:hover{
+  animation-play-state: paused !important;
+  transition: 250ms ease-in-out;
+  
+}
+.paused p:hover, .paused .emo:hover{
+  color: #ff472b !important;
+  transition: 200ms ease-in-out;
+}
+
+.paused .emo:hover{
+  scale: 1.1;
+}
