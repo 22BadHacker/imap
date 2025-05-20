@@ -18,14 +18,17 @@ const Galerie = () => {
     <div className='w-full grid grid-cols-1 pb-[100px] '>
       {/* <Banner /> */}
       {Gallerie.map((item, i) => (
-        <div key={i} className="grid md:grid-cols-2 gap-10 pt-8 pb-8 first:border-t-[0px] border-t-[1px] border-t-[#2a2a2a]/50 last:border-b-[1px] last:border-b-[#2a2a2a]/50">
+        <motion.div key={i} initial={{ opacity: 0, y: 5, filter: 'blur(4px)' }}
+        whileInView={{ opacity: 1, y: 0, filter: 'blur(0)' }}
+        transition={{ duration: 0.2,delay:i* .2, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 0.2 }}  className="grid md:grid-cols-2 gap-10 pt-8 pb-8 first:border-t-[0px] border-t-[1px] border-t-[#2a2a2a]/50 last:border-b-[1px] last:border-b-[#2a2a2a]/50">
             <div className="flex flex-col gap-4 ">
               {/* <div className="flex gap-6 items-start">
               </div> */}
                 <h1 className='text-[35px] text-[#2a2a2a] tracking-tight  uppercase  font-morir font-semibold leading-[1.1]'>{item.formation}</h1>
                 <h6 className='text-[15px] leading-relaxed font-poppins font-semi md:max-w-[560px] text-[#2d2626]'>{item.desc}</h6>
 
-                <Link className='bg-main2 font-morir uppercase w-fit text-white px-4 py-2 relative top-5 md:top-7 text-[12.5px] tracking-wide hover:bg-main duration-200 ease-in-out rounded-full flex gap-2 items-center' href='/'><span className='size-[7.5px] rounded-full bg-white'></span> Découvrir davantage</Link>
+                <Link className='bg-main font-morir uppercase w-fit text-white px-4 py-2 relative top-5 md:top-7 text-[12.5px] tracking-wide hover:bg-main2 duration-200 ease-in-out rounded-full flex gap-2 items-center' href='/'><span className='size-[7.5px] rounded-full bg-white'></span> Découvrir davantage</Link>
                 
             </div>
 
@@ -38,7 +41,7 @@ const Galerie = () => {
 
               </div> */}
             </div>
-        </div>
+        </motion.div>
         
       ))}
      
