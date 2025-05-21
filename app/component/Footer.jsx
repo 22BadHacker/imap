@@ -27,6 +27,7 @@ const Footer = () => {
               <h6 className='uppercase text-[12px]  font-noto_sans font-normal pb-[22px] w-fit hover:text-main cursor-pointer blink-on-hover'>/ On est là pour vous</h6>
               <Link className='text-[30px] font-noto_sans font-semibold leading-tight hover:text-main2 duration-200 w-fit ease-in-out' href={'/'}>contact.imap@gmail.com</Link>
               <Link className='text-[30px] font-noto_sans font-semibold leading-tight hover:text-main2 duration-200 w-fit ease-in-out' href={'/'}>+212 (0)6 042 483 95</Link>
+              {/* <Link className='text-[30px] font-noto_sans font-semibold leading-tight hover:text-main2 duration-200 w-fit ease-in-out' href={'/'}>N, Rue 5, 26 Bd du Fouarat, Casablanca 20670</Link> */}
               
           </div>
 
@@ -47,7 +48,7 @@ const Footer = () => {
               </div>                
               <div className="flex flex-col gap-0 col-span-2 sm:col-span-1">
                 <h6 className='uppercase text-[12px]  font-noto_sans font-normal pb-[22px] w-fit hover:text-main cursor-pointer blink-on-hover'>/ Trouvez-nous</h6>
-                <Link target='_blank' className='text-[20px] hover:text-main2 duration-200 ease-in-out font-poppins font-semibold leading-tight' href={'https://www.google.com/maps/place/37-15+Rue+du+Yamen,+Casablanca/@33.5731104,-7.5898433,17z/data=!3m1!4b1!4m6!3m5!1s0xda7a2f8c9e0d5b7:0x8a2f8c9e0d5b7!8m2!3d33.5731104!4d-7.5898433!16s%2Fg%2F11c1gqj_6h'}>37-15 Rue du Yamen, Casablanca</Link>
+                <Link target='_blank' className='text-[20px] hover:text-main2 duration-200 ease-in-out font-poppins font-semibold leading-tight' href='https://www.google.com/maps/place/Skills+Institute+Applied+Private+Ima+-+%D9%85%D8%B9%D9%87%D8%AF+%D8%A7%D9%84%D9%85%D9%87%D9%86+%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D9%8A%D8%A9+%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%E2%80%AD/@33.5825423,-7.5554973,17z/data=!3m1!4b1!4m6!3m5!1s0xda7cdd6601350ed:0x7b691318bf5d9619!8m2!3d33.5825423!4d-7.5554973!16s%2Fg%2F11fs08kdwb?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D'>N, Rue 5, 26 Bd du Fouarat, Casablanca 20670</Link>
               </div>                
           </div>
       </div>

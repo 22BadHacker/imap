@@ -25,8 +25,8 @@ const Contact = () => {
             <div className="flex w-full flex-col gap-6 ">
               
               <p className='uppercase font-morir   text-black contact-title opacity-70 pb-3 text-[17px] flex gap-1 items-center'> <span className=''>/</span>notre emplacement</p>
-              <iframe className='w-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6198199059386!2d-7.612786500000001!3d33.589219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29e135bc767%3A0x996cc0c9356b767!2s37-15%20Rue%20du%20Y%C3%A9men%2C%20Casablanca%2020250!5e0!3m2!1sen!2sma!4v1737142249435!5m2!1sen!2sma" width="600" height="500" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            
+              {/* <iframe className='w-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6198199059386!2d-7.612786500000001!3d33.589219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29e135bc767%3A0x996cc0c9356b767!2s37-15%20Rue%20du%20Y%C3%A9men%2C%20Casablanca%2020250!5e0!3m2!1sen!2sma!4v1737142249435!5m2!1sen!2sma" width="600" height="500" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.877015632191!2d-7.555497299999999!3d33.58254229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cdd6601350ed%3A0x7b691318bf5d9619!2zU2tpbGxzIEluc3RpdHV0ZSBBcHBsaWVkIFByaXZhdGUgSW1hIC0g2YXYudmH2K8g2KfZhNmF2YfZhiDYp9mE2KrYt9io2YrZgtmK2Kkg2KfZhNiu2KfYtQ!5e0!3m2!1sen!2sma!4v1747781405928!5m2!1sen!2sma" className='w-full' width="600" height="500" loading="lazy"  allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>            
             </div>
               
               <Formailer/>
